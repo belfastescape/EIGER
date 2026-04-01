@@ -326,7 +326,7 @@ export default function Home() {
               Frequently Asked Questions
             </h2>
             <p className="text-base sm:text-lg md:text-xl text-gray-300 max-w-3xl mx-auto px-4">
-              Got questions? We've got answers! Here are some of the most common questions about our escape rooms.
+              Quick answers about our Grindelwald venue and the three mountain-set games we run here.
             </p>
           </motion.div>
 
@@ -339,47 +339,51 @@ export default function Home() {
             <Accordion type="single" collapsible className="w-full">
               <AccordionItem value="item-1" className="border-[#222]">
                 <AccordionTrigger className="text-white hover:text-cyan-400">
-                  How many people can play in one escape room?
+                  How many players fit in each Eiger room?
                 </AccordionTrigger>
                 <AccordionContent className="text-gray-300">
-                  Our escape rooms can accommodate groups of 2-8 people, depending on the specific room. We recommend
-                  checking the individual room pages for exact capacity limits.
+                  The Eiger Signal holds two to eight; The Forgotten Bunker and The Ice Chamber each cap out a little
+                  lower (see their pages for exact numbers). If you are between sizes, tell us when you book and we will
+                  steer you toward the room that breathes best with your group.
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-2" className="border-[#222]">
                 <AccordionTrigger className="text-white hover:text-cyan-400">
-                  How long does an escape room experience last?
+                  How long should we block on the calendar?
                 </AccordionTrigger>
                 <AccordionContent className="text-gray-300">
-                  Each escape room game lasts 60 minutes. However, you should plan for about 75-90 minutes total,
-                  including briefing, the game itself, and debriefing.
+                  The mission clock runs about sixty minutes. With waiver, story, and a quick wrap-up, most teams are
+                  in and out in roughly seventy-five to ninety minutes—plan a little buffer before dinner in Grindelwald.
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-3" className="border-[#222]">
                 <AccordionTrigger className="text-white hover:text-cyan-400">
-                  Are escape rooms suitable for children?
+                  Can kids join, or is this adults-only?
                 </AccordionTrigger>
                 <AccordionContent className="text-gray-300">
-                  Yes! Our escape rooms are family-friendly and suitable for children aged 10 and above playing in family groups. Groups of children under 14
-                   must be accompanied by an adult. We don't our recommend escape rooms for groups of children under 12 years old
+                  We aim for ages ten and up so everyone can follow the puzzles. Mixed-age families work great; anyone
+                  under fourteen needs an adult in the room, and kid-only groups should be twelve plus. The Forgotten
+                  Bunker is the friendliest entry for younger players; The Ice Chamber is aimed at teens and adults.
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-4" className="border-[#222]">
                 <AccordionTrigger className="text-white hover:text-cyan-400">
-                  What happens if we can't solve the escape room in time?
+                  What if the timer beats us?
                 </AccordionTrigger>
                 <AccordionContent className="text-gray-300">
-                  Don't worry! Our game masters are there to help with hints throughout the game. Even if you don't
-                  escape in time, we will give you extra hints to help you escape.
+                  Plenty of teams hear the buzzer before the final lock opens—especially in The Ice Chamber. Your game
+                  master still walks you through the loose ends so the story lands, and you leave with a clear picture of
+                  what you cracked and what still hid in the mountain.
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-5" className="border-[#222]">
                 <AccordionTrigger className="text-white hover:text-cyan-400">
-                  Do I need to book in advance?
+                  Do walk-ins ever work, or are we better booking ahead?
                 </AccordionTrigger>
                 <AccordionContent className="text-gray-300">
-                  We highly recommend booking in advance, especially for weekends and holidays. You can book online
-                  through our website or our contact page.
+                  Same-day slots sometimes open, but holiday weeks and ski season weekends fill up fast. If you have a
+                  train connection or a chalet checkout, reserve online so the room you want is waiting—not a maybe
+                  at the door.
                 </AccordionContent>
               </AccordionItem>
             </Accordion>

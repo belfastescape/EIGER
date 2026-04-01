@@ -9,7 +9,6 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import ImageWithFilter from "@/components/image-with-filter"
 import { HeroSection } from "@/components/hero-section"
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 import GoogleIcon from '@/components/GoogleIcon'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 
@@ -336,40 +335,40 @@ export default function EscapeRoomsPage() {
 
             <div className="space-y-4">
               <div className="bg-[#111] rounded-lg border border-[#222] p-6">
-                <h3 className="text-xl font-bold mb-2 text-white">How do I choose the right room?</h3>
+                <h3 className="text-xl font-bold mb-2 text-white">Which storyline should we tackle first?</h3>
                 <p className="text-gray-300">
-                  If you're new to escape rooms, we recommend starting with The Eiger Signal (difficulty 3/5). For
-                  experienced players looking for a challenge, try The Forgotten Bunker (4/5) or The Ice Chamber
-                  (4.5/5). Each room has a different theme, so you can also choose based on what interests you most!
+                  The Eiger Signal is our clearest on-ramp: radio static, rescue-hut tension, difficulty around three
+                  out of five. If you already love cipher work and wartime props, The Forgotten Bunker turns the dial
+                  up. When you want frostbite ambience and non-linear logic, The Ice Chamber is the summit push—save
+                  it for a crew that relishes chaos.
                 </p>
               </div>
 
               <div className="bg-[#111] rounded-lg border border-[#222] p-6">
-                <h3 className="text-xl font-bold mb-2 text-white">What if we don't escape in time?</h3>
+                <h3 className="text-xl font-bold mb-2 text-white">If the alarm sounds before we finish, do we still get closure?</h3>
                 <p className="text-gray-300">
-                  Don't worry! Many teams don't escape in 60 minutes, especially in our more challenging rooms. If you
-                  don't make it out in time, we will give you extra time to complete your game. All of our games are
-                  story based , so we want you to experience the end of the story even if you run a bit over time.
+                  Yes. The story matters as much as the score. We would rather you see how the narrative ends than
+                  walk out on a cliffhanger, so expect a short walkthrough when the timer stops—especially in longer
+                  arcs like The Ice Chamber where threads cross in multiple corners.
                 </p>
               </div>
 
               <div className="bg-[#111] rounded-lg border border-[#222] p-6">
-                <h3 className="text-xl font-bold mb-2 text-white">Can we take photos inside the rooms?</h3>
+                <h3 className="text-xl font-bold mb-2 text-white">Why no photos inside the sets?</h3>
                 <p className="text-gray-300">
-                  You can take photos of your team while you are playing your game. However, we're happy to take a group
-                  photo of your team after your experience. It's probably better that way so you don't miss out on any
-                  of the experience.
+                  We keep cameras out of the play space so the next team does not inherit spoilers on Instagram. After
+                  the debrief we will grab a crisp team shot in the lobby—feel free to mention if you want the peaks
+                  framed in the window behind you.
                 </p>
               </div>
 
               <div className="bg-[#111] rounded-lg border border-[#222] p-6">
-                <h3 className="text-xl font-bold mb-2 text-white">Do you offer gift vouchers?</h3>
+                <h3 className="text-xl font-bold mb-2 text-white">Can we gift a mountain mission to someone visiting Grindelwald?</h3>
                 <p className="text-gray-300">
-                  Yes! Escape room experiences make great gifts. You can purchase gift on our booking page. Vouchers are
-                  valid for 12 months from the date of purchase and can be emailed directly to the recipient or to you
-                  to give in person. Check out our souvenir gift card that we will send out for to for free. They make
-                  great little momentos. NB. If your date expires, we will always extend the voucher date. We want as
-                  many people to play our games as possible.
+                  Absolutely. Digital vouchers cover any of our three rooms and stay valid for twelve months—perfect
+                  for guests who already skied Jungfrau and want an indoor adventure. Order through the booking flow,
+                  or email us if you need a custom amount. We can usually extend expiry dates if the weather window
+                  shifts; just ask before you give up on the trip.
                 </p>
               </div>
             </div>

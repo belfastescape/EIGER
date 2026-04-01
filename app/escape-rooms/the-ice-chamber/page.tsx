@@ -458,30 +458,31 @@ export default function IceChamberPage() {
               <TabsContent value="general" className="space-y-4">
                 <Card className="bg-[#111] border-[#222]">
                   <CardContent className="pt-6">
-                    <h3 className="text-lg font-bold text-white mb-2">Do we really get locked in?</h3>
+                    <h3 className="text-lg font-bold text-white mb-2">Do the ice doors actually seal us in?</h3>
                     <p className="text-gray-300">
-                      No, you are never actually locked in the room. For safety reasons, you can exit the room at any
-                      time if needed. The goal is to solve the puzzles to "escape" within the time limit, but the door
-                      is never physically locked.
+                      No. The frost is theatre, not a trap. You can step out for air, a coat adjustment, or an
+                      emergency anytime. The &quot;escape&quot; is a mission objective—finish the thaw before the
+                      countdown—not a physical lock behind you.
                     </p>
                   </CardContent>
                 </Card>
                 <Card className="bg-[#111] border-[#222]">
                   <CardContent className="pt-6">
-                    <h3 className="text-lg font-bold text-white mb-2">What if we get stuck?</h3>
+                    <h3 className="text-lg font-bold text-white mb-2">How do hints work in the cold?</h3>
                     <p className="text-gray-300">
-                      Don't worry! Our game masters monitor your progress and can provide hints if you're stuck. You can
-                      request hints at any time, and we'll help guide you in the right direction without giving away the
-                      solutions.
+                      Your game master watches the chamber feed and can route a clue through the in-world comms. Ask
+                      early if you want a light push; otherwise we will wait until the team looks stuck so the
+                      difficulty still feels earned.
                     </p>
                   </CardContent>
                 </Card>
                 <Card className="bg-[#111] border-[#222]">
                   <CardContent className="pt-6">
-                    <h3 className="text-lg font-bold text-white mb-2">How early should we arrive?</h3>
+                    <h3 className="text-lg font-bold text-white mb-2">What time should boots hit the lobby?</h3>
                     <p className="text-gray-300">
-                      Please arrive 10 minutes before your scheduled time. This allows us to brief you on the rules and
-                      get you ready for your adventure. 
+                      Aim for fifteen minutes ahead of your slot. The Ice Chamber needs a slightly longer gear
+                      briefing—layers, gloves, and how we keep the floor safe—before we cut you loose inside the
+                      glacier.
                     </p>
                   </CardContent>
                 </Card>
@@ -489,30 +490,31 @@ export default function IceChamberPage() {
               <TabsContent value="room" className="space-y-4">
                 <Card className="bg-[#111] border-[#222]">
                   <CardContent className="pt-6">
-                    <h3 className="text-lg font-bold text-white mb-2">Is The Ice Chamber suitable for beginners?</h3>
+                    <h3 className="text-lg font-bold text-white mb-2">Is The Ice Chamber a first-night room?</h3>
                     <p className="text-gray-300">
-                      The Ice Chamber is our most challenging room, rated 4.5/5 for difficulty. We recommend beginners
-                      try The Eiger Signal first to get familiar with escape room concepts before taking on this advanced
-                      challenge.
+                      We rate it at 4.5/5 difficulty with puzzles spread across multiple zones. If you have never
+                      played a room before, warm up on The Eiger Signal or The Forgotten Bunker; come back here when
+                      you already know how your crew communicates under pressure.
                     </p>
                   </CardContent>
                 </Card>
                 <Card className="bg-[#111] border-[#222]">
                   <CardContent className="pt-6">
-                    <h3 className="text-lg font-bold text-white mb-2">Can 2 people succeed in this room?</h3>
+                    <h3 className="text-lg font-bold text-white mb-2">Can a duo clear the chamber?</h3>
                     <p className="text-gray-300">
-                      The Ice Chamber contains multiple puzzles that require coordination between team members in different
-                      areas. It just needs an experienced team of 2 to tackle this room without too much help. It is
-                      certainly not a room for people to try who have never played an escape room before. Try the other
-                      games if it is your first time.
+                      Two seasoned players who split attention well can finish, but the room keeps parallel tasks
+                      running—expect to jog between stations. Brand-new pairs should book a larger team or pick a
+                      gentler room first; we would rather you leave exhilarated than exhausted.
                     </p>
                   </CardContent>
                 </Card>
                 <Card className="bg-[#111] border-[#222]">
                   <CardContent className="pt-6">
-                    <h3 className="text-lg font-bold text-white mb-2">What makes this room so challenging?</h3>
+                    <h3 className="text-lg font-bold text-white mb-2">What makes this room bite harder than the others?</h3>
                     <p className="text-gray-300">
-                      This room features our most complex puzzles, which are set out in a non linear fashion, making it perfect for those seeking a real challenge.
+                      The Ice Chamber is deliberately non-linear: clues you find early may not pay off until later, and
+                      temperature-themed effects can hide details in plain sight. It rewards teams who track every
+                      discovery on a shared board rather than chasing one linear path.
                     </p>
                   </CardContent>
                 </Card>

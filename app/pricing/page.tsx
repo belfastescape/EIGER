@@ -440,56 +440,60 @@ export default function PricingPage() {
                <Accordion type="single" collapsible className="w-full">
                  <AccordionItem value="item-1" className="border-b border-[#222]">
                    <AccordionTrigger className="text-white hover:text-cyan-400">
-                     Can discounts be combined?
+                     Can we stack more than one Eiger promotion on a single booking?
                    </AccordionTrigger>
                    <AccordionContent className="text-gray-300">
-                     No, discounts cannot be combined. Only one discount can be applied per booking. We will
-                     automatically apply the highest discount you qualify for.
+                     No—only one offer applies per checkout. If you qualify for several, we automatically keep the
+                     reduction that saves your group the most on that date and room.
                    </AccordionContent>
                  </AccordionItem>
                  <AccordionItem value="item-2" className="border-b border-[#222]">
                    <AccordionTrigger className="text-white hover:text-cyan-400">
-                     Is there a minimum number of players required?
+                     What is the smallest crew you will run a room for?
                    </AccordionTrigger>
                    <AccordionContent className="text-gray-300">
-                     Yes, each room has a minimum 2 player requirement. 
+                     Every mission at Eiger Escape Rooms needs at least two players so puzzles that split attention still
+                     work. Solo travellers can book as a pair with a friend or ask us about joining another duo if we
+                     ever trial public slots.
                    </AccordionContent>
                  </AccordionItem>
                  <AccordionItem value="item-3" className="border-b border-[#222]">
                    <AccordionTrigger className="text-white hover:text-cyan-400">
-                     How long are gift vouchers valid for?
+                     How long are Grindelwald gift vouchers good for?
                    </AccordionTrigger>
                    <AccordionContent className="text-gray-300">
-                     Gift vouchers are valid for 12 months from the date of purchase. The expiration date will be clearly
-                     marked on the voucher. Extensions may be possible in certain circumstances - please contact us if
-                     your voucher is nearing expiration.
+                     Vouchers stay valid for twelve months from purchase—long enough to span ski season and summer hiking.
+                     If your Jungfrau trip slips, email us before the date; we often extend once so the credit does not
+                     vanish into the fog.
                    </AccordionContent>
                  </AccordionItem>
                  <AccordionItem value="item-4" className="border-b border-[#222]">
                    <AccordionTrigger className="text-white hover:text-cyan-400">
-                     Do you offer private bookings?
+                     Will another group share our Eiger Signal or Bunker slot?
                    </AccordionTrigger>
                    <AccordionContent className="text-gray-300">
-                     Yes, when you book an entire room, it's automatically private - we never combine different groups in
-                     the same room. For exclusive use of our entire facility, please contact us about our corporate
-                     packages or custom events.
+                     Never. A reservation buys the room, not a seat at a stranger&apos;s table. For a full-venue takeover
+                     across The Eiger Signal, The Forgotten Bunker, and The Ice Chamber, contact us with your guest list
+                     and we will quote a schedule.
                    </AccordionContent>
                  </AccordionItem>
                  <AccordionItem value="item-5" className="border-b border-[#222]">
                    <AccordionTrigger className="text-white hover:text-cyan-400">
-                     What payment methods do you accept?
+                     How do we pay from abroad or on a company PO?
                    </AccordionTrigger>
                    <AccordionContent className="text-gray-300">
-                     We accept all major credit cards (Visa, Mastercard, American Express), for online
-                     bookings. For corporate events and large group bookings, we can also accept direct bank transfers.
+                     Online bookings use major cards (Visa, Mastercard, American Express). Swiss and EU companies can
+                     request an invoice with bank transfer for team blocks and school trips—send your billing details
+                     when you lock the date.
                    </AccordionContent>
                  </AccordionItem>
                  <AccordionItem value="item-6" className="border-b-0">
                    <AccordionTrigger className="text-white hover:text-cyan-400">
-                     Are there any additional costs I should be aware of?
+                     Does the listed price cover everything for the hour in-room?
                    </AccordionTrigger>
                    <AccordionContent className="text-gray-300">
-                     The prices listed include all game fees and GST. 
+                     The rate you see covers the full game, briefing, and standard taxes for Eiger Escape Rooms. Optional
+                     add-ons—custom debriefs, staggered waves for big groups—are quoted separately if you need them.
                    </AccordionContent>
                  </AccordionItem>
                </Accordion>

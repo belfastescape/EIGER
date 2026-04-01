@@ -403,7 +403,8 @@ If you are wanting an escape room experience, we would 100% recommended this one
               Frequently Asked Questions
             </h2>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-              Everything you need to know about team building at Eiger Escape Rooms.
+              Corporate offsites, leadership retreats, and squad days—answered for our Grindelwald venue and three
+              mountain-set rooms.
             </p>
           </motion.div>
 
@@ -417,193 +418,93 @@ If you are wanting an escape room experience, we would 100% recommended this one
             <Accordion type="single" collapsible className="space-y-4">
               <AccordionItem value="item-1" className="border border-[#222] rounded-lg overflow-hidden bg-[#111]">
                 <AccordionTrigger className="px-6 py-4 text-white hover:text-cyan-400 transition-colors">
-                  How many people can participate in team building?
+                  How many colleagues can we bring to Eiger Escape Rooms in one wave?
                 </AccordionTrigger>
                 <AccordionContent className="px-6 pb-4 text-gray-300">
-                  We can accommodate teams of all sizes, from small departments of 8-10 people to large corporate groups
-                  of up to 30 people. 
+                  A single department can fill one room; larger offsites can run The Eiger Signal, The Forgotten Bunker,
+                  and The Ice Chamber in parallel so roughly thirty people play at once. We then stagger the next wave if
+                  you need more seats—tell us your headcount and we will map a timetable that keeps energy high instead
+                  of leaving half the team in the cold.
                 </AccordionContent>
               </AccordionItem>
 
               <AccordionItem value="item-2" className="border border-[#222] rounded-lg overflow-hidden bg-[#111]">
                 <AccordionTrigger className="px-6 py-4 text-white hover:text-cyan-400 transition-colors">
-                  Do we need any special skills or preparation?
+                  Do we need escape-room experience or mountaineering skills?
                 </AccordionTrigger>
                 <AccordionContent className="px-6 pb-4 text-gray-300">
-                  No special skills or preparation are required. Our escape rooms are designed to be accessible to
-                  everyone, regardless of experience level. We recommend comfortable clothing and an open mind. The most
-                  important things to bring are good communication skills and a willingness to work together as a team.
+                  No crampons required—our challenges live indoors. Prior escape-room visits help in The Ice Chamber, but
+                  The Eiger Signal welcomes newcomers. Bring clear communication, one person willing to keep a clue log,
+                  and shoes you are happy standing in for an hour; we handle the alpine flavour with lighting, sound, and
+                  story.
                 </AccordionContent>
               </AccordionItem>
 
               <AccordionItem value="item-3" className="border border-[#222] rounded-lg overflow-hidden bg-[#111]">
                 <AccordionTrigger className="px-6 py-4 text-white hover:text-cyan-400 transition-colors">
-                  How far in advance should we book?
+                  How far ahead should we book a team day in Grindelwald?
                 </AccordionTrigger>
                 <AccordionContent className="px-6 pb-4 text-gray-300">
-                  For small teams (under 10 people), we recommend booking at least 2 weeks in advance. For larger
-                  corporate groups or custom packages, 3-4 weeks notice is ideal, especially during peak seasons.
-                  However, we can sometimes accommodate last-minute bookings, so don't hesitate to contact us even if
-                  your event is coming up soon.
+                  Aim for two weeks for a single room, three to four when you need every bay or a back-to-back schedule
+                  during ski season and Christmas markets. Last-minute gaps sometimes open—email us with your train
+                  arrival time and we will see what is still on the board.
                 </AccordionContent>
               </AccordionItem>
 
               <AccordionItem value="item-4" className="border border-[#222] rounded-lg overflow-hidden bg-[#111]">
                 <AccordionTrigger className="px-6 py-4 text-white hover:text-cyan-400 transition-colors">
-                  What makes escape rooms good for team building?
+                  Why choose Eiger Escape Rooms over another indoor team activity?
                 </AccordionTrigger>
                 <AccordionContent className="px-6 pb-4 text-gray-300">
-                  Escape rooms naturally encourage the skills that make teams successful: communication, leadership,
-                  problem-solving, and collaboration. The time pressure creates an environment where team dynamics
-                  become apparent. The shared experience of working toward a common goal helps build trust and
-                  camaraderie, while the post-game debrief allows teams to reflect on their performance and identify
-                  areas for improvement.
+                  Our games are built for this valley—radio distress calls, bunker ciphers, ice caverns—not generic
+                  padlock drills. The sixty-minute clock surfaces who speaks up, who listens, and who connects dots under
+                  stress, which is exactly what most managers want to observe without staging a workshop in a beige
+                  conference room.
                 </AccordionContent>
               </AccordionItem>
 
               <AccordionItem value="item-5" className="border border-[#222] rounded-lg overflow-hidden bg-[#111]">
                 <AccordionTrigger className="px-6 py-4 text-white hover:text-cyan-400 transition-colors">
-                  Can you customize the experience for our company?
+                  Can we align the experience with a company message or off-site theme?
                 </AccordionTrigger>
                 <AccordionContent className="px-6 pb-4 text-gray-300">
-                  Yes! Just ask us to see what we can do.
+                  Share your objectives when you book—quarterly values, a merger story, leadership principles. We cannot
+                  rewrite entire rooms overnight, but we can tailor briefings, hint language, and debrief prompts so the
+                  mission echoes what your leadership team wants reinforced.
                 </AccordionContent>
               </AccordionItem>
 
               <AccordionItem value="item-6" className="border border-[#222] rounded-lg overflow-hidden bg-[#111]">
                 <AccordionTrigger className="px-6 py-4 text-white hover:text-cyan-400 transition-colors">
-                  What's included in the team debrief?
+                  What does the post-game debrief cover?
                 </AccordionTrigger>
                 <AccordionContent className="px-6 pb-4 text-gray-300">
-                  Our team debriefs vary  include a basic review of your team's
-                  performance, highlighting team strengths etc.
+                  Your game master walks through pivotal moments: where communication clicked, where parallel puzzles
+                  stalled, and how hints were used. If you want a facilitator-led discussion afterward, tell us in
+                  advance—we will reserve a few extra minutes in the lobby before everyone scatters toward fondue.
                 </AccordionContent>
               </AccordionItem>
 
               <AccordionItem value="item-7" className="border border-[#222] rounded-lg overflow-hidden bg-[#111]">
                 <AccordionTrigger className="px-6 py-4 text-white hover:text-cyan-400 transition-colors">
-                  Do you offer catering for team events?
+                  Do you cater meals or recommend where to go after the games?
                 </AccordionTrigger>
                 <AccordionContent className="px-6 pb-4 text-gray-300">
-                  No. We are surrounded by many of the city's best restaurants and bars. We are happy to suggest close by restaurant's and pubs. Just ask us.
+                  We focus on the escape experiences; food and drink stay outside the play areas. Grindelwald has
+                  excellent bistros, hotel dining rooms, and casual spots within a short walk—tell us your budget and
+                  dietary needs and we will point your group somewhere that fits the tone of the day.
                 </AccordionContent>
               </AccordionItem>
 
               <AccordionItem value="item-8" className="border border-[#222] rounded-lg overflow-hidden bg-[#111]">
                 <AccordionTrigger className="px-6 py-4 text-white hover:text-cyan-400 transition-colors">
-                  What is your cancellation policy for team bookings?
+                  What is the cancellation policy for corporate and large team bookings?
                 </AccordionTrigger>
                 <AccordionContent className="px-6 pb-4 text-gray-300">
-                  We are very flexible. We realise that even the best laid plans have to be changed sometimes.Just let us know asap.
-                </AccordionContent>
-              </AccordionItem>
-
-              <AccordionItem value="item-9" className="border border-[#222] rounded-lg overflow-hidden bg-[#111]">
-                <AccordionTrigger className="px-6 py-4 text-white hover:text-cyan-400 transition-colors">
-                  What are some unique team building packages offered in Eiger?
-                </AccordionTrigger>
-                <AccordionContent className="px-6 pb-4 text-gray-300">
-                  Looking to bolster team spirit and camaraderie? Eiger offers a variety of exciting team-building packages that cater to diverse interests and preferences. See how we compare:
-
-                  <div className="mt-4 space-y-4">
-                    <div>
-                      <h4 className="font-bold text-white">1. Abseiling Adventure</h4>
-                      <p>Spend half a day exploring waterfalls, ziplining, and abseiling. This package is perfect for thrill-seekers looking for an exhilarating team bonding experience. Price: $249</p>
-                    </div>
-
-                    <div>
-                      <h4 className="font-bold text-white">2. Amazing Race Adventure</h4>
-                      <p>Unleash your competitive spirit with a well-crafted race that doubles as a team-building exercise. Ideal for festive occasions or mid-year events. Price: $1650</p>
-                    </div>
-
-                    <div>
-                      <h4 className="font-bold text-white">3. Axe Throwing & Dining Experience</h4>
-                      <p>Combine the fun of axe throwing with a delectable meal at a nearby elegant restaurant. This package provides both excitement and nourishment. Price: $142</p>
-                    </div>
-
-                    <div>
-                      <h4 className="font-bold text-white">4. Circus Teambuilding Session</h4>
-                      <p>Experience the wonders of the circus in a unique team-building activity. Accommodates groups ranging from 18 to 32 participants. Price: $48</p>
-                    </div>
-
-                    <div>
-                      <h4 className="font-bold text-white">5. Clay Shooting Challenge</h4>
-                      <p>Engage in a friendly competition with colleagues through this dynamic clay shooting activity. Price: $85</p>
-                    </div>
-
-                    <div>
-                      <h4 className="font-bold text-white">6. Fling It! Team Challenge</h4>
-                      <p>Push your team's synergy to the limits with this imaginative challenge, suitable for groups of 15 or more. We are scratching our heads at this one. It is offered by GoBananas. Price: $78</p>
-                    </div>
-
-                    <div>
-                      <h4 className="font-bold text-white">7. Murder Mystery Dinner</h4>
-                      <p>Transport your group into a thrilling narrative with a murder mystery dinner experience, ideal for 15 to 28 participants. Price: $179</p>
-                    </div>
-
-                    <div>
-                      <h4 className="font-bold text-white">8. Paintball Extravaganza</h4>
-                      <p>Enjoy an action-packed day of paintball, where teams can compete as vigorously or casually as they prefer. Price: $72.50</p>
-                    </div>
-
-                    <div>
-                      <h4 className="font-bold text-white">9. Rock Climbing Activity</h4>
-                      <p>For those looking for a physically demanding and fun challenge, rock climbing offers the perfect setting for team-building. Minimum group size is 20. Price: $29</p>
-                    </div>
-
-                    <div>
-                      <h4 className="font-bold text-white">10. Highropes Adventure Course</h4>
-                      <p>Navigate a treetop obstacle course designed to test your team's agility and cooperation. Price: $59</p>
-                    </div>
-
-                    <div>
-                      <h4 className="font-bold text-white">11. Scenic Rafting Experience</h4>
-                      <p>Immerse in a two-hour rafting journey that combines beautiful scenery with thrilling rapids. Price: $149</p>
-                    </div>
-                  </div>
-
-                  <p className="mt-4">Each of these packages offers unique opportunities for teams to connect and grow stronger together through shared adventures and challenges in Eiger.</p>
-                </AccordionContent>
-              </AccordionItem>
-
-              <AccordionItem value="item-10" className="border border-[#222] rounded-lg overflow-hidden bg-[#111]">
-                <AccordionTrigger className="px-6 py-4 text-white hover:text-cyan-400 transition-colors">
-                  What options are available for indoor team building events in Eiger?
-                </AccordionTrigger>
-                <AccordionContent className="px-6 pb-4 text-gray-300">
-                  <p className="mb-4">Planning a team building day in Eiger and want to keep it indoors? You're in luck! Eiger offers a range of exciting and engaging activities perfect for team bonding.</p>
-
-                  <div className="space-y-6">
-                    <div>
-                      <h4 className="font-bold text-white mb-2">Interactive and Creative Experiences</h4>
-                      <div className="space-y-4">
-                        <div>
-                          <h5 className="font-semibold text-cyan-400">Mixology Classes</h5>
-                          <p>Stir up some fun with cocktail-making sessions, where your team can learn the art of mixology from seasoned bartenders. It's a great way to unleash creativity and discover new favorites. Not everyone will be comfortable with an alcohol related team building activity. Best to ask everyone's thoughts first.</p>
-                        </div>
-                        <div>
-                          <h5 className="font-semibold text-cyan-400">Culinary Workshops</h5>
-                          <p>Sharpen your cooking skills together under the guidance of professional chefs. These workshops provide a delicious way to foster teamwork and communication.</p>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div>
-                      <h4 className="font-bold text-white mb-2">Action-Packed Adventures</h4>
-                      <div className="space-y-4">
-                        <div>
-                          <h5 className="font-semibold text-cyan-400">Indoor Kart Racing</h5>
-                          <p>Feel the thrill of competition with indoor go-karting. It gets the heart racing and spirit soaring while also encouraging teamwork and sportsmanship.</p>
-                        </div>
-                        <div>
-                          <h5 className="font-semibold text-cyan-400">Escape Rooms</h5>
-                          <p>Challenge yourselves in themed escape rooms that test problem-solving abilities and teamwork under pressure. It's a perfect blend of fun and brain-power. And extremely budget friendly!</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <p className="mt-6">With these varied options, your team is sure to have a day filled with laughter, learning, and lasting memories. Whether crafting cocktails or racing around a track, Eiger has plenty to offer for an unforgettable indoor team-building experience.</p>
+                  Parties of ten or more need seven days notice for a full refund. Smaller team blocks follow our
+                  standard policy: forty-eight hours or more for a refund or reschedule, tighter windows limit what we
+                  can move. The sooner you flag a weather delay or flight change, the more flexibility we have across
+                  rooms.
                 </AccordionContent>
               </AccordionItem>
             </Accordion>

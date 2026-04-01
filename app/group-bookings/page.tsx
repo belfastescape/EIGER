@@ -440,8 +440,10 @@ export default function GroupBookingsPage() {
                       </div>
                     </AccordionTrigger>
                     <AccordionContent className="text-gray-300">
-                      For small groups (under 10 people), we recommend booking at least a week in advance. For larger
-                      groups, 3-4 weeks notice is ideal, especially during peak seasons.
+                      For eight people or fewer, a week in Grindelwald usually does the trick unless you need a
+                      Saturday night. If you want all three rooms running simultaneously—or a hen, stag, or school
+                      block—give us three to four weeks in winter, earlier around Christmas markets. We will always
+                      try to squeeze a last-minute gap if the schedule allows.
                     </AccordionContent>
                   </AccordionItem>
 
@@ -453,9 +455,9 @@ export default function GroupBookingsPage() {
                       </div>
                     </AccordionTrigger>
                     <AccordionContent className="text-gray-300">
-                      Each escape room experience lasts 60 minutes. We recommend arriving 15 minutes before your
-                      scheduled time for briefing and preparation. For larger groups, please allow additional time for
-                      group organization and photos.
+                      The in-room clock runs sixty minutes. Add fifteen minutes for briefing and waivers, plus another
+                      ten for a victory photo or a laugh about what went wrong. Big groups rotating through multiple
+                      rooms should pad the evening so nobody has to sprint from the train to the door.
                     </AccordionContent>
                   </AccordionItem>
                 </Accordion>
@@ -471,9 +473,9 @@ export default function GroupBookingsPage() {
                       </div>
                     </AccordionTrigger>
                     <AccordionContent className="text-gray-300">
-                      Yes! For larger groups, we can split you into multiple rooms. This is a great way to add some
-                      friendly competition to your event. We can accommodate up to 30 people across our different
-                      rooms.
+                      Yes. Spin The Eiger Signal, The Forgotten Bunker, and The Ice Chamber at the same start time and
+                      compare notes afterward—bragging rights included. We can host roughly thirty players across the
+                      venue in one wave; larger celebrations can stagger starts so everyone still gets a warm welcome.
                     </AccordionContent>
                   </AccordionItem>
 
@@ -485,9 +487,9 @@ export default function GroupBookingsPage() {
                       </div>
                     </AccordionTrigger>
                     <AccordionContent className="text-gray-300">
-                      We understand that plans can change. For group bookings, we ask for 48 hours notice for
-                      cancellations or rescheduling. Please contact us as soon as possible if you need to make changes
-                      to your booking.
+                      For parties of ten or more, please give seven days notice if you need a refund. Inside that
+                      window we can often move a date once, but it depends on the season. The sooner you reach out, the
+                      more options we have to shuffle rooms or times without losing your deposit.
                     </AccordionContent>
                   </AccordionItem>
                 </Accordion>

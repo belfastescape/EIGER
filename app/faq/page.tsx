@@ -25,135 +25,141 @@ export default function FAQPage() {
   const [activeCategory, setActiveCategory] = useState("all")
   const [filteredFaqs, setFilteredFaqs] = useState<FAQ[]>([])
 
-  // All FAQs data
+  // All FAQs data — written for Eiger Escape Rooms, Grindelwald
   const faqs: FAQ[] = [
-    // General Information
     {
-      id: "what-is-escape-room",
-      question: "What is an escape room?",
+      id: "what-is-eiger",
+      question: "What is an escape room at Eiger Escape Rooms?",
       answer:
-        "An escape room is a physical adventure game where players are placed in a themed room and have to solve a series of puzzles, find clues, and complete objectives within a set time limit (usually 60 minutes) to 'escape' or accomplish the mission. Our rooms are designed to challenge your mind, test your teamwork, and provide an unforgettable experience for friends, families, and colleagues.",
+        "You step into a timed, story-driven adventure inside one of our themed spaces. Your mission is to decode clues, open mechanisms, and complete the narrative before the clock runs out—usually within sixty minutes. Here at Eiger Escape Rooms in Grindelwald, every game is tied to the mountain: a rescue-hut signal, a sealed bunker, or a frozen chamber deep in the rock. Nothing is random trivia; the puzzles belong to the world we have built.",
       category: "general",
       tags: ["basics", "new players"],
     },
     {
-      id: "first-time-tips",
-      question: "I've never done an escape room before. Any tips?",
+      id: "first-visit-tips",
+      question: "I've never played an escape room before. Where should I start?",
       answer:
-        "For first-timers, we recommend: 1) Communicate with your team and share what you find, 2) Search thoroughly but respectfully - nothing needs to be forced or broken, 3) Organize your clues so you can keep track of what you've found, 4) Don't be afraid to ask for hints if you're stuck, and 5) Most importantly, have fun! The Forgotten Bunker is an excellent choice for beginners.",
+        "Call out what you find, split tasks so nobody huddles over one puzzle, and flag anything that looks like a pattern or code. You will not need to climb furniture or break props—everything is meant to be discovered. If you are new to the format, we usually point first-timers toward The Eiger Signal or The Forgotten Bunker; The Ice Chamber is built for crews who already know how escape games flow.",
       category: "general",
       tags: ["basics", "new players", "tips"],
     },
     {
       id: "what-to-bring",
-      question: "What should I bring to an escape room?",
+      question: "What should we wear or bring to our booking?",
       answer:
-        "You don't need to bring anything special to enjoy our escape rooms. Just bring your enthusiasm, problem-solving skills, and team spirit! We provide everything needed to solve the puzzles. We do recommend wearing comfortable clothing and arriving 15 minutes before your scheduled time. Please note that food and drinks are not allowed in the escape rooms, and we have secure lockers for your personal belongings.",
+        "Wear comfortable shoes and layers you can move in—Grindelwald weather shifts quickly, and you will still be active inside the rooms. We supply everything you need to play. Leave food and drink outside the game areas; lockers are available for valuables. Aim to arrive about fifteen minutes before your slot so we can check you in, set expectations, and start the story on time.",
       category: "general",
       tags: ["preparation", "new players"],
     },
     {
       id: "how-many-people",
-      question: "How many people can play in an escape room?",
+      question: "How many players fit in each room?",
       answer:
-        "Each of our rooms has a minimum and maximum capacity: The Eiger Signal accommodates 2-8 players, The Ice Chamber works best with 2-7 players, and The Forgotten Bunker is suitable for 2-6 players. For the best experience, we recommend 3-5 players for The Eiger Signal and The Forgotten Bunker, and 4-6 players for The Ice Chamber due to its complexity and layered layout.",
+        "The Eiger Signal takes two to eight players. The Forgotten Bunker is built for two to six. The Ice Chamber fits two to seven and spreads puzzles across more than one beat—larger teams often split attention naturally. If you are unsure, tell us your group size when you book and we will suggest the best fit.",
       category: "general",
       tags: ["group size", "booking"],
     },
     {
       id: "age-requirements",
-      question: "Is there a minimum age requirement?",
+      question: "Are your games suitable for children or school groups?",
       answer:
-        "We recommend players be at least 10 years old to fully enjoy and participate in the puzzles. If you are looking at a group of kids playing together with an adult, then 12 years old is the minimum age. Players under 16 must be accompanied by an adult. The Forgotten Bunker is a strong family-friendly option. The Ice Chamber and The Eiger Signal contain more complex puzzles that may be challenging for younger players. There's no maximum age limit - escape rooms are fun for everyone!",
+        "We recommend players be at least ten for the full puzzle experience. Mixed-age groups work best when an adult joins in. For parties of children under fourteen, we require an adult in the room. Purely kid-only groups need to be twelve or older. The Forgotten Bunker tends to suit families; The Ice Chamber is heavier on layered logic and suits teens and adults who want a real challenge.",
       category: "general",
       tags: ["age", "children", "family"],
     },
 
-    // Booking & Pricing
     {
       id: "how-to-book",
       question: "How do I book a room?",
       answer:
-        "Booking is easy! You can book directly through our website by selecting your preferred room, date, and time. Payment is required at the time of booking to secure your reservation. You can also reach us via our contact page if you need help. We recommend booking in advance, especially for weekends and holidays, as our rooms often fill up quickly.",
+        "Choose your room and time through our online booking flow and pay at checkout to secure the slot. Weekends, holidays, and ski-season weeks fill fast—book early if you have a fixed date. If you need to move dates, swap rooms, or arrange a corporate block, use our contact form and we will help.",
       category: "booking",
       tags: ["reservation", "payment"],
     },
-    
+
     {
       id: "cancellation-policy",
-      question: "What is your cancellation policy?",
+      question: "What is your cancellation and rescheduling policy?",
       answer:
-        "Our cancellation policy is as follows: With 48+ hours notice, you can receive a full refund or reschedule for free. With 24-48 hours notice, no refund is available, but you can reschedule at no additional cost. With less than 24 hours notice, no refund or rescheduling is available. For group bookings of 10+ people, cancellations require 7 days notice for a refund. Rescheduling is always subject to availability.",
+        "With forty-eight hours or more before your game, you can receive a full refund or reschedule once at no charge. Between twenty-four and forty-eight hours, you can reschedule but refunds are not available. Inside twenty-four hours, bookings are non-refundable and rescheduling is at our discretion based on availability. For group bookings of ten or more, please give seven days notice for any refund.",
       category: "booking",
       tags: ["cancellation", "refund", "reschedule"],
     },
     {
       id: "gift-vouchers",
-      question: "Do you offer gift vouchers?",
+      question: "Do you sell gift vouchers?",
       answer:
-        "Yes! Escape room experiences make great gifts. You can purchase gift vouchers for specific rooms or for any value. Vouchers are valid for 12 months from the date of purchase and can be emailed directly to the recipient or to you to give in person. You can purchase gift vouchers through our website or get in touch via our contact page.",
+        "Yes. Vouchers work for any standard experience at Eiger Escape Rooms and are valid for twelve months from purchase. You can order them through the booking path or ask us by email if you want a custom amount. They make a solid gift for visitors staying in the Jungfrau region who want something memorable after a day on the slopes.",
       category: "booking",
       tags: ["gifts", "vouchers"],
     },
     {
       id: "discounts-available",
-      question: "What discounts do you offer?",
+      question: "Do you run special rates or group deals?",
       answer:
-        "We offer several discounts: Saturday morning special discount. All games before noon, $130 maximum charge for up to 8 players, weekday bookings (Monday-Friday, team deal.. $33 pp if you have a minimum of 7ppl. Contact us to ask for group discounts. Teenage birthday deal $25 pp, $28pp on saturday afternoons.",
+        "We rotate seasonal offers—think early slots, weekday team blocks, and birthday bundles. Pricing and active deals are always shown at checkout. If you are coordinating a school, club, or company event, message us with your headcount and dates; we will quote the best option across our three rooms.",
       category: "booking",
       tags: ["discounts", "savings", "special offers"],
     },
 
-    // Game Experience
     {
       id: "locked-in",
-      question: "Do we really get locked in?",
+      question: "Are we physically locked inside the room?",
       answer:
-        "No, you are never actually locked in the room. For safety reasons, you can exit the room at any time if needed. The goal is to solve the puzzles to 'escape' within the time limit, but the door is never physically locked. Our game masters monitor your progress throughout the experience to ensure your safety and enjoyment.",
+        "No. You are never trapped behind a bolted door. You can exit the space if you need air, a bathroom break, or an emergency. The \"escape\" is a story goal: finish the mission before time expires. Our game masters watch each session so you stay safe and on track.",
       category: "experience",
       tags: ["safety", "gameplay"],
     },
-    
-    
+
     {
       id: "scary",
-      question: "Are the rooms scary?",
+      question: "Are the rooms horror or jump-scare experiences?",
       answer:
-        "No, our rooms are not designed to be scary. They are puzzle-based adventures that focus on problem-solving rather than fear factors. There are no jump scares, horror elements, or actors that will frighten you. All our rooms are suitable for players who don't enjoy horror elements. The rooms are challenging mentally, but not frightening.",
+        "No. Our themes are mystery, tension, and atmosphere—think alpine radio static, wartime archives, and ice-lit chambers—not gore or haunted-house scares. We do not use actors to startle you. If someone in your group prefers low-stress play, tell us when you arrive and we will tailor hints accordingly.",
       category: "experience",
       tags: ["horror", "fear", "atmosphere"],
     },
     {
       id: "photos",
-      question: "Can we take photos inside the rooms?",
+      question: "Can we take photos or videos during the game?",
       answer:
-        "To preserve the mystery for future players and protect our room designs, we don't allow photos inside the rooms during gameplay. However, we're happy to take a group photo of your team before or after your experience that you can share on social media! We encourage you to tag us in your posts - we love seeing our players' excitement.",
+        "We keep gameplay photography out of the rooms so puzzle details stay private for the next team. After your game, we are happy to snap a group photo in our lobby or designated spot—tag Eiger Escape Rooms when you post so we can cheer you on.",
       category: "experience",
       tags: ["photography", "social media"],
     },
 
-    // Group Bookings & Events
     {
       id: "team-building",
-      question: "Do you offer team building events?",
+      question: "Do you host corporate or team-building groups?",
       answer:
-        "Yes, we specialize in corporate team building events! Our escape rooms are perfect for improving communication, problem-solving, and teamwork. We offer several packages: Team Building Basic (up to 20 people, 2 hours) for $600, Team Building Premium (up to 30 people, half day) for $1,200, and Custom Corporate Events with flexible pricing. Visit our Team Building page for more details or contact us to discuss your specific needs.",
+        "Yes. Companies use us for communication drills under pressure, cross-functional teams, and off-site days in the mountains. You can run multiple rooms side by side for a friendly scoreboard. Share your objectives when you contact us—we will suggest timings, room pairings, and debrief talking points that match your team.",
       category: "groups",
       tags: ["corporate", "team building", "work events"],
     },
     {
       id: "private-bookings",
-      question: "Do you offer private bookings?",
+      question: "Will we share a room with strangers?",
       answer:
-        "Yes, when you book an entire room, it's automatically private - we never combine different groups in the same room. For exclusive use of our entire facility, please contact us about our corporate packages or custom events. This is perfect for larger celebrations, team building events, or any occasion where you want a more personalized experience.",
+        "Never. When you book a room, that session is yours alone. We do not mix unrelated groups. If you want the whole venue for a private takeover, reach out with dates and guest numbers and we will build a schedule across The Eiger Signal, The Forgotten Bunker, and The Ice Chamber.",
       category: "groups",
       tags: ["private", "exclusive", "group booking"],
     },
-    
-    
-    
-
-    
+    {
+      id: "accessibility-venue",
+      question: "Is the venue accessible if someone uses a wheelchair or has limited mobility?",
+      answer:
+        "Our lobby and briefing areas are step-free. Game spaces vary by room—some puzzles require reaching low shelves or moving between zones. Tell us about mobility or sensory needs when you book and we will recommend the best fit, reserve extra time if helpful, and brief your game master so hints arrive in a way that works for your whole team.",
+      category: "accessibility",
+      tags: ["mobility", "needs"],
+    },
+    {
+      id: "location-grindelwald",
+      question: "Where exactly are you in Grindelwald?",
+      answer:
+        "We are at 3818 Grindelwald, Switzerland. Most guests arrive via regional trains through Interlaken; the village is compact and walkable. If you are driving, plan a few extra minutes for parking in peak ski weeks. Drop us a note before you travel if you want the best route from your hotel or the lifts.",
+      category: "location",
+      tags: ["address", "travel"],
+    },
   ]
 
   useEffect(() => {
@@ -236,7 +242,7 @@ export default function FAQPage() {
               Frequently Asked Questions
             </h1>
             <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto">
-              Find answers to common questions about our escape rooms, booking process, and more.
+              Practical answers about our Grindelwald venue, The Eiger Signal, The Forgotten Bunker, The Ice Chamber, and how we run games here.
             </p>
           </motion.div>
         </div>
@@ -318,7 +324,7 @@ export default function FAQPage() {
                 {filteredFaqs.length > 0 ? (
                   <Accordion type="single" collapsible className="w-full">
                     {filteredFaqs.map((faq: FAQ) => (
-                      <motion.div key={faq.id} variants={fadeIn}>
+                      <motion.div key={faq.id} id={faq.id} variants={fadeIn} className="scroll-mt-28">
                         <AccordionItem
                           value={faq.id}
                           className="bg-[#111] rounded-lg border border-[#222] overflow-hidden mb-4"
@@ -426,24 +432,28 @@ export default function FAQPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {[
                 {
-                  question: "What is the best room for beginners?",
-                  answer: "The Eiger Signal is our recommended starting point.",
-                  link: "#first-time-tips",
+                  question: "Which room should first-timers book?",
+                  answer:
+                    "Start with The Eiger Signal or The Forgotten Bunker; save The Ice Chamber for when your crew already speaks escape-room shorthand.",
+                  link: "/faq#first-visit-tips",
                 },
                 {
-                  question: "Do you offer team building events?",
-                  answer: "Yes, we specialize in corporate team building events!",
-                  link: "#team-building",
+                  question: "Can we bring a company off-site here?",
+                  answer:
+                    "Yes—run one room or all three in parallel, then compare notes over coffee in town.",
+                  link: "/faq#team-building",
                 },
                 {
-                  question: "How much does it cost?",
-                  answer: "Adultprices range from $35-$45 per person, and under 16's $25-$28 ,with group discounts available.",
-                  link: "#pricing",
+                  question: "How do pricing and offers work?",
+                  answer:
+                    "Rates and seasonal bundles update live at checkout; big groups should email us for a tailored quote.",
+                  link: "/faq#discounts-available",
                 },
                 {
-                  question: "What is your cancellation policy?",
-                  answer: "24+ hours notice: Full refund or free rescheduling. If you can't make it, just tell us asap. We will be as reasonable as possible",
-                  link: "#cancellation-policy",
+                  question: "What if our plans change?",
+                  answer:
+                    "Forty-eight hours or more gets a full refund or free reschedule; inside twenty-four hours options narrow—see the full policy.",
+                  link: "/faq#cancellation-policy",
                 },
               ].map((item, index) => (
                 <Link

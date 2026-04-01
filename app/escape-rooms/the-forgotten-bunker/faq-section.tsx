@@ -8,58 +8,60 @@ export function FaqSection() {
           Frequently Asked Questions
         </h2>
         <p className="text-xl text-gray-400 max-w-3xl mx-auto text-center mb-12">
-          Everything you need to know about your bunker mission.
+          Field notes for teams heading into the Forgotten Bunker.
         </p>
 
         <Accordion type="single" collapsible className="space-y-4">
           <AccordionItem value="item-1" className="border border-[#222] rounded-lg overflow-hidden bg-[#111]">
             <AccordionTrigger className="px-6 py-4 text-white hover:text-cyan-400 transition-colors">
-              Is this room suitable for children?
+              Is the bunker OK for families with younger players?
             </AccordionTrigger>
             <AccordionContent className="px-6 pb-4 text-gray-300">
-              Yes! This room works well for families playing together. The puzzles are engaging, and your games master
-              will guide you through the WWII and cipher themes in an accessible way.
+              The room leans on WWII-era cipher props and radio chatter—no shock scares, but the pacing is quicker than
+              The Eiger Signal. Families with kids ten and up usually have a blast when an adult joins the mission. If
+              your group is mostly tweens, we recommend at least one grown-up who loves decoding paperwork.
             </AccordionContent>
           </AccordionItem>
 
           <AccordionItem value="item-2" className="border border-[#222] rounded-lg overflow-hidden bg-[#111]">
             <AccordionTrigger className="px-6 py-4 text-white hover:text-cyan-400 transition-colors">
-              What is the special challenge for experienced players?
+              What is the &quot;extra mile&quot; for veterans escape-room players?
             </AccordionTrigger>
             <AccordionContent className="px-6 pb-4 text-gray-300">
-              For experienced players we&apos;ve included a sidequest challenge that adds an extra layer of difficulty.
-              You&apos;ll only discover it if you move through the first puzzles at a fast pace. It doesn&apos;t affect the
-              main story or your ability to complete the room.
+              Sharp crews who clear the first act with time to spare may uncover an optional side mission tucked into
+              the bunker&apos;s paperwork. It never blocks the main exit path—it simply rewards teams who like to
+              chase every loose thread before the all-clear sounds.
             </AccordionContent>
           </AccordionItem>
 
           <AccordionItem value="item-3" className="border border-[#222] rounded-lg overflow-hidden bg-[#111]">
             <AccordionTrigger className="px-6 py-4 text-white hover:text-cyan-400 transition-colors">
-              How many people can play at once?
+              How many operatives can the bunker hold?
             </AccordionTrigger>
             <AccordionContent className="px-6 pb-4 text-gray-300">
-              The room is designed for 2–6 players. This is our smallest room, so we recommend a maximum of 5 adults or 6
-              teenagers for the best experience.
+              Two to six players is the sweet spot. It is our most compact footprint at Eiger Escape Rooms, so five
+              adults (or six lanky teenagers) keeps sightlines clear without crowding the map table.
             </AccordionContent>
           </AccordionItem>
 
           <AccordionItem value="item-4" className="border border-[#222] rounded-lg overflow-hidden bg-[#111]">
             <AccordionTrigger className="px-6 py-4 text-white hover:text-cyan-400 transition-colors">
-              Do we need any special skills or knowledge?
+              Do we need history degrees or German language skills?
             </AccordionTrigger>
             <AccordionContent className="px-6 pb-4 text-gray-300">
-              No special skills or knowledge required. The room is accessible to everyone regardless of experience level.
-              All you need is a sense of adventure and a willingness to work together.
+              No. Everything you need is printed, stamped, or wired into the set. Bring curiosity, a steady hand for
+              tuning dials, and one teammate who keeps a running inventory of what you have already ruled out.
             </AccordionContent>
           </AccordionItem>
 
           <AccordionItem value="item-5" className="border border-[#222] rounded-lg overflow-hidden bg-[#111]">
             <AccordionTrigger className="px-6 py-4 text-white hover:text-cyan-400 transition-colors">
-              What happens if we get stuck?
+              How do hints work in the bunker?
             </AccordionTrigger>
             <AccordionContent className="px-6 pb-4 text-gray-300">
-              Our games masters are always watching and ready to provide hints. We want you to have a fun and successful
-              experience, so we&apos;ll give you a clue when it looks like you&apos;ve been stuck for too long.
+              The watch officer in our booth sees every channel you open. Ask for a nudge when morale dips, or wait
+              until we check in—either way, hints are delivered in-universe so the bunker stays believable from the
+              first briefing to the final handshake.
             </AccordionContent>
           </AccordionItem>
         </Accordion>
