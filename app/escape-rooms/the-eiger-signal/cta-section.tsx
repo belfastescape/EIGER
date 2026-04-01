@@ -53,8 +53,8 @@ function ShareCard({ delay = 0 }: { delay?: number }) {
     if (navigator.share) {
       try {
         await navigator.share({
-          title: "Operation Pitt – Eiger Escape Rooms",
-          text: "Check out Operation Pitt at Eiger Escape Rooms — a Eiger spy thriller for 2–8 players!",
+          title: "The Eiger Signal – Eiger Escape Rooms",
+          text: "Check out The Eiger Signal at Eiger Escape Rooms — a mountain rescue mystery for 2–8 players!",
           url: window.location.href,
         })
       } catch {

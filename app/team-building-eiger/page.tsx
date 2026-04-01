@@ -4,7 +4,7 @@ import { useState, useEffect } from "react"
 import Link from "next/link"
 import Image from "next/image"
 import { motion } from "framer-motion"
-import { CheckCircle2, Users, Star, ArrowRight, Building2, Brain, Puzzle, Send, MapPin, Phone, Mail, Clock, Facebook, User, MessageSquare } from "lucide-react"
+import { CheckCircle2, Users, Star, ArrowRight, Building2, Brain, Puzzle, Send, MapPin, Mail, Clock, Facebook, User, MessageSquare } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs"
@@ -21,7 +21,6 @@ export default function TeamBuildingEigerPage() {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    phone: "",
     subject: "Team Building Eiger Enquiry",
     message: "",
   })
@@ -48,7 +47,7 @@ export default function TeamBuildingEigerPage() {
       const data = await response.json()
       if (response.ok) {
         setSubmitStatus("success")
-        setFormData({ name: "", email: "", phone: "", subject: "Team Building Eiger Enquiry", message: "" })
+        setFormData({ name: "", email: "", subject: "Team Building Eiger Enquiry", message: "" })
       } else {
         setSubmitStatus("error")
         setErrorMessage(data.details || data.error || "Something went wrong. Please try again.")
@@ -647,20 +646,20 @@ export default function TeamBuildingEigerPage() {
           </motion.div>
 
           {/* Tabs and room content copied exactly from the original */}
-          <Tabs defaultValue="operation-pitt" className="w-full">
+          <Tabs defaultValue="the-eiger-signal" className="w-full">
             <TabsList className="w-full flex justify-center mb-8 bg-[#111] border border-[#222] p-1">
-              <TabsTrigger value="operation-pitt" className="flex-1">
-                Operation Pitt
+              <TabsTrigger value="the-eiger-signal" className="flex-1">
+                The Eiger Signal
               </TabsTrigger>
-              <TabsTrigger value="billion-dollar-heist" className="flex-1">
-                The Billion Dollar Heist
+              <TabsTrigger value="the-forgotten-bunker" className="flex-1">
+                The Forgotten Bunker
               </TabsTrigger>
-              <TabsTrigger value="ancient-tomb" className="flex-1">
-                Quest for the Ancient Tomb
+              <TabsTrigger value="the-ice-chamber" className="flex-1">
+                The Ice Chamber
               </TabsTrigger>
             </TabsList>
 
-            <TabsContent value="operation-pitt">
+            <TabsContent value="the-eiger-signal">
               <motion.div
                 className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center"
                 initial="hidden"
@@ -671,14 +670,14 @@ export default function TeamBuildingEigerPage() {
                 <div className="rounded-xl overflow-hidden">
                   <Image
                     src="/images/mountain.png"
-                    alt="Operation Pitt Escape Room"
+                    alt="The Eiger Signal"
                     width={800}
                     height={600}
                     className="w-full h-auto"
                   />
                 </div>
                 <div>
-                  <h3 className="text-2xl font-bold mb-4 text-white">Operation Pitt</h3>
+                  <h3 className="text-2xl font-bold mb-4 text-white">The Eiger Signal</h3>
                   <div className="flex items-center mb-4">
                     <div className="bg-gradient-to-r from-cyan-500 to-green-500 text-white text-xs font-bold px-3 py-1 rounded-full mr-3">
                       DIFFICULTY: CHALLENGING
@@ -689,8 +688,8 @@ export default function TeamBuildingEigerPage() {
                     </span>
                   </div>
                   <p className="text-gray-300 mb-4">
-                    Navigate through political intrigue and government secrets in this Eiger-themed adventure.
-                    Operation Pitt tests strategic thinking and careful attention to detail.
+                    Decode a mysterious transmission from an abandoned mountain rescue hut and uncover what lies beneath
+                    the Eiger. The Eiger Signal tests strategic thinking and careful attention to detail.
                   </p>
                   <h4 className="text-lg font-bold mb-2 text-white">Team Skills Tested:</h4>
                   <ul className="space-y-2 mb-6">
@@ -714,7 +713,7 @@ export default function TeamBuildingEigerPage() {
               </motion.div>
             </TabsContent>
 
-            <TabsContent value="billion-dollar-heist">
+            <TabsContent value="the-forgotten-bunker">
               <motion.div
                 className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center"
                 initial="hidden"
@@ -725,27 +724,27 @@ export default function TeamBuildingEigerPage() {
                 <div className="rounded-xl overflow-hidden">
                   <Image
                     src="/images/bunker.png"
-                    alt="The Billion Dollar Heist Escape Room"
+                    alt="The Forgotten Bunker"
                     width={800}
                     height={600}
                     className="w-full h-auto"
                   />
                 </div>
                 <div>
-                  <h3 className="text-2xl font-bold mb-4 text-white">The Billion Dollar Heist</h3>
+                  <h3 className="text-2xl font-bold mb-4 text-white">The Forgotten Bunker</h3>
                   <div className="flex items-center mb-4">
                     <div className="bg-gradient-to-r from-cyan-500 to-green-500 text-white text-xs font-bold px-3 py-1 rounded-full mr-3">
                       DIFFICULTY: EXPERIENCED
                     </div>
                     <span className="text-sm text-gray-400 flex items-center">
                       <Users className="w-3.5 h-3.5 mr-1.5 text-cyan-400" />
-                      2-7 people per room
+                      2-6 people per room
                     </span>
                   </div>
                   <p className="text-gray-300 mb-4">
-                    Plan the perfect heist to steal THE  priceless diamond in this thrilling challenge. With multiple rooms
-                    and complex puzzles, The Billion Dollar Heist is perfect for larger teams that need to coordinate across
-                    different areas.
+                    Work through military ciphers and classified documents in a sealed WWII bunker that has reactivated
+                    deep in the mountain. The Forgotten Bunker is perfect for teams that need to coordinate across puzzles
+                    and tight spaces.
                   </p>
                   <h4 className="text-lg font-bold mb-2 text-white">Team Skills Tested:</h4>
                   <ul className="space-y-2 mb-6">
@@ -769,7 +768,7 @@ export default function TeamBuildingEigerPage() {
               </motion.div>
             </TabsContent>
 
-            <TabsContent value="ancient-tomb">
+            <TabsContent value="the-ice-chamber">
               <motion.div
                 className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center"
                 initial="hidden"
@@ -780,33 +779,32 @@ export default function TeamBuildingEigerPage() {
                 <div className="rounded-xl overflow-hidden">
                   <Image
                     src="/images/chamber.png"
-                    alt="Quest for the Ancient Tomb Escape Room"
+                    alt="The Ice Chamber"
                     width={800}
                     height={600}
                     className="w-full h-auto"
                   />
                 </div>
                 <div>
-                  <h3 className="text-2xl font-bold mb-4 text-white">Quest for the Ancient Tomb</h3>
+                  <h3 className="text-2xl font-bold mb-4 text-white">The Ice Chamber</h3>
                   <div className="flex items-center mb-4">
                     <div className="bg-gradient-to-r from-cyan-500 to-green-500 text-white text-xs font-bold px-3 py-1 rounded-full mr-3">
-                      DIFFICULTY: CHALLENGING
+                      DIFFICULTY: EXPERT
                     </div>
                     <span className="text-sm text-gray-400 flex items-center">
                       <Users className="w-3.5 h-3.5 mr-1.5 text-cyan-400" />
-                      2-6 people per room
+                      2-7 people per room
                     </span>
                   </div>
                   <p className="text-gray-300 mb-4">
-                    Embark on a magical journey to find the legendary wand in this enchanting adventure. Quest for the
-                    Ancient Tomb is ideal for teams new to escape rooms or those looking to build creative problem-solving
-                    skills.
+                    Explore a frozen chamber where mechanisms respond to your choices. With layered, nonlinear puzzles,
+                    The Ice Chamber is ideal for larger experienced teams that need to coordinate across shifting spaces.
                   </p>
                   <h4 className="text-lg font-bold mb-2 text-white">Team Skills Tested:</h4>
                   <ul className="space-y-2 mb-6">
                     <li className="flex items-start">
                       <CheckCircle2 className="w-5 h-5 text-cyan-400 mr-2 mt-0.5" />
-                      <span className="text-gray-300">Creative thinking and imagination</span>
+                      <span className="text-gray-300">Creative thinking under changing conditions</span>
                     </li>
                     <li className="flex items-start">
                       <CheckCircle2 className="w-5 h-5 text-cyan-400 mr-2 mt-0.5" />
@@ -891,37 +889,20 @@ export default function TeamBuildingEigerPage() {
                 )}
 
                 <form onSubmit={handleSubmit} className="space-y-6">
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <div className="space-y-2">
-                      <Label htmlFor="tb-name" className="text-gray-300 text-sm font-medium">Name *</Label>
-                      <div className="relative">
-                        <User className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-500" />
-                        <Input
-                          id="tb-name"
-                          name="name"
-                          type="text"
-                          required
-                          value={formData.name}
-                          onChange={handleInputChange}
-                          className="pl-10 bg-[#0a0a0a] border-[#333] text-white placeholder-gray-500 focus:border-cyan-500 focus:ring-cyan-500/20"
-                          placeholder="Your name"
-                        />
-                      </div>
-                    </div>
-                    <div className="space-y-2">
-                      <Label htmlFor="tb-phone" className="text-gray-300 text-sm font-medium">Phone</Label>
-                      <div className="relative">
-                        <Phone className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-500" />
-                        <Input
-                          id="tb-phone"
-                          name="phone"
-                          type="tel"
-                          value={formData.phone}
-                          onChange={handleInputChange}
-                          className="pl-10 bg-[#0a0a0a] border-[#333] text-white placeholder-gray-500 focus:border-cyan-500 focus:ring-cyan-500/20"
-                          placeholder="Your phone number"
-                        />
-                      </div>
+                  <div className="space-y-2">
+                    <Label htmlFor="tb-name" className="text-gray-300 text-sm font-medium">Name *</Label>
+                    <div className="relative">
+                      <User className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-500" />
+                      <Input
+                        id="tb-name"
+                        name="name"
+                        type="text"
+                        required
+                        value={formData.name}
+                        onChange={handleInputChange}
+                        className="pl-10 bg-[#0a0a0a] border-[#333] text-white placeholder-gray-500 focus:border-cyan-500 focus:ring-cyan-500/20"
+                        placeholder="Your name"
+                      />
                     </div>
                   </div>
                   <div className="space-y-2">
@@ -1006,23 +987,7 @@ export default function TeamBuildingEigerPage() {
                     </div>
                     <div>
                       <h3 className="font-bold text-white mb-1">Address</h3>
-                      <p className="text-gray-300">Mt Everest</p>
-                      <p className="text-gray-300">Khumbu, Solukhumbu, Nepal</p>
-                      <p className="text-gray-300">New Zealand</p>
-                    </div>
-                  </motion.li>
-
-                  <motion.li variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6 } } }} className="flex items-start">
-                    <div className="w-12 h-12 bg-gradient-to-br from-cyan-500 to-green-500 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
-                      <Phone className="w-6 h-6 text-white" />
-                    </div>
-                    <div>
-                      <h3 className="font-bold text-white mb-1">Phone</h3>
-                      <p className="text-gray-300">
-                        <Link href="tel:+64215550198" className="hover:text-cyan-400 transition-colors">
-                          021 555 0198
-                        </Link>
-                      </p>
+                      <p className="text-gray-300">3818 Grindelwald, Switzerland</p>
                     </div>
                   </motion.li>
 
@@ -1079,14 +1044,14 @@ export default function TeamBuildingEigerPage() {
                 <h2 className="text-2xl font-bold mb-4 text-white">Find Us</h2>
                 <div className="absolute inset-0 pt-16 px-8 pb-8">
                   <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14092.750377749018!2d86.9253667!3d27.988156449999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39e854a215bd9ebd%3A0x576dcf806abbab2!2sMt%20Everest!5e0!3m2!1sen!2snz!4v1774825629232!5m2!1sen!2snz"
+                    src="https://maps.google.com/maps?q=3818+Grindelwald,+Switzerland&hl=en&z=14&output=embed"
                     width="100%"
                     height="100%"
                     style={{ border: 0, borderRadius: "0.5rem" }}
                     allowFullScreen
                     loading="lazy"
                     referrerPolicy="no-referrer-when-downgrade"
-                    title="Mt Everest on Google Maps"
+                    title="3818 Grindelwald, Switzerland on Google Maps"
                     className="grayscale opacity-80 hover:grayscale-0 hover:opacity-100 transition-all duration-300"
                   ></iframe>
                 </div>

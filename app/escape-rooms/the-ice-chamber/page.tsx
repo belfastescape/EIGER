@@ -10,7 +10,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { ImageSlideshow } from "@/components/image-slideshow"
 import { CtaSection } from "./cta-section"
 
-export default function DiamondHeist() {
+export default function IceChamberPage() {
   const [isVisible, setIsVisible] = useState(false)
 
   useEffect(() => {
@@ -38,8 +38,8 @@ export default function DiamondHeist() {
       <section className="relative py-20 overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/images/bunker.png"
-            alt="The Billion Dollar Heist"
+            src="/images/chamber.png"
+            alt="The Ice Chamber"
             fill
             className="object-cover opacity-40"
             priority
@@ -56,15 +56,15 @@ export default function DiamondHeist() {
               <ChevronLeft className="w-4 h-4 mr-1" /> Back to All Rooms
             </Link>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 bg-gradient-to-r from-cyan-400 to-green-400 bg-clip-text text-transparent">
-              The Billion Dollar Heist
+              The Ice Chamber
               <br />
               <span className="text-3xl md:text-4xl lg:text-5xl mt-[30px] inline-block">
                 Our Most Challenging Escape Room
               </span>
             </h1>
             <p className="text-xl md:text-2xl text-gray-300 max-w-3xl">
-              The world&apos;s most secure vault holds a billion-dollar haul. Can your crew crack the
-              security, bypass the laser grid, and walk away with the ultimate prize?
+              A hidden chamber deep inside the Eiger, preserved in perfect ice. Mechanisms respond to your presence—every
+              choice shapes what happens next. Solve its secrets before it seals again.
             </p>
           </motion.div>
 
@@ -112,18 +112,19 @@ export default function DiamondHeist() {
                 <h2 className="text-3xl font-bold mb-6 text-white">Your Mission Briefing</h2>
                 <div className="prose prose-lg prose-invert max-w-none">
                   <p className="text-gray-300">
-                    The Phantom syndicate has pulled off the biggest heist in history — a billion-dollar haul
-                    stashed inside their custom-built ultra-secure vault. Every security system known to
-                    humankind stands between you and the prize.
+                    A hidden chamber has been discovered deep inside the Eiger, preserved in perfect ice. Strange symbols
+                    cover the walls, and crystalline structures glow with an unnatural light. No records explain who built
+                    it—or why.
                   </p>
                   <p className="text-gray-300 mt-4">
-                    Your crew of elite thieves has been hired to break in, bypass the infamous laser grid,
-                    crack the vault combination, and disappear before the alarm sounds. One shot. Sixty minutes.
-                    A billion reasons not to fail.
+                    As you explore the chamber, mechanisms begin to respond to your presence, shifting the environment
+                    itself. This is not just a place, but a system waiting to be activated. Every choice you make shapes
+                    what happens next.
                   </p>
                   <p className="text-gray-300 mt-4">
-                    This is our most advanced room — trickier than Operation Pitt — and is best suited to
-                    players who have tackled an escape room before. Do you have what it takes?
+                    This is our most advanced room — trickier than The Eiger Signal — and is best suited to players who
+                    have tackled an escape room before. Solve the chamber&apos;s secrets before it seals itself again… or
+                    risk becoming part of what it was built to contain.
                   </p>
                 </div>
               </motion.div>
@@ -138,10 +139,10 @@ export default function DiamondHeist() {
                 <h2 className="text-3xl font-bold mb-6 text-white">Experience Features</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div className="bg-[#111] p-6 rounded-xl border border-[#222]">
-                    <h3 className="text-xl font-bold mb-3 text-white">Multi-Room Experience</h3>
+                    <h3 className="text-xl font-bold mb-3 text-white">Living Environment</h3>
                     <p className="text-gray-300">
-                      Work through multiple layers of the Phantom syndicate&apos;s defences — each room
-                      more challenging than the last — before reaching the vault and the infamous laser maze.
+                      The chamber responds to your team—ice, light, and mechanisms shift as you progress, so no two runs
+                      feel quite the same.
                     </p>
                   </div>
                   <div className="bg-[#111] p-6 rounded-xl border border-[#222]">
@@ -152,16 +153,16 @@ export default function DiamondHeist() {
                     </p>
                   </div>
                   <div className="bg-[#111] p-6 rounded-xl border border-[#222]">
-                    <h3 className="text-xl font-bold mb-3 text-white">High-Tech Elements</h3>
+                    <h3 className="text-xl font-bold mb-3 text-white">Branching Choices</h3>
                     <p className="text-gray-300">
-                      The famous laser maze ensures a memorable finish to this epic adventure.
+                      Decisions matter. The chamber&apos;s systems react to how you work together under pressure.
                     </p>
                   </div>
                   <div className="bg-[#111] p-6 rounded-xl border border-[#222]">
                     <h3 className="text-xl font-bold mb-3 text-white">Immersive Atmosphere</h3>
                     <p className="text-gray-300">
-                      Step inside the Phantom syndicate&apos;s sleek underground vault complex — a
-                      fully immersive set that puts you right in the middle of the action.
+                      Step into a frozen space deep in the mountain—symbols, crystal, and shadow combine for a fully
+                      immersive set.
                     </p>
                   </div>
                 </div>
@@ -179,7 +180,7 @@ export default function DiamondHeist() {
                   <div className="overflow-hidden rounded-xl aspect-video">
                     <Image
                       src="/images/bunker.png"
-                      alt="Team navigating laser security in Billion Dollar Heist"
+                      alt="Team exploring The Ice Chamber"
                       width={600}
                       height={400}
                       className="w-full h-full object-cover"
@@ -188,7 +189,7 @@ export default function DiamondHeist() {
                   <div className="overflow-hidden rounded-xl aspect-video">
                     <Image
                       src="/images/chamber.png"
-                      alt="Friends working together in Billion Dollar Heist escape room"
+                      alt="Friends working together in The Ice Chamber"
                       width={600}
                       height={400}
                       className="w-full h-full object-cover"
@@ -197,7 +198,7 @@ export default function DiamondHeist() {
                   <div className="overflow-hidden rounded-xl aspect-video">
                     <Image
                       src="/images/mountain.png"
-                      alt="Group solving laser puzzle in Billion Dollar Heist"
+                      alt="Group solving puzzles in The Ice Chamber"
                       width={600}
                       height={400}
                       className="w-full h-full object-cover"
@@ -206,7 +207,7 @@ export default function DiamondHeist() {
                   <div className="overflow-hidden rounded-xl aspect-video">
                     <Image
                       src="/images/reception.png"
-                      alt="Team successfully navigating Billion Dollar Heist laser security"
+                      alt="Team in The Ice Chamber"
                       width={600}
                       height={400}
                       className="w-full h-full object-cover"
@@ -232,9 +233,9 @@ export default function DiamondHeist() {
                         ))}
                       </div>
                       <p className="text-gray-300 italic mb-4">
-                        "The Billion Dollar Heist was the most challenging and rewarding escape room I've ever done! The
-                        puzzles were incredibly clever and the multi-room setup kept us engaged the entire time. We
-                        escaped with just 37 seconds left and the adrenaline rush was amazing!"
+                        "The Ice Chamber was the most challenging and rewarding escape room I've ever done! The puzzles
+                        were incredibly clever and the shifting environment kept us engaged the entire time. We escaped
+                        with just 37 seconds left and the adrenaline rush was amazing!"
                       </p>
                       <div className="flex items-center">
                         <div className="w-10 h-10 rounded-full bg-gradient-to-r from-cyan-500 to-green-500 flex items-center justify-center mr-3">
@@ -283,7 +284,7 @@ export default function DiamondHeist() {
                         ))}
                       </div>
                       <p className="text-gray-300 italic mb-4">
-                        "Our team of 6 took on The Billion Dollar Heist as part of a corporate team building day, and it was
+                        "Our team of 6 took on The Ice Chamber as part of a corporate team building day, and it was
                         perfect! The room really highlighted everyone's different strengths and forced us to communicate
                         effectively. Even though we didn't escape in time, it was a fantastic bonding experience."
                       </p>
@@ -378,8 +379,8 @@ export default function DiamondHeist() {
                   <div className="p-6">
                     <h3 className="text-xl font-bold mb-4 text-white">Accept Your Mission</h3>
                     <p className="text-gray-300 mb-4">
-                      Ready to test your skills with our most challenging room? Book now and see if you have what it
-                      takes to steal the diamond.
+                      Ready to test your skills with our most challenging room? Book now and see if you can unlock the
+                      chamber before it seals.
                     </p>
                     <Link href="/booking" className="text-cyan-400 hover:text-cyan-300 transition-colors">
                       Book Now
@@ -395,17 +396,17 @@ export default function DiamondHeist() {
                   variants={fadeIn}
                 >
                   <div className="p-6">
-                    <h3 className="text-xl font-bold mb-4 text-white">Other Classified Operations</h3>
+                    <h3 className="text-xl font-bold mb-4 text-white">Our Other Escape Rooms</h3>
                     <div className="space-y-4">
                       <Link
-                        href="/escape-rooms/operation-pitt"
+                        href="/escape-rooms/the-eiger-signal"
                         className="block p-4 bg-[#0a0a0a] rounded-lg border border-[#333] hover:border-cyan-500/50 transition-all group"
                       >
                         <h4 className="font-bold text-white group-hover:text-cyan-400 transition-colors">
-                          Operation Pitt
+                          The Eiger Signal
                         </h4>
                         <p className="text-gray-400 text-sm mt-1">
-                          Track down criminal mastermind Viktor Pitt in this elite spy thriller.
+                          Decode a mysterious transmission from an abandoned mountain rescue hut high on the Eiger.
                         </p>
                         <div className="flex items-center justify-end mt-2">
                           <ArrowRight className="w-4 h-4 text-cyan-400 opacity-0 group-hover:opacity-100 transition-opacity" />
@@ -413,14 +414,14 @@ export default function DiamondHeist() {
                       </Link>
 
                       <Link
-                        href="/escape-rooms/ancient-tomb"
+                        href="/escape-rooms/the-forgotten-bunker"
                         className="block p-4 bg-[#0a0a0a] rounded-lg border border-[#333] hover:border-cyan-500/50 transition-all group"
                       >
                         <h4 className="font-bold text-white group-hover:text-cyan-400 transition-colors">
-                          Quest for the Ancient Tomb
+                          The Forgotten Bunker
                         </h4>
                         <p className="text-gray-400 text-sm mt-1">
-                          Uncover a legendary relic in this family-friendly archaeological adventure.
+                          Work through WWII ciphers and classified documents in a sealed bunker deep in the Eiger.
                         </p>
                         <div className="flex items-center justify-end mt-2">
                           <ArrowRight className="w-4 h-4 text-cyan-400 opacity-0 group-hover:opacity-100 transition-opacity" />
@@ -488,11 +489,11 @@ export default function DiamondHeist() {
               <TabsContent value="room" className="space-y-4">
                 <Card className="bg-[#111] border-[#222]">
                   <CardContent className="pt-6">
-                    <h3 className="text-lg font-bold text-white mb-2">Is The Billion Dollar Heist suitable for beginners?</h3>
+                    <h3 className="text-lg font-bold text-white mb-2">Is The Ice Chamber suitable for beginners?</h3>
                     <p className="text-gray-300">
-                      The Billion Dollar Heist is our most challenging room, rated 4.5/5 for difficulty. We recommend
-                      beginners try Operation Pitt first to get familiar with escape room concepts before
-                      taking on this advanced challenge.
+                      The Ice Chamber is our most challenging room, rated 4.5/5 for difficulty. We recommend beginners
+                      try The Eiger Signal first to get familiar with escape room concepts before taking on this advanced
+                      challenge.
                     </p>
                   </CardContent>
                 </Card>
@@ -500,8 +501,10 @@ export default function DiamondHeist() {
                   <CardContent className="pt-6">
                     <h3 className="text-lg font-bold text-white mb-2">Can 2 people succeed in this room?</h3>
                     <p className="text-gray-300">
-                      The Billion Dollar Heist contains multiple puzzles that require coordination between team members in
-                      different areas. It just needs an experienced team of 2 to tackle this room without too much help. It is certainly not a room for  people to try  who have never played an escape room before. Try the other games if it is your first time. 
+                      The Ice Chamber contains multiple puzzles that require coordination between team members in different
+                      areas. It just needs an experienced team of 2 to tackle this room without too much help. It is
+                      certainly not a room for people to try who have never played an escape room before. Try the other
+                      games if it is your first time.
                     </p>
                   </CardContent>
                 </Card>
@@ -535,11 +538,11 @@ export default function DiamondHeist() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-0">
               <div className="order-2 md:order-1 p-8 md:p-12 flex flex-col justify-center">
                 <h2 className="text-3xl font-bold mb-6 bg-gradient-to-r from-cyan-400 to-green-400 bg-clip-text text-transparent">
-                  Ready to Pull Off the Billion Dollar Heist?
+                  Ready to Enter The Ice Chamber?
                 </h2>
                 <p className="text-lg text-gray-300 mb-8">
-                  The vault is waiting. The laser grid is armed. Your crew has sixty minutes to make history.
-                  Are you in?
+                  The chamber is waking. Crystalline light cuts through the ice. Your crew has sixty minutes to solve its
+                  secrets before it seals. Are you in?
                 </p>
                 <Link 
                   href="/booking" 
@@ -553,20 +556,20 @@ export default function DiamondHeist() {
                 <ImageSlideshow
                   images={[
                     {
-                      src: "/images/bunker.png",
-                      alt: "Team navigating laser security in Billion Dollar Heist",
+                      src: "/images/chamber.png",
+                      alt: "Team exploring The Ice Chamber",
                     },
                     {
-                      src: "/images/chamber.png",
-                      alt: "Friends working together in Billion Dollar Heist escape room",
+                      src: "/images/bunker.png",
+                      alt: "Frozen passages near The Ice Chamber",
                     },
                     {
                       src: "/images/mountain.png",
-                      alt: "Group solving laser puzzle in Billion Dollar Heist",
+                      alt: "The Eiger above the ice chamber",
                     },
                     {
                       src: "/images/reception.png",
-                      alt: "Team successfully navigating Billion Dollar Heist laser security",
+                      alt: "Eiger Escape Rooms reception",
                     },
                   ]}
                   interval={4000}

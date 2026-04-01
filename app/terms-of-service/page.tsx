@@ -291,7 +291,7 @@ export default function TermsOfServicePage() {
                     </div>
                     <div className="flex items-start">
                       <MapPin className="w-5 h-5 text-cyan-400 mr-3 mt-0.5 flex-shrink-0" />
-                      <span>Mt Everest, Khumbu, Solukhumbu, Nepal</span>
+                      <span>3818 Grindelwald, Switzerland</span>
                     </div>
                   </div>
                 </div>

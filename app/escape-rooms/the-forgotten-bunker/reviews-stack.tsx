@@ -31,14 +31,14 @@ export function ReviewsStack() {
         >
           <Image
             src="/images/chamber.png"
-            alt="Swail's review of Quest for the Ancient Tomb"
+            alt="Swail's review of The Forgotten Bunker"
             fill
             className="object-cover sm:hidden"
             sizes="90vw"
           />
           <Image
             src="/images/chamber.png"
-            alt="Swail's review of Quest for the Ancient Tomb"
+            alt="Swail's review of The Forgotten Bunker"
             fill
             className="object-cover hidden sm:block"
             sizes="90vw"
@@ -52,14 +52,14 @@ export function ReviewsStack() {
         >
           <Image
             src="/images/bunker.png"
-            alt="Zach's review of Quest for the Ancient Tomb"
+            alt="Zach's review of The Forgotten Bunker"
             fill
             className="object-cover sm:hidden"
             sizes="90vw"
           />
           <Image
             src="/images/bunker.png"
-            alt="Zach's review of Quest for the Ancient Tomb"
+            alt="Zach's review of The Forgotten Bunker"
             fill
             className="object-cover hidden sm:block"
             sizes="90vw"
@@ -73,14 +73,14 @@ export function ReviewsStack() {
         >
           <Image
             src="/images/mountain.png"
-            alt="Nash's review of Quest for the Ancient Tomb"
+            alt="Nash's review of The Forgotten Bunker"
             fill
             className="object-cover sm:hidden"
             sizes="90vw"
           />
           <Image
             src="/images/mountain.png"
-            alt="Nash's review of Quest for the Ancient Tomb"
+            alt="Nash's review of The Forgotten Bunker"
             fill
             className="object-cover hidden sm:block"
             sizes="90vw"
@@ -94,7 +94,7 @@ export function ReviewsStack() {
         >
           <Image
             src="/images/reception.png"
-            alt="Quest for the Ancient Tomb — Guest Reviews"
+            alt="The Forgotten Bunker — Guest Reviews"
             fill
             className="object-cover sm:hidden"
             sizes="90vw"
@@ -102,7 +102,7 @@ export function ReviewsStack() {
           />
           <Image
             src="/images/reception.png"
-            alt="Quest for the Ancient Tomb — Guest Reviews"
+            alt="The Forgotten Bunker — Guest Reviews"
             fill
             className="object-cover hidden sm:block"
             sizes="90vw"

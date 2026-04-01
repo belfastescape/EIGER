@@ -228,7 +228,7 @@ export default function PricingPage() {
                 <h2 className="text-3xl font-bold text-white">Choose Your Experience</h2>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                  {/* Operation Pitt */}
+                  {/* The Eiger Signal */}
                   <Card className="bg-[#111] border-[#222] hover:border-cyan-500/30 transition-all overflow-hidden">
                     <div className="h-40 relative">
                       <video 
@@ -243,8 +243,8 @@ export default function PricingPage() {
                       </video>
                       <div className="absolute inset-0 bg-gradient-to-t from-[#111] to-transparent"></div>
                       <div className="absolute bottom-4 left-4 right-4">
-                        <h3 className="text-xl font-bold text-white">Operation Pitt</h3>
-                        <p className="text-sm text-gray-300">Exciting Spy themed Escape Room in Eiger</p>
+                        <h3 className="text-xl font-bold text-white">The Eiger Signal</h3>
+                        <p className="text-sm text-gray-300">Mountain rescue hut mystery on the Eiger</p>
                       </div>
                     </div>
                     <CardContent className="pt-6">
@@ -259,7 +259,7 @@ export default function PricingPage() {
                         </li>
                         <li className="flex items-start">
                           <Check className="w-5 h-5 text-cyan-400 mr-2 mt-0.5 flex-shrink-0" />
-                          <span className="text-gray-300">Eiger-themed adventure</span>
+                          <span className="text-gray-300">Decode the transmission</span>
                         </li>
                         <li className="flex items-start">
                           <Check className="w-5 h-5 text-cyan-400 mr-2 mt-0.5 flex-shrink-0" />
@@ -278,13 +278,62 @@ export default function PricingPage() {
                     </CardFooter>
                   </Card>
 
-                  {/* The Billion Dollar Heist */}
+                  {/* The Forgotten Bunker */}
                   <Card className="bg-[#111] border-[#222] hover:border-cyan-500/30 transition-all overflow-hidden">
                     <div className="h-40 relative">
-                      <Image src="/images/bunker.png" alt="The Billion Dollar Heist" fill className="object-cover" />
+                      <Image src="/images/bunker.png" alt="The Forgotten Bunker" fill className="object-cover" />
                       <div className="absolute inset-0 bg-gradient-to-t from-[#111] to-transparent"></div>
                       <div className="absolute bottom-4 left-4 right-4">
-                        <h3 className="text-xl font-bold text-white">The Billion Dollar Heist</h3>
+                        <h3 className="text-xl font-bold text-white">The Forgotten Bunker</h3>
+                        <p className="text-sm text-gray-300">WWII ciphers and classified secrets</p>
+                      </div>
+                    </div>
+                    <CardContent className="pt-6">
+                      <div className="mb-6">
+                        
+                        <p className="text-sm text-gray-400">2-6 players | 60 minutes</p>
+                      </div>
+                      <ul className="space-y-2 mb-6">
+                        <li className="flex items-start">
+                          <Check className="w-5 h-5 text-cyan-400 mr-2 mt-0.5 flex-shrink-0" />
+                          <span className="text-gray-300">Moderate difficulty (4/5)</span>
+                        </li>
+                        <li className="flex items-start">
+                          <Check className="w-5 h-5 text-cyan-400 mr-2 mt-0.5 flex-shrink-0" />
+                          <span className="text-gray-300">Military ciphers &amp; documents</span>
+                        </li>
+                        <li className="flex items-start">
+                          <Check className="w-5 h-5 text-cyan-400 mr-2 mt-0.5 flex-shrink-0" />
+                          <span className="text-gray-300">Great for families &amp; small groups</span>
+                        </li>
+                        <li className="flex items-start">
+                          <Check className="w-5 h-5 text-cyan-400 mr-2 mt-0.5 flex-shrink-0" />
+                          <span className="text-gray-300">Tense countdown finale</span>
+                        </li>
+                      </ul>
+                    </CardContent>
+                    <CardFooter>
+                      <Link href="/booking" className="text-cyan-400 hover:text-cyan-300 transition-colors">
+                        Book Now
+                      </Link>
+                    </CardFooter>
+                  </Card>
+
+                  {/* The Ice Chamber */}
+                  <Card className="bg-[#111] border-[#222] hover:border-cyan-500/30 transition-all overflow-hidden">
+                    <div className="h-40 relative">
+                      <video 
+                        autoPlay 
+                        loop 
+                        muted 
+                        playsInline
+                        className="absolute inset-0 w-full h-full object-cover"
+                      >
+                        <source src="/videos/optimised/WANDMOVIE.webm" type="video/webm" />
+                      </video>
+                      <div className="absolute inset-0 bg-gradient-to-t from-[#111] to-transparent"></div>
+                      <div className="absolute bottom-4 left-4 right-4">
+                        <h3 className="text-xl font-bold text-white">The Ice Chamber</h3>
                         <p className="text-sm text-gray-300">Our most challenging room</p>
                       </div>
                     </div>
@@ -300,64 +349,15 @@ export default function PricingPage() {
                         </li>
                         <li className="flex items-start">
                           <Check className="w-5 h-5 text-cyan-400 mr-2 mt-0.5 flex-shrink-0" />
-                          <span className="text-gray-300">Laser Maze Finale</span>
+                          <span className="text-gray-300">Living environment &amp; branching choices</span>
                         </li>
                         <li className="flex items-start">
                           <Check className="w-5 h-5 text-cyan-400 mr-2 mt-0.5 flex-shrink-0" />
-                          <span className="text-gray-300">High-tech puzzles and elements</span>
+                          <span className="text-gray-300">Layered puzzles for experienced teams</span>
                         </li>
                         <li className="flex items-start">
                           <Check className="w-5 h-5 text-cyan-400 mr-2 mt-0.5 flex-shrink-0" />
-                          <span className="text-gray-300">Most exciting Escape</span>
-                        </li>
-                      </ul>
-                    </CardContent>
-                    <CardFooter>
-                      <Link href="/booking" className="text-cyan-400 hover:text-cyan-300 transition-colors">
-                        Book Now
-                      </Link>
-                    </CardFooter>
-                  </Card>
-
-                  {/* Quest for the Ancient Tomb */}
-                  <Card className="bg-[#111] border-[#222] hover:border-cyan-500/30 transition-all overflow-hidden">
-                    <div className="h-40 relative">
-                      <video 
-                        autoPlay 
-                        loop 
-                        muted 
-                        playsInline
-                        className="absolute inset-0 w-full h-full object-cover"
-                      >
-                        <source src="/videos/optimised/WANDMOVIE.webm" type="video/webm" />
-                      </video>
-                      <div className="absolute inset-0 bg-gradient-to-t from-[#111] to-transparent"></div>
-                      <div className="absolute bottom-4 left-4 right-4">
-                        <h3 className="text-xl font-bold text-white">Quest for the Ancient Tomb</h3>
-                        <p className="text-sm text-gray-300">Family-friendly magical adventure</p>
-                      </div>
-                    </div>
-                    <CardContent className="pt-6">
-                      <div className="mb-6">
-                        
-                        <p className="text-sm text-gray-400">2-6 players | 60 minutes</p>
-                      </div>
-                      <ul className="space-y-2 mb-6">
-                        <li className="flex items-start">
-                          <Check className="w-5 h-5 text-cyan-400 mr-2 mt-0.5 flex-shrink-0" />
-                          <span className="text-gray-300">Moderate difficulty (4/5)</span>
-                        </li>
-                        <li className="flex items-start">
-                          <Check className="w-5 h-5 text-cyan-400 mr-2 mt-0.5 flex-shrink-0" />
-                          <span className="text-gray-300">Perfect for beginners & families</span>
-                        </li>
-                        <li className="flex items-start">
-                          <Check className="w-5 h-5 text-cyan-400 mr-2 mt-0.5 flex-shrink-0" />
-                          <span className="text-gray-300">Magical themed environment</span>
-                        </li>
-                        <li className="flex items-start">
-                          <Check className="w-5 h-5 text-cyan-400 mr-2 mt-0.5 flex-shrink-0" />
-                          <span className="text-gray-300">Our newest game with lots of tech</span>
+                          <span className="text-gray-300">Most exciting escape on the mountain</span>
                         </li>
                       </ul>
                     </CardContent>

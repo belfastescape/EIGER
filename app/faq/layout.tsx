@@ -32,7 +32,7 @@ const faqSchema = {
       "name": "I've never done an escape room before. Any tips?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "For first-timers, we recommend: 1) Communicate with your team and share what you find, 2) Search thoroughly but respectfully - nothing needs to be forced or broken, 3) Organize your clues so you can keep track of what you've found, 4) Don't be afraid to ask for hints if you're stuck, and 5) Most importantly, have fun! Our Quest for the Ancient Tomb room is an excellent choice for beginners."
+        "text": "For first-timers, we recommend: 1) Communicate with your team and share what you find, 2) Search thoroughly but respectfully - nothing needs to be forced or broken, 3) Organize your clues so you can keep track of what you've found, 4) Don't be afraid to ask for hints if you're stuck, and 5) Most importantly, have fun! The Forgotten Bunker is an excellent choice for beginners."
       }
     },
     {
@@ -40,7 +40,7 @@ const faqSchema = {
       "name": "How many people can play in an escape room?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Each of our rooms has a minimum and maximum capacity: Operation Pitt accommodates 2-8 players, The Billion Dollar Heist works best with 2-7 players, and Quest for the Ancient Tomb is suitable for 2-6 players. For the best experience, we recommend 3-5 players for Operation Pitt and Quest for the Ancient Tomb, and 4-6 players for The Billion Dollar Heist."
+        "text": "Each of our rooms has a minimum and maximum capacity: The Eiger Signal accommodates 2-8 players, The Ice Chamber works best with 2-7 players, and The Forgotten Bunker is suitable for 2-6 players. For the best experience, we recommend 3-5 players for The Eiger Signal and The Forgotten Bunker, and 4-6 players for The Ice Chamber."
       }
     },
     {
@@ -48,7 +48,7 @@ const faqSchema = {
       "name": "Is there a minimum age requirement?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "We recommend players be at least 10 years old to fully enjoy and participate in the puzzles. If you are looking at a group of kids playing together with an adult, then 12 years old is the minimum age. Players under 16 must be accompanied by an adult. Our Quest for the Ancient Tomb room is the most family-friendly option."
+        "text": "We recommend players be at least 10 years old to fully enjoy and participate in the puzzles. If you are looking at a group of kids playing together with an adult, then 12 years old is the minimum age. Players under 16 must be accompanied by an adult. The Forgotten Bunker is a strong family-friendly option."
       }
     },
     {
@@ -56,7 +56,7 @@ const faqSchema = {
       "name": "How do I book a room?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Booking is easy! You can book directly through our website by selecting your preferred room, date, and time. Payment is required at the time of booking to secure your reservation. Alternatively, you can call us at 021 555 0198 during business hours to book over the phone. We recommend booking in advance, especially for weekends and holidays, as our rooms often fill up quickly."
+        "text": "Booking is easy! You can book directly through our website by selecting your preferred room, date, and time. Payment is required at the time of booking to secure your reservation. You can also reach us via our contact page if you need help. We recommend booking in advance, especially for weekends and holidays, as our rooms often fill up quickly."
       }
     },
     {
@@ -64,7 +64,7 @@ const faqSchema = {
       "name": "Do you offer gift vouchers?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes! Escape room experiences make great gifts. You can purchase gift vouchers for specific rooms or for any value. Vouchers are valid for 12 months from the date of purchase and can be emailed directly to the recipient or to you to give in person. You can purchase gift vouchers through our website or by calling us at 021 555 0198."
+        "text": "Yes! Escape room experiences make great gifts. You can purchase gift vouchers for specific rooms or for any value. Vouchers are valid for 12 months from the date of purchase and can be emailed directly to the recipient or to you to give in person. You can purchase gift vouchers through our website or get in touch via our contact page."
       }
     },
     {

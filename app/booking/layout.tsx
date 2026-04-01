@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Book Now - Eiger Escape Rooms',
-  description: 'Book your escape room adventure. Choose from our thrilling experiences: Operation Pitt, The Billion Dollar Heist, and Quest for the Ancient Tomb. Easy online booking available.',
+  description: 'Book your escape room adventure. Choose from our thrilling experiences: The Eiger Signal, The Forgotten Bunker, and The Ice Chamber. Easy online booking available.',
   robots: {
     index: false,
     follow: false,

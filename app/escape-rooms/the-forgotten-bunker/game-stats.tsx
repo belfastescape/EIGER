@@ -73,7 +73,7 @@ function DifficultyStatCard({ icon, label, filled, total }: DifficultyStatCardPr
 
 export function GameStats() {
   return (
-    <section className="py-16 bg-[#1a0a2e]">
+    <section className="py-16 bg-[#0f1410]">
       <div className="mx-auto max-w-7xl px-4">
         <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
           <StatCard

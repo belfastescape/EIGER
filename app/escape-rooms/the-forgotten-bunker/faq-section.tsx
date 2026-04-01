@@ -2,13 +2,13 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 
 export function FaqSection() {
   return (
-    <section className="py-20 bg-[#1a0a2e] border-t border-purple-800/40">
+    <section className="py-20 bg-[#0f1410] border-t border-white/10">
       <div className="mx-auto max-w-3xl px-4">
         <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white font-mono text-center">
           Frequently Asked Questions
         </h2>
         <p className="text-xl text-gray-400 max-w-3xl mx-auto text-center mb-12">
-          Everything you need to know about your ancient tomb adventure.
+          Everything you need to know about your bunker mission.
         </p>
 
         <Accordion type="single" collapsible className="space-y-4">
@@ -17,10 +17,8 @@ export function FaqSection() {
               Is this room suitable for children?
             </AccordionTrigger>
             <AccordionContent className="px-6 pb-4 text-gray-300">
-              Yes! This room is designed to be family-friendly and is suitable for children
-              playing alongside their family. The puzzles are tricky, but the games master will
-              guide you along with the adventure, and the archaeological exploration theme is perfect
-              for young imaginations.
+              Yes! This room works well for families playing together. The puzzles are engaging, and your games master
+              will guide you through the WWII and cipher themes in an accessible way.
             </AccordionContent>
           </AccordionItem>
 
@@ -29,10 +27,9 @@ export function FaqSection() {
               What is the special challenge for experienced players?
             </AccordionTrigger>
             <AccordionContent className="px-6 pb-4 text-gray-300">
-              For experienced players we&apos;ve included a sidequest challenge that adds an extra
-              layer of difficulty. You&apos;ll only discover it if you steamroller the first set of
-              puzzles at a really fast pace. It doesn&apos;t affect the main story or your ability to
-              escape the room.
+              For experienced players we&apos;ve included a sidequest challenge that adds an extra layer of difficulty.
+              You&apos;ll only discover it if you move through the first puzzles at a fast pace. It doesn&apos;t affect the
+              main story or your ability to complete the room.
             </AccordionContent>
           </AccordionItem>
 
@@ -41,8 +38,8 @@ export function FaqSection() {
               How many people can play at once?
             </AccordionTrigger>
             <AccordionContent className="px-6 pb-4 text-gray-300">
-              The room is designed for 2–6 players. This is our smallest room, so we recommend
-              a maximum of 5 adults or 6 teenagers for the best experience.
+              The room is designed for 2–6 players. This is our smallest room, so we recommend a maximum of 5 adults or 6
+              teenagers for the best experience.
             </AccordionContent>
           </AccordionItem>
 
@@ -51,9 +48,8 @@ export function FaqSection() {
               Do we need any special skills or knowledge?
             </AccordionTrigger>
             <AccordionContent className="px-6 pb-4 text-gray-300">
-              No special skills or knowledge required. The room is accessible to everyone
-              regardless of experience level. All you need is a sense of adventure and a
-              willingness to work together.
+              No special skills or knowledge required. The room is accessible to everyone regardless of experience level.
+              All you need is a sense of adventure and a willingness to work together.
             </AccordionContent>
           </AccordionItem>
 
@@ -62,9 +58,8 @@ export function FaqSection() {
               What happens if we get stuck?
             </AccordionTrigger>
             <AccordionContent className="px-6 pb-4 text-gray-300">
-              Our games masters are always watching and ready to provide hints. We want you to
-              have a fun and successful experience, so we&apos;ll give you a clue when it looks like
-              you&apos;ve been stuck for too long.
+              Our games masters are always watching and ready to provide hints. We want you to have a fun and successful
+              experience, so we&apos;ll give you a clue when it looks like you&apos;ve been stuck for too long.
             </AccordionContent>
           </AccordionItem>
         </Accordion>

@@ -4,22 +4,22 @@ import { Button } from "@/components/ui/button"
 
 const TOP_ROOMS = [
   {
-    id: "operation-pitt",
-    name: "Operation Pitt",
+    id: "the-eiger-signal",
+    name: "The Eiger Signal",
     image: "/images/mountain.png",
-    href: "/escape-rooms/operation-pitt",
+    href: "/escape-rooms/the-eiger-signal",
   },
   {
-    id: "billion-dollar-heist",
-    name: "The Billion Dollar Heist",
+    id: "the-forgotten-bunker",
+    name: "The Forgotten Bunker",
     image: "/images/bunker.png",
-    href: "/escape-rooms/billion-dollar-heist",
+    href: "/escape-rooms/the-forgotten-bunker",
   },
   {
-    id: "ancient-tomb",
-    name: "Quest for the Ancient Tomb",
+    id: "the-ice-chamber",
+    name: "The Ice Chamber",
     image: "/images/chamber.png",
-    href: "/escape-rooms/ancient-tomb",
+    href: "/escape-rooms/the-ice-chamber",
   },
 ]
 

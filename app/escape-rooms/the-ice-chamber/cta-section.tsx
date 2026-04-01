@@ -53,8 +53,8 @@ function ShareCard({ delay = 0 }: { delay?: number }) {
     if (navigator.share) {
       try {
         await navigator.share({
-          title: "Quest for the Ancient Tomb – Eiger Escape Rooms",
-          text: "Check out Quest for the Ancient Tomb at Eiger Escape Rooms — an archaeological adventure for 2–6 players!",
+          title: "The Ice Chamber – Eiger Escape Rooms",
+          text: "Check out The Ice Chamber at Eiger Escape Rooms — a deep-Eiger ice mystery for 2–7 players!",
           url: window.location.href,
         })
       } catch {
@@ -73,11 +73,11 @@ function ShareCard({ delay = 0 }: { delay?: number }) {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-80px" }}
       transition={{ type: "spring", stiffness: 180, damping: 14, delay }}
-      className="h-[460px] flex flex-col items-center gap-4 rounded-xl border border-white bg-[#1a0a2e] hover:bg-[#1f0d35] p-8 text-center transition-all hover:scale-[1.02]"
+      className="h-[460px] flex flex-col items-center gap-4 rounded-xl border border-white bg-[#111] hover:bg-[#151515] p-8 text-center transition-all hover:scale-[1.02]"
     >
       <div className="flex-1 flex flex-col items-center justify-center">
         <Share2 className="w-10 h-10 text-cyan-400 mb-6" />
-        <h3 className="text-xl md:text-2xl text-amber-400 font-semibold leading-snug">
+        <h3 className="text-xl md:text-2xl text-white font-semibold leading-snug">
           Suggest this game to your friends.
         </h3>
       </div>
@@ -112,11 +112,11 @@ function CtaCard({ title, subtitle, href, label, variant = "secondary", buttonCo
       className={`h-[460px] flex flex-col items-center gap-4 rounded-xl border p-8 text-center transition-all hover:scale-[1.02] ${
         isPrimary
           ? "border-white bg-white/10 hover:bg-white/15"
-          : "border-white bg-[#1a0a2e] hover:bg-[#1f0d35]"
+          : "border-white bg-[#111] hover:bg-[#151515]"
       }`}
     >
       <div className="flex-1 flex flex-col justify-center">
-        <h3 className="text-xl md:text-2xl text-amber-400 text-center font-semibold leading-snug mb-3">{title}</h3>
+        <h3 className="text-xl md:text-2xl text-white text-center font-semibold leading-snug mb-3">{title}</h3>
         <p className="text-base text-gray-400">{subtitle}</p>
       </div>
       <SkewButton href={href} label={label} color={buttonColor} />
@@ -126,7 +126,7 @@ function CtaCard({ title, subtitle, href, label, variant = "secondary", buttonCo
 
 export function CtaSection() {
   return (
-    <section id="book" className="py-20 bg-[#1a0a2e]">
+    <section id="cta-cards" className="py-20 bg-[#0a0a0a]">
       <div className="mx-auto max-w-6xl px-4">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 items-stretch">
           <ShareCard delay={0} />
@@ -141,7 +141,7 @@ export function CtaSection() {
           />
           <CtaCard
             title="Questions about this game?"
-            subtitle="Feel free to contact us about Family Visits, Birthday Parties, and more."
+            subtitle="Feel free to contact us about Team Challenges, Birthday Parties, and more."
             href="/contact"
             label="Contact Us"
             buttonColor="blue"

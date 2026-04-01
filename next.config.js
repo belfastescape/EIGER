@@ -77,6 +77,13 @@ const nextConfig = {
   turbopack: {},
   // IMPROVEMENT: Compress output
   compress: true,
+  async redirects() {
+    return [
+      { source: '/escape-rooms/operation-pitt', destination: '/escape-rooms/the-eiger-signal', permanent: true },
+      { source: '/escape-rooms/billion-dollar-heist', destination: '/escape-rooms/the-ice-chamber', permanent: true },
+      { source: '/escape-rooms/ancient-tomb', destination: '/escape-rooms/the-forgotten-bunker', permanent: true },
+    ]
+  },
 }
 
 module.exports = nextConfig

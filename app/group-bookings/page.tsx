@@ -537,11 +537,10 @@ export default function GroupBookingsPage() {
                 variants={fadeIn}
               >
                 <h3 className="text-2xl font-bold text-white mb-6">Visit Us</h3>
-                <p className="text-gray-300 mb-2">Mt Everest</p>
-                <p className="text-gray-300 mb-4">Khumbu, Solukhumbu, Nepal</p>
+                <p className="text-gray-300 mb-4">3818 Grindelwald, Switzerland</p>
                 <div className="mt-6">
                   <Link
-                    href="https://www.google.com/maps/place/Mt+Everest/@27.9881564,86.9253667,12z"
+                    href="https://www.google.com/maps/place/3818+Grindelwald,+Switzerland"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center text-cyan-400 hover:text-cyan-300"
@@ -557,10 +556,9 @@ export default function GroupBookingsPage() {
                 variants={fadeIn}
               >
                 <h3 className="text-2xl font-bold text-white mb-6">Contact Details</h3>
-                <p className="text-gray-300 mb-2">Phone: 021 555 0198</p>
                 <p className="text-gray-300 mb-4">Email: info@eigerescaperooms.com</p>
                 <p className="text-gray-300">
-                  For group bookings and special arrangements, please use our contact page or give us a call.
+                  For group bookings and special arrangements, please use our contact page or email us.
                 </p>
               </motion.div>
             </div>

@@ -62,24 +62,23 @@ export default function RootLayout({
     "url": "https://www.eigerescaperooms.com",
     "logo": "https://www.eigerescaperooms.com/images/eiger-hero.png",
     "image": "https://www.eigerescaperooms.com/images/eiger-hero.png",
-    "description": "Eiger's premier escape room experience. Perfect for team building, birthday parties, and group activities. Three immersive themed rooms in the Khumbu region at Mt Everest.",
+    "description": "Eiger's premier escape room experience. Perfect for team building, birthday parties, and group activities. Three immersive themed rooms at 3818 Grindelwald, Switzerland.",
     "priceRange": "$$",
     "currenciesAccepted": "NZD",
     "paymentAccepted": "Cash, Credit Card, Debit Card",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "Mt Everest",
-      "addressLocality": "Solukhumbu",
-      "addressRegion": "Koshi Province",
-      "postalCode": "56000",
-      "addressCountry": "NP"
+      "streetAddress": "3818",
+      "addressLocality": "Grindelwald",
+      "addressRegion": "Canton of Bern",
+      "postalCode": "3818",
+      "addressCountry": "CH"
     },
     "geo": {
       "@type": "GeoCoordinates",
-      "latitude": 27.9881564,
-      "longitude": 86.9253667
+      "latitude": 46.6242,
+      "longitude": 8.0342
     },
-    "telephone": "+64215550198",
     "email": "info@eigerescaperooms.com",
     "openingHoursSpecification": [
       {
@@ -98,11 +97,11 @@ export default function RootLayout({
     "sameAs": [
       "https://www.facebook.com/YOUR_FACEBOOK_PAGE"
     ],
-    "hasMap": "https://www.google.com/maps/place/Mt+Everest/@27.9881564,86.9253667,12z",
+    "hasMap": "https://www.google.com/maps/place/3818+Grindelwald,+Switzerland",
     "areaServed": {
       "@type": "City",
-      "name": "Solukhumbu",
-      "addressCountry": "NP"
+      "name": "Grindelwald",
+      "addressCountry": "CH"
     },
     "keywords": "escape room eiger, escape rooms eiger, team building eiger, birthday party venue eiger, tourist attraction eiger, indoor activities eiger, things to do eiger"
   }

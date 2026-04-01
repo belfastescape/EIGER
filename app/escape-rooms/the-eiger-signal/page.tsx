@@ -7,7 +7,7 @@ import { DescriptionSection } from "./description-section"
 import { GameStats } from "./game-stats"
 import { VideoSection } from "./video-section"
 import { CtaSection } from "./cta-section"
-export default function OperationPitt() {
+export default function TheEigerSignalPage() {
   return (
     <div className="min-h-screen">
       {/* Breadcrumb Navigation */}
@@ -23,7 +23,7 @@ export default function OperationPitt() {
             </BreadcrumbItem>
             <BreadcrumbSeparator />
             <BreadcrumbItem>
-              <BreadcrumbPage>Operation Pitt</BreadcrumbPage>
+              <BreadcrumbPage>The Eiger Signal</BreadcrumbPage>
             </BreadcrumbItem>
           </BreadcrumbList>
         </Breadcrumb>
@@ -57,7 +57,7 @@ export default function OperationPitt() {
             Challenge your friends or work mates — play as two teams in a head to head battle
           </h2>
           <p className="mt-8 text-lg md:text-xl text-gray-400 leading-relaxed max-w-2xl mx-auto">
-            Operation Pitt is equally brilliant for{" "}
+            The Eiger Signal is equally brilliant for{" "}
             <Link href="/team-building-eiger" className="text-white underline underline-offset-4 hover:text-gray-300 transition-colors font-semibold">
               corporate team building
             </Link>
@@ -65,7 +65,7 @@ export default function OperationPitt() {
             <Link href="/group-bookings" className="text-white underline underline-offset-4 hover:text-gray-300 transition-colors font-semibold">
               teenage birthday parties
             </Link>
-            . Two rooms, one winner.
+            . Race the clock and decode the mystery together.
           </p>
         </div>
       </section>

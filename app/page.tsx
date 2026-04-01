@@ -28,9 +28,9 @@ export default function Home() {
     target: cardsContainerRef,
     offset: ["start start", "end end"],
   })
-  // Card 1 (Pitt) folds back during first 40% of scroll
+  // Card 1 (The Eiger Signal) folds back during first 40% of scroll
   const card1RotateX = useTransform(scrollYProgress, [0, 0.4], [0, -90])
-  // Card 2 (Ancient Tomb) folds back during middle 40–80%
+  // Card 2 (The Forgotten Bunker) folds back during middle 40–80%
   const card2RotateX = useTransform(scrollYProgress, [0.4, 0.8], [0, -90])
 
   return (
@@ -100,13 +100,13 @@ export default function Home() {
           <div
             className="sticky top-0 h-screen flex items-center justify-center overflow-hidden"
           >
-            {/* ── Card 3: Billion Dollar Heist — bottom of stack, rendered first (furthest back) ── */}
+            {/* ── Card 3: The Ice Chamber — bottom of stack, rendered first (furthest back) ── */}
             <div className="absolute w-[90%] h-[85vh] rounded-3xl overflow-hidden border border-gray-400/40 flex items-end bg-black"
               style={{ transformOrigin: "center top", zIndex: 10 }}
             >
               <Image
                 src="/images/chamber.png"
-                alt="Billion Dollar Heist"
+                alt="The Ice Chamber"
                 fill
                 className="object-cover"
                 loading="lazy"
@@ -119,10 +119,14 @@ export default function Home() {
                   <span className="inline-flex items-center text-sm text-cyan-400 mb-3 gap-1.5">
                     <Users className="w-4 h-4" /> 2–7 people &nbsp;·&nbsp; 60 minutes
                   </span>
-                  <h3 className="text-4xl md:text-6xl font-bold text-white mb-4">Billion Dollar Heist</h3>
+                  <h3 className="text-4xl md:text-6xl font-bold text-white mb-4">The Ice Chamber</h3>
                   <p className="text-gray-200 text-lg md:text-xl mb-8 max-w-xl">
-                    The Phantom syndicate has stashed a billion-dollar haul inside the world's most secure vault.
-                    Can your crew crack the security and walk away with the ultimate prize?
+                    A hidden chamber has been discovered deep inside the Eiger, preserved in perfect ice. Strange symbols
+                    cover the walls, and crystalline structures glow with an unnatural light. No records explain who built
+                    it—or why. As you explore the chamber, mechanisms begin to respond to your presence, shifting the
+                    environment itself. This is not just a place, but a system waiting to be activated. Every choice you
+                    make shapes what happens next. Solve the chamber&apos;s secrets before it seals itself again… or risk
+                    becoming part of what it was built to contain.
                   </p>
                   <div className="flex flex-wrap gap-4">
                     <Link href="/booking">
@@ -130,7 +134,7 @@ export default function Home() {
                         Book Now <ArrowRight className="ml-2 h-5 w-5" />
                       </Button>
                     </Link>
-                    <Link href="/escape-rooms/billion-dollar-heist">
+                    <Link href="/escape-rooms/the-ice-chamber">
                       <Button variant="outline" className="border-white text-white hover:bg-white hover:text-black text-lg py-4 px-10">
                         Learn More
                       </Button>
@@ -140,14 +144,14 @@ export default function Home() {
               </div>
             </div>
 
-            {/* ── Card 2: Ancient Tomb — middle of stack ── */}
+            {/* ── Card 2: The Forgotten Bunker — middle of stack ── */}
             <motion.div
               className="absolute w-[90%] h-[85vh] rounded-3xl overflow-hidden border border-gray-400/40 flex items-end bg-black"
               style={{ rotateX: card2RotateX, transformPerspective: 1200, transformOrigin: "center top", zIndex: 20 }}
             >
               <Image
                 src="/images/bunker.png"
-                alt="Quest for The Ancient Tomb"
+                alt="The Forgotten Bunker"
                 fill
                 className="object-cover"
                 loading="lazy"
@@ -160,11 +164,14 @@ export default function Home() {
                   <span className="inline-flex items-center text-sm text-cyan-400 mb-3 gap-1.5">
                     <Users className="w-4 h-4" /> 2–6 people &nbsp;·&nbsp; 60 minutes
                   </span>
-                  <h3 className="text-4xl md:text-6xl font-bold text-white mb-4">Quest for The Ancient Tomb</h3>
+                  <h3 className="text-4xl md:text-6xl font-bold text-white mb-4">The Forgotten Bunker</h3>
                   <p className="text-gray-200 text-lg md:text-xl mb-8 max-w-xl">
-                    Step into a world of magic and mystery where ancient spells and enchanted artifacts await. Your team must
-                    work together to master the magical arts, solve mystical puzzles, and retrieve the legendary Ancient Tomb
-                    before dark forces claim it forever. Perfect for families and fantasy enthusiasts!
+                    Hidden deep within the Eiger lies a sealed WWII bunker, lost to time and buried beneath ice. Recently
+                    uncovered, its systems have mysteriously reactivated. Inside, maps, coded messages, and classified
+                    documents reveal a secret operation that was never meant to be found. As you work through military
+                    ciphers and restore the bunker&apos;s control systems, a final set of orders emerges—one that was
+                    never carried out. The countdown has already begun. You must decipher the truth and shut it down
+                    before the bunker completes its last mission.
                   </p>
                   <div className="flex flex-wrap gap-4">
                     <Link href="/booking">
@@ -172,7 +179,7 @@ export default function Home() {
                         Book Now <ArrowRight className="ml-2 h-5 w-5" />
                       </Button>
                     </Link>
-                    <Link href="/escape-rooms/ancient-tomb">
+                    <Link href="/escape-rooms/the-forgotten-bunker">
                       <Button variant="outline" className="border-white text-white hover:bg-white hover:text-black text-lg py-4 px-10">
                         Learn More
                       </Button>
@@ -182,14 +189,14 @@ export default function Home() {
               </div>
             </motion.div>
 
-            {/* ── Card 1: Operation Pitt — top of stack, rendered last (frontmost) ── */}
+            {/* ── Card 1: The Eiger Signal — top of stack, rendered last (frontmost) ── */}
             <motion.div
               className="absolute w-[90%] h-[85vh] rounded-3xl overflow-hidden border border-gray-400/40 flex items-end bg-black"
               style={{ rotateX: card1RotateX, transformPerspective: 1200, transformOrigin: "center top", zIndex: 30 }}
             >
               <Image
                 src="/images/mountain.png"
-                alt="Operation Pitt"
+                alt="The Eiger Signal"
                 fill
                 className="object-cover"
                 loading="lazy"
@@ -202,12 +209,14 @@ export default function Home() {
                   <span className="inline-flex items-center text-sm text-cyan-400 mb-3 gap-1.5">
                     <Users className="w-4 h-4" /> 2–8 people &nbsp;·&nbsp; 60 minutes
                   </span>
-                  <h3 className="text-4xl md:text-6xl font-bold text-white mb-4">Operation Pitt</h3>
+                  <h3 className="text-4xl md:text-6xl font-bold text-white mb-4">The Eiger Signal</h3>
                   <p className="text-gray-200 text-lg md:text-xl mb-8 max-w-xl">
-                    The Kiwi Secret Service is hearing a lot of internet chatter about something called Operation Pitt.
-                    Someone is going to blow up the Pitt. Your team must go into the spy's hideout to see if you can
-                    steal his secret plan, before it is too late. We have 2 identical versions of this game, so it can be
-                    played in head to head team challenges.
+                    An abandoned mountain rescue hut high on the Eiger has begun transmitting again after decades of
+                    silence. Inside, everything is frozen in time—radios humming, lights flickering, logs abruptly ending.
+                    A strange signal pulses through the equipment, repeating in patterns no one can explain. As you restore
+                    power and decode the transmission, it becomes clear this is no ordinary distress call. Something was
+                    discovered beneath the mountain… and it may still be there. You have one hour to uncover the truth
+                    before the signal completes—and whatever it&apos;s calling finally arrives.
                   </p>
                   <div className="flex flex-wrap gap-4">
                     <Link href="/booking">
@@ -215,7 +224,7 @@ export default function Home() {
                         Book Now <ArrowRight className="ml-2 h-5 w-5" />
                       </Button>
                     </Link>
-                    <Link href="/escape-rooms/operation-pitt">
+                    <Link href="/escape-rooms/the-eiger-signal">
                       <Button variant="outline" className="border-white text-white hover:bg-white hover:text-black text-lg py-4 px-10">
                         Learn More
                       </Button>
@@ -296,8 +305,8 @@ export default function Home() {
               </div>
               <h3 className="text-xl font-bold mb-3 text-white">Central Location</h3>
               <p className="text-gray-300">
-                Conveniently located in the Khumbu at Mt Everest, with regional access via Kathmandu and Lukla, and
-                lodges and dining in nearby villages.
+                Conveniently located at 3818 Grindelwald, Switzerland, with regional rail access via Interlaken and
+                connections across the Bernese Oberland.
               </p>
             </motion.div>
           </div>
@@ -370,7 +379,7 @@ export default function Home() {
                 </AccordionTrigger>
                 <AccordionContent className="text-gray-300">
                   We highly recommend booking in advance, especially for weekends and holidays. You can book online
-                  through our website or call us directly.
+                  through our website or our contact page.
                 </AccordionContent>
               </AccordionItem>
             </Accordion>

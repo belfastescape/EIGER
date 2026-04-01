@@ -13,21 +13,21 @@ export const viewport: Viewport = {
 }
 
 export const metadata: Metadata = {
-  title: "Operation Pitt | Eiger-Themed Spy Escape Room | Eiger Escape Rooms",
+  title: "The Eiger Signal | Mountain Mystery Escape Room | Eiger Escape Rooms",
   description:
-    "Experience Eiger's most unique escape room adventure at the Pitt. Navigate through political intrigue and government secrets in this immersive 60-minute challenge. Perfect for 2-8 players. Book your mission today!",
+    "An abandoned mountain rescue hut on the Eiger is transmitting again. Decode the signal and uncover what lies beneath the mountain before time runs out. 2–8 players, 60 minutes.",
   openGraph: {
-    title: "Operation Pitt | Eiger-Themed Spy Escape Room | Eiger Escape Rooms",
+    title: "The Eiger Signal | Mountain Mystery Escape Room | Eiger Escape Rooms",
     description:
-      "Experience Eiger's most unique escape room adventure at the Pitt. Navigate through political intrigue and government secrets in this immersive 60-minute challenge. Perfect for 2-8 players.",
-    url: "https://www.eigerescaperooms.com/escape-rooms/operation-pitt",
+      "An abandoned mountain rescue hut on the Eiger is transmitting again. Decode the signal and uncover what lies beneath the mountain before time runs out. 2–8 players, 60 minutes.",
+    url: "https://www.eigerescaperooms.com/escape-rooms/the-eiger-signal",
     siteName: "Eiger Escape Rooms",
     images: [
       {
         url: "https://www.eigerescaperooms.com/images/mountain.png",
         width: 1200,
         height: 630,
-        alt: "Operation Pitt Escape Room",
+        alt: "The Eiger Signal Escape Room",
       },
     ],
     locale: "en_NZ",
@@ -35,9 +35,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Operation Pitt | Eiger-Themed Spy Escape Room | Eiger Escape Rooms",
+    title: "The Eiger Signal | Mountain Mystery Escape Room | Eiger Escape Rooms",
     description:
-      "Experience Eiger's most unique escape room adventure at the Pitt. Navigate through political intrigue and government secrets in this immersive 60-minute challenge.",
+      "An abandoned mountain rescue hut on the Eiger is transmitting again. Decode the signal and uncover what lies beneath the mountain before time runs out.",
     images: ["https://www.eigerescaperooms.com/images/mountain.png"],
   },
   robots: {
@@ -53,13 +53,13 @@ export const metadata: Metadata = {
   },
 }
 
-const operationPittSchema = {
+const eigerSignalSchema = {
   "@context": "https://schema.org",
   "@type": "Product",
-  "name": "Operation Pitt - Eiger Spy Escape Room",
-  "description": "Experience Eiger's most unique escape room adventure at the Pitt. Navigate through political intrigue and government secrets in this immersive 60-minute challenge for 2-8 players.",
+  "name": "The Eiger Signal - Mountain Mystery Escape Room",
+  "description": "An abandoned mountain rescue hut high on the Eiger has begun transmitting again after decades of silence. Decode the transmission and uncover the truth in this immersive 60-minute challenge for 2–8 players.",
   "image": "https://www.eigerescaperooms.com/images/mountain.png",
-  "url": "https://www.eigerescaperooms.com/escape-rooms/operation-pitt",
+  "url": "https://www.eigerescaperooms.com/escape-rooms/the-eiger-signal",
   "brand": {
     "@type": "Brand",
     "name": "Eiger Escape Rooms"
@@ -69,7 +69,7 @@ const operationPittSchema = {
     "priceCurrency": "NZD",
     "price": "35",
     "availability": "https://schema.org/InStock",
-    "url": "https://www.eigerescaperooms.com/escape-rooms/operation-pitt",
+    "url": "https://www.eigerescaperooms.com/escape-rooms/the-eiger-signal",
     "validFrom": "2024-01-01"
   },
   "category": "Escape Room Experience",
@@ -92,14 +92,14 @@ const operationPittSchema = {
   ]
 }
 
-export default function OperationPittLayout({
+export default function TheEigerSignalLayout({
   children,
 }: {
   children: React.ReactNode
 }) {
   return (
     <>
-      <JsonLd data={operationPittSchema} />
+      <JsonLd data={eigerSignalSchema} />
       {children}
     </>
   )

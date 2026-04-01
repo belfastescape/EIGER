@@ -4,7 +4,7 @@ import { useState, useEffect } from "react"
 import Link from "next/link"
 import Image from "next/image"
 import { motion } from "framer-motion"
-import { Users, Clock, CheckCircle2, ArrowRight, Building2, Brain, Puzzle, MapPin, Phone, Mail, Facebook, Star } from "lucide-react"
+import { Users, Clock, CheckCircle2, ArrowRight, Building2, Brain, Puzzle, MapPin, Mail, Facebook, Star } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs"
@@ -311,7 +311,7 @@ export default function TeamBuildingPage() {
                     </div>
                   </div>
                   <p className="text-gray-300 mb-6 italic">
-                    "We took our team last night for our Christmas function. We completed Operation Pitt, it's well thought out, fun and a little challenging at times.
+                    "We took our team last night for our Christmas function. We completed The Eiger Signal, it's well thought out, fun and a little challenging at times.
 
 Everyone had a fantastic time and it's a great team bonding experience. So much so that everyone was talking about coming back to do another room in the New Year.
 
@@ -644,20 +644,20 @@ If you are wanting an escape room experience, we would 100% recommended this one
             </p>
           </motion.div>
 
-          <Tabs defaultValue="operation-pitt" className="w-full">
+          <Tabs defaultValue="the-eiger-signal" className="w-full">
             <TabsList className="w-full flex justify-center mb-8 bg-[#111] border border-[#222] p-1">
-              <TabsTrigger value="operation-pitt" className="flex-1">
-                Operation Pitt
+              <TabsTrigger value="the-eiger-signal" className="flex-1">
+                The Eiger Signal
               </TabsTrigger>
-              <TabsTrigger value="billion-dollar-heist" className="flex-1">
-                The Billion Dollar Heist
+              <TabsTrigger value="the-forgotten-bunker" className="flex-1">
+                The Forgotten Bunker
               </TabsTrigger>
-              <TabsTrigger value="ancient-tomb" className="flex-1">
-                Quest for the Ancient Tomb
+              <TabsTrigger value="the-ice-chamber" className="flex-1">
+                The Ice Chamber
               </TabsTrigger>
             </TabsList>
 
-            <TabsContent value="operation-pitt">
+            <TabsContent value="the-eiger-signal">
               <motion.div
                 className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center"
                 initial="hidden"
@@ -668,17 +668,17 @@ If you are wanting an escape room experience, we would 100% recommended this one
                 <div className="rounded-xl overflow-hidden">
                   <Image
                     src="/images/mountain.png"
-                    alt="Operation Pitt Escape Room"
+                    alt="The Eiger Signal"
                     width={800}
                     height={600}
                     className="w-full h-auto"
                   />
                 </div>
                 <div>
-                  <h3 className="text-2xl font-bold mb-4 text-white">Operation Pitt</h3>
+                  <h3 className="text-2xl font-bold mb-4 text-white">The Eiger Signal</h3>
                   <div className="flex items-center mb-4">
                     <div className="bg-gradient-to-r from-cyan-500 to-green-500 text-white text-xs font-bold px-3 py-1 rounded-full mr-3">
-                      TRY HEAD TO HEAD CHALLENGES!
+                      MOUNTAIN MYSTERY
                     </div>
                     <span className="text-sm text-gray-400 flex items-center">
                       <Users className="w-3.5 h-3.5 mr-1.5 text-cyan-400" />
@@ -686,8 +686,8 @@ If you are wanting an escape room experience, we would 100% recommended this one
                     </span>
                   </div>
                   <p className="text-gray-300 mb-4">
-                    Navigate through this spy adventure Eiger-themed escape room.
-                    Operation Pitt tests strategic thinking and careful attention to detail.
+                    Decode a mysterious transmission from an abandoned mountain rescue hut and uncover what lies beneath
+                    the Eiger. The Eiger Signal tests strategic thinking and careful attention to detail.
                   </p>
                   <h4 className="text-lg font-bold mb-2 text-white">Team Skills Tested:</h4>
                   <ul className="space-y-2 mb-6">
@@ -714,7 +714,7 @@ If you are wanting an escape room experience, we would 100% recommended this one
               </motion.div>
             </TabsContent>
 
-            <TabsContent value="billion-dollar-heist">
+            <TabsContent value="the-forgotten-bunker">
               <motion.div
                 className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center"
                 initial="hidden"
@@ -725,27 +725,27 @@ If you are wanting an escape room experience, we would 100% recommended this one
                 <div className="rounded-xl overflow-hidden">
                   <Image
                     src="/images/bunker.png"
-                    alt="The Billion Dollar Heist Escape Room"
+                    alt="The Forgotten Bunker"
                     width={800}
                     height={600}
                     className="w-full h-auto"
                   />
                 </div>
                 <div>
-                  <h3 className="text-2xl font-bold mb-4 text-white">The Billion Dollar Heist</h3>
+                  <h3 className="text-2xl font-bold mb-4 text-white">The Forgotten Bunker</h3>
                   <div className="flex items-center mb-4">
                     <div className="bg-gradient-to-r from-cyan-500 to-green-500 text-white text-xs font-bold px-3 py-1 rounded-full mr-3">
-                      CHALLENGING
+                      WWII CIPHERS
                     </div>
                     <span className="text-sm text-gray-400 flex items-center">
                       <Users className="w-3.5 h-3.5 mr-1.5 text-cyan-400" />
-                      2-7 people per room
+                      2-6 people per room
                     </span>
                   </div>
                   <p className="text-gray-300 mb-4">
-                    Plan the perfect heist to steal a priceless diamond in this thrilling challenge. With multiple rooms
-                    and complex puzzles, The Billion Dollar Heist is perfect for larger teams that need to coordinate across
-                    different areas.
+                    Work through military ciphers and classified documents in a sealed bunker that has reactivated deep in
+                    the mountain. The Forgotten Bunker is perfect for teams that need to coordinate across puzzles and
+                    tight spaces.
                   </p>
                   <h4 className="text-lg font-bold mb-2 text-white">Team Skills Tested:</h4>
                   <ul className="space-y-2 mb-6">
@@ -772,7 +772,7 @@ If you are wanting an escape room experience, we would 100% recommended this one
               </motion.div>
             </TabsContent>
 
-            <TabsContent value="ancient-tomb">
+            <TabsContent value="the-ice-chamber">
               <motion.div
                 className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center"
                 initial="hidden"
@@ -783,33 +783,33 @@ If you are wanting an escape room experience, we would 100% recommended this one
                 <div className="rounded-xl overflow-hidden">
                   <Image
                     src="/images/chamber.png"
-                    alt="Quest for the Ancient Tomb Escape Room"
+                    alt="The Ice Chamber"
                     width={800}
                     height={600}
                     className="w-full h-auto"
                   />
                 </div>
                 <div>
-                  <h3 className="text-2xl font-bold mb-4 text-white">Quest for the Ancient Tomb</h3>
+                  <h3 className="text-2xl font-bold mb-4 text-white">The Ice Chamber</h3>
                   <div className="flex items-center mb-4">
                     <div className="bg-gradient-to-r from-cyan-500 to-green-500 text-white text-xs font-bold px-3 py-1 rounded-full mr-3">
-                      BEST FOR 4/5 PLAYERS
+                      MOST CHALLENGING
                     </div>
                     <span className="text-sm text-gray-400 flex items-center">
                       <Users className="w-3.5 h-3.5 mr-1.5 text-cyan-400" />
-                      2-6 people per room
+                      2-7 people per room
                     </span>
                   </div>
                   <p className="text-gray-300 mb-4">
-                    Embark on a magical journey to find the legendary wand in this enchanting adventure. Quest for the
-                    Ancient Tomb is ideal for teams new to escape rooms or those looking to build creative problem-solving
-                    skills.
+                    Explore a frozen chamber where the environment itself responds to your choices. With layered puzzles and
+                    nonlinear challenges, The Ice Chamber is ideal for experienced teams that need to coordinate across
+                    shifting spaces.
                   </p>
                   <h4 className="text-lg font-bold mb-2 text-white">Team Skills Tested:</h4>
                   <ul className="space-y-2 mb-6">
                     <li className="flex items-start">
                       <CheckCircle2 className="w-5 h-5 text-cyan-400 mr-2 mt-0.5" />
-                      <span className="text-gray-300">Creative thinking and imagination</span>
+                      <span className="text-gray-300">Creative thinking under changing conditions</span>
                     </li>
                     <li className="flex items-start">
                       <CheckCircle2 className="w-5 h-5 text-cyan-400 mr-2 mt-0.5" />
@@ -890,23 +890,7 @@ If you are wanting an escape room experience, we would 100% recommended this one
                   </div>
                   <div>
                     <h3 className="font-bold text-white mb-1">Address</h3>
-                    <p className="text-gray-300">Mt Everest</p>
-                    <p className="text-gray-300">Khumbu, Solukhumbu, Nepal</p>
-                    <p className="text-gray-300">New Zealand</p>
-                  </div>
-                </motion.li>
-
-                <motion.li variants={fadeIn} className="flex items-start">
-                  <div className="w-12 h-12 bg-gradient-to-br from-cyan-500 to-green-500 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
-                    <Phone className="w-6 h-6 text-white" />
-                  </div>
-                  <div>
-                    <h3 className="font-bold text-white mb-1">Phone</h3>
-                    <p className="text-gray-300">
-                      <Link href="tel:+64215550198" className="hover:text-cyan-400 transition-colors">
-                        021 555 0198
-                      </Link>
-                    </p>
+                    <p className="text-gray-300">3818 Grindelwald, Switzerland</p>
                   </div>
                 </motion.li>
 

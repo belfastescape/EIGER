@@ -130,7 +130,7 @@ export function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
                   href="/contact"
                   className="text-sm text-gray-300 hover:text-cyan-400 transition-colors"
                 >
-                  Book Operation Pitt
+                  Book The Eiger Signal
                 </Link>
               </li>
               <li>
@@ -138,7 +138,7 @@ export function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
                   href="/contact"
                   className="text-sm text-gray-300 hover:text-cyan-400 transition-colors"
                 >
-                  Book Billion Dollar Heist
+                  Book The Forgotten Bunker
                 </Link>
               </li>
               <li>
@@ -146,7 +146,7 @@ export function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
                   href="/contact"
                   className="text-sm text-gray-300 hover:text-cyan-400 transition-colors"
                 >
-                  Book Ancient Tomb Quest
+                  Book The Ice Chamber
                 </Link>
               </li>
             </ul>

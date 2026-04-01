@@ -13,21 +13,21 @@ export const viewport: Viewport = {
 }
 
 export const metadata: Metadata = {
-  title: "The Billion Dollar Heist | Multi-Room Escape Adventure | Eiger Escape Rooms",
+  title: "The Forgotten Bunker | WWII Cipher Escape Room | Eiger Escape Rooms",
   description:
-    "Plan the perfect heist in Eiger's most challenging escape room. Navigate through multiple rooms, solve intricate puzzles, and face a thrilling laser maze. Perfect for experienced teams of 2-7 players. Book your 60-minute adventure today!",
+    "A sealed WWII bunker deep in the Eiger has reactivated. Work through military ciphers and classified documents before the last mission completes. 2–6 players, 60 minutes.",
   openGraph: {
-    title: "The Billion Dollar Heist | Multi-Room Escape Adventure | Eiger Escape Rooms",
+    title: "The Forgotten Bunker | Eiger Escape Rooms",
     description:
-      "Plan the perfect heist in Eiger's most challenging escape room. Navigate through multiple rooms, solve intricate puzzles, and face a thrilling laser maze. Perfect for experienced teams of 2-7 players.",
-    url: "https://www.eigerescaperooms.com/escape-rooms/billion-dollar-heist",
+      "A sealed WWII bunker deep in the Eiger has reactivated. Work through military ciphers and classified documents before the last mission completes. 2–6 players, 60 minutes.",
+    url: "https://www.eigerescaperooms.com/escape-rooms/the-forgotten-bunker",
     siteName: "Eiger Escape Rooms",
     images: [
       {
         url: "https://www.eigerescaperooms.com/images/bunker.png",
-        width: 1200,
-        height: 630,
-        alt: "The Billion Dollar Heist Escape Room",
+        width: 1920,
+        height: 1080,
+        alt: "The Forgotten Bunker Escape Room",
       },
     ],
     locale: "en_NZ",
@@ -35,9 +35,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "The Billion Dollar Heist | Multi-Room Escape Adventure | Eiger Escape Rooms",
+    title: "The Forgotten Bunker | Eiger Escape Rooms",
     description:
-      "Plan the perfect heist in Eiger's most challenging escape room. Navigate through multiple rooms, solve intricate puzzles, and face a thrilling laser maze.",
+      "A sealed WWII bunker deep in the Eiger has reactivated. Work through military ciphers and classified documents before the last mission completes.",
     images: ["https://www.eigerescaperooms.com/images/bunker.png"],
   },
   robots: {
@@ -53,13 +53,13 @@ export const metadata: Metadata = {
   },
 }
 
-const diamondHeistSchema = {
+const forgottenBunkerSchema = {
   "@context": "https://schema.org",
   "@type": "Product",
-  "name": "The Billion Dollar Heist - Multi-Room Escape Adventure",
-  "description": "Plan the perfect heist in Eiger's most challenging escape room. Navigate through multiple rooms, solve intricate puzzles, and face a thrilling laser maze. Perfect for experienced teams of 2-7 players.",
+  "name": "The Forgotten Bunker - WWII Cipher Escape Room",
+  "description": "Hidden deep within the Eiger lies a sealed WWII bunker. Decipher classified documents and shut down the bunker before its last mission completes. 2–6 players, 60 minutes.",
   "image": "https://www.eigerescaperooms.com/images/bunker.png",
-  "url": "https://www.eigerescaperooms.com/escape-rooms/billion-dollar-heist",
+  "url": "https://www.eigerescaperooms.com/escape-rooms/the-forgotten-bunker",
   "brand": {
     "@type": "Brand",
     "name": "Eiger Escape Rooms"
@@ -69,7 +69,7 @@ const diamondHeistSchema = {
     "priceCurrency": "NZD",
     "price": "35",
     "availability": "https://schema.org/InStock",
-    "url": "https://www.eigerescaperooms.com/escape-rooms/billion-dollar-heist",
+    "url": "https://www.eigerescaperooms.com/escape-rooms/the-forgotten-bunker",
     "validFrom": "2024-01-01"
   },
   "category": "Escape Room Experience",
@@ -82,24 +82,24 @@ const diamondHeistSchema = {
     {
       "@type": "PropertyValue",
       "name": "Players",
-      "value": "2-7"
+      "value": "2-6"
     },
     {
       "@type": "PropertyValue",
       "name": "Difficulty",
-      "value": "Hard"
+      "value": "Beginner-Friendly"
     }
   ]
 }
 
-export default function DiamondHeistLayout({
+export default function TheForgottenBunkerLayout({
   children,
 }: {
   children: React.ReactNode
 }) {
   return (
     <>
-      <JsonLd data={diamondHeistSchema} />
+      <JsonLd data={forgottenBunkerSchema} />
       {children}
     </>
   )

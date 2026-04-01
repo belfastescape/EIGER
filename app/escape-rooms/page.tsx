@@ -115,39 +115,40 @@ export default function EscapeRoomsPage() {
 
   const rooms = [
     {
-      id: "operation-pitt",
-      name: "Operation Pitt",
-      description: "Our Classic spy themed escape room. Available as a Head to Head Challenge between 2 teams.",
+      id: "the-eiger-signal",
+      name: "The Eiger Signal",
+      description:
+        "An abandoned mountain rescue hut high on the Eiger has begun transmitting again after decades of silence. Inside, everything is frozen in time—radios humming, lights flickering, logs abruptly ending. A strange signal pulses through the equipment, repeating in patterns no one can explain. As you restore power and decode the transmission, it becomes clear this is no ordinary distress call. Something was discovered beneath the mountain… and it may still be there. You have one hour to uncover the truth before the signal completes—and whatever it's calling finally arrives.",
       image: "/images/mountain.png",
 
       minPeople: 2,
-      maxPeople: 14,
+      maxPeople: 8,
       duration: 60,
-      tags: ["spy themed", "advanced", "teamwork"],
+      tags: ["beginner", "mystery", "signal"],
     },
     {
-      id: "billion-dollar-heist",
-      name: "The Billion Dollar Heist",
+      id: "the-forgotten-bunker",
+      name: "The Forgotten Bunker",
       description:
-        "Plan the perfect heist to steal a priceless diamond in this thrilling challenge that tests your team's strategic thinking.",
+        "Hidden deep within the Eiger lies a sealed WWII bunker, lost to time and buried beneath ice. Recently uncovered, its systems have mysteriously reactivated. Inside, maps, coded messages, and classified documents reveal a secret operation that was never meant to be found. As you work through military ciphers and restore the bunker's control systems, a final set of orders emerges—one that was never carried out. The countdown has already begun. You must decipher the truth and shut it down before the bunker completes its last mission.",
       image: "/images/bunker.png",
-    
-      minPeople: 2,
-      maxPeople: 7,
-      duration: 60,
-      tags: ["heist", "expert", "multi-room"],
-    },
-    {
-      id: "ancient-tomb",
-      name: "Quest for the Ancient Tomb",
-      description:
-        "Embark on a magical journey to find the legendary wand in this enchanting and puzzle-filled adventure.",
-      image: "/images/chamber.png",
-      
+
       minPeople: 2,
       maxPeople: 6,
       duration: 60,
-      tags: ["fantasy", "family-friendly", "beginner"],
+      tags: ["beginner", "family-friendly", "historical", "ciphers"],
+    },
+    {
+      id: "the-ice-chamber",
+      name: "The Ice Chamber",
+      description:
+        "A hidden chamber has been discovered deep inside the Eiger, preserved in perfect ice. Strange symbols cover the walls, and crystalline structures glow with an unnatural light. No records explain who built it—or why. As you explore the chamber, mechanisms begin to respond to your presence, shifting the environment itself. This is not just a place, but a system waiting to be activated. Every choice you make shapes what happens next. Solve the chamber's secrets before it seals itself again… or risk becoming part of what it was built to contain.",
+      image: "/images/chamber.png",
+
+      minPeople: 2,
+      maxPeople: 7,
+      duration: 60,
+      tags: ["expert", "ice", "exploration"],
     },
   ]
 
@@ -337,8 +338,8 @@ export default function EscapeRoomsPage() {
               <div className="bg-[#111] rounded-lg border border-[#222] p-6">
                 <h3 className="text-xl font-bold mb-2 text-white">How do I choose the right room?</h3>
                 <p className="text-gray-300">
-                  If you're new to escape rooms, we recommend starting with Operation Pitt(difficulty 3/5). For
-                  experienced players looking for a challenge, try Quest for The Ancient Tomb (4/5) or The Billion Dollar Heist
+                  If you're new to escape rooms, we recommend starting with The Eiger Signal (difficulty 3/5). For
+                  experienced players looking for a challenge, try The Forgotten Bunker (4/5) or The Ice Chamber
                   (4.5/5). Each room has a different theme, so you can also choose based on what interests you most!
                 </p>
               </div>

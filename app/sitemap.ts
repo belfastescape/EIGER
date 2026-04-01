@@ -41,19 +41,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/escape-rooms/operation-pitt`,
+      url: `${baseUrl}/escape-rooms/the-eiger-signal`,
       lastModified: new Date(),
       changeFrequency: 'weekly',
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/escape-rooms/billion-dollar-heist`,
+      url: `${baseUrl}/escape-rooms/the-ice-chamber`,
       lastModified: new Date(),
       changeFrequency: 'weekly',
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/escape-rooms/ancient-tomb`,
+      url: `${baseUrl}/escape-rooms/the-forgotten-bunker`,
       lastModified: new Date(),
       changeFrequency: 'weekly',
       priority: 0.8,

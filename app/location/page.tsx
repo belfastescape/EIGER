@@ -5,7 +5,7 @@ import { useState, useEffect } from "react"
 import { motion } from "framer-motion"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
-import { MapPin, Phone, Mail, Clock, Bus, Car, ArrowRight } from "lucide-react"
+import { MapPin, Mail, Clock, Bus, Car, ArrowRight } from "lucide-react"
 
 export default function LocationPage() {
   const [isVisible, setIsVisible] = useState(false)
@@ -25,7 +25,7 @@ export default function LocationPage() {
         >
           <div className="w-full h-[320px] md:h-[400px] relative overflow-hidden bg-[#111]">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14092.750377749018!2d86.9253667!3d27.988156449999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39e854a215bd9ebd%3A0x576dcf806abbab2!2sMt%20Everest!5e0!3m2!1sen!2snz!4v1774825629232!5m2!1sen!2snz"
+              src="https://maps.google.com/maps?q=3818+Grindelwald,+Switzerland&hl=en&z=14&output=embed"
               width="100%"
               height="100%"
               style={{ border: 0 }}
@@ -33,7 +33,7 @@ export default function LocationPage() {
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
               className="absolute inset-0 w-full h-full"
-              title="Mt Everest on Google Maps"
+              title="3818 Grindelwald, Switzerland on Google Maps"
             />
           </div>
           <div className="p-8 text-center">
@@ -41,10 +41,10 @@ export default function LocationPage() {
               Our Location
             </h1>
             <p className="text-xl text-gray-300 mb-4">
-              Mt Everest, Khumbu, Solukhumbu, Nepal
+              3818 Grindelwald, Switzerland
             </p>
             <p className="text-gray-400 mb-8">
-              Find us in the Khumbu region—domestic flights from Kathmandu connect to Lukla, with trekking routes through Namche Bazaar toward base camp.
+              Find us in the village of Grindelwald in the Bernese Oberland, with regional rail links via Interlaken.
             </p>
           </div>
         </motion.div>
@@ -59,10 +59,6 @@ export default function LocationPage() {
             <h2 className="text-2xl font-bold mb-6 text-white">Contact Information</h2>
             <div className="space-y-4">
               <div className="flex items-center">
-                <Phone className="w-5 h-5 text-cyan-400 mr-3" />
-                <p className="text-gray-300">021 555 0198</p>
-              </div>
-              <div className="flex items-center">
                 <Mail className="w-5 h-5 text-cyan-400 mr-3" />
                 <p className="text-gray-300">info@eigerescaperooms.com</p>
               </div>
@@ -72,7 +68,7 @@ export default function LocationPage() {
               </div>
               <div className="flex items-center">
                 <MapPin className="w-5 h-5 text-cyan-400 mr-3" />
-                <p className="text-gray-300">Mt Everest, Khumbu, Solukhumbu, Nepal</p>
+                <p className="text-gray-300">3818 Grindelwald, Switzerland</p>
               </div>
             </div>
           </motion.div>
@@ -91,7 +87,7 @@ export default function LocationPage() {
                   <h3 className="text-lg font-semibold text-white">Parking</h3>
                 </div>
                 <p className="text-gray-300 ml-8">
-                  Limited vehicle access in the high Khumbu; most visitors use flights to Lukla, then lodges and footpaths between villages.
+                  Public and hotel parking is available in and around Grindelwald; follow local signage.
                 </p>
               </div>
               <div>
@@ -100,7 +96,7 @@ export default function LocationPage() {
                   <h3 className="text-lg font-semibold text-white">Public Transport</h3>
                 </div>
                 <p className="text-gray-300 ml-8">
-                  Regional flights and shared ground transport serve towns in the Everest area; plan multi-day trekking from Lukla or Namche for the final approach.
+                  Take Swiss Federal Railways (SBB) to Interlaken Ost, then the Berner Oberland Bahn to Grindelwald.
                 </p>
               </div>
             </div>

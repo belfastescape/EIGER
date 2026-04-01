@@ -8,20 +8,19 @@ export const teamBuildingSchema = {
     "name": "Eiger Escape Rooms",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "Mt Everest",
-      "addressLocality": "Solukhumbu",
-      "addressRegion": "Koshi Province",
-      "postalCode": "56000",
-      "addressCountry": "NP"
+      "streetAddress": "3818",
+      "addressLocality": "Grindelwald",
+      "addressRegion": "Canton of Bern",
+      "postalCode": "3818",
+      "addressCountry": "CH"
     },
-    "telephone": "+64215550198",
     "url": "https://www.eigerescaperooms.com"
   },
   "serviceType": "Team Building Activities",
   "areaServed": {
     "@type": "City",
-    "name": "Solukhumbu",
-    "addressCountry": "NP"
+    "name": "Grindelwald",
+    "addressCountry": "CH"
   },
   "offers": {
     "@type": "Offer",
@@ -39,7 +38,7 @@ export const teamBuildingSchema = {
         "@type": "Offer",
         "itemOffered": {
           "@type": "Service",
-          "name": "Operation Pitt",
+          "name": "The Eiger Signal",
           "description": "Navigate through political intrigue and government secrets in this Eiger-themed escape room adventure. 2-8 players."
         }
       },
@@ -47,7 +46,7 @@ export const teamBuildingSchema = {
         "@type": "Offer",
         "itemOffered": {
           "@type": "Service",
-          "name": "The Billion Dollar Heist",
+          "name": "The Forgotten Bunker",
           "description": "Plan the perfect heist to steal a priceless diamond in this multi-room escape challenge. 2-7 players."
         }
       },
@@ -55,7 +54,7 @@ export const teamBuildingSchema = {
         "@type": "Offer",
         "itemOffered": {
           "@type": "Service",
-          "name": "Quest for the Ancient Tomb",
+          "name": "The Ice Chamber",
           "description": "Embark on a magical journey to find the legendary wand in this enchanting adventure. 2-6 players."
         }
       }

@@ -1,6 +1,6 @@
 import Link from "next/link"
 import Image from "next/image"
-import { Facebook, MapPin, Phone, Mail, Clock } from "lucide-react"
+import { Facebook, MapPin, Mail, Clock } from "lucide-react"
 
 /** WCAG-friendly body text on footer bg `#080808` */
 const footerMuted = "text-gray-300"
@@ -92,18 +92,18 @@ export function Footer() {
               <h3 className="text-lg font-bold mb-4 text-white">Our Rooms</h3>
               <ul className="space-y-2">
                 <li>
-                  <Link href="/escape-rooms/operation-pitt" className={footerLink}>
-                    Operation Pitt
+                  <Link href="/escape-rooms/the-eiger-signal" className={footerLink}>
+                    The Eiger Signal
                   </Link>
                 </li>
                 <li>
-                  <Link href="/escape-rooms/billion-dollar-heist" className={footerLink}>
-                    The Billion Dollar Heist
+                  <Link href="/escape-rooms/the-forgotten-bunker" className={footerLink}>
+                    The Forgotten Bunker
                   </Link>
                 </li>
                 <li>
-                  <Link href="/escape-rooms/ancient-tomb" className={footerLink}>
-                    Quest for the Ancient Tomb
+                  <Link href="/escape-rooms/the-ice-chamber" className={footerLink}>
+                    The Ice Chamber
                   </Link>
                 </li>
               </ul>
@@ -156,13 +156,7 @@ export function Footer() {
               <ul className="space-y-3">
                 <li className="flex items-start">
                   <MapPin className="w-5 h-5 text-cyan-400 mr-2 mt-0.5" />
-                  <span className={footerMuted}>Mt Everest, Khumbu, Solukhumbu, Nepal</span>
-                </li>
-                <li className="flex items-center">
-                  <Phone className="w-5 h-5 text-cyan-400 mr-2" />
-                  <Link href="tel:+0215550198" className={footerLink}>
-                    021 555 0198
-                  </Link>
+                  <span className={footerMuted}>3818 Grindelwald, Switzerland</span>
                 </li>
                 <li className="flex items-center">
                   <Mail className="w-5 h-5 text-cyan-400 mr-2" />

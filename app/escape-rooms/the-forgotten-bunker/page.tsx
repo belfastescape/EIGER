@@ -10,9 +10,9 @@ import { ReviewsStack } from "./reviews-stack"
 import { CtaSection } from "./cta-section"
 import { FaqSection } from "./faq-section"
 
-export default function MagicWandPage() {
+export default function TheForgottenBunkerPage() {
   return (
-    <div className="min-h-screen bg-[#1a0a2e]">
+    <div className="min-h-screen bg-[#0f1410]">
       {/* Breadcrumb Navigation */}
       <div className="container mx-auto px-4 pt-24 pb-2">
         <Breadcrumb>
@@ -26,7 +26,7 @@ export default function MagicWandPage() {
             </BreadcrumbItem>
             <BreadcrumbSeparator />
             <BreadcrumbItem>
-              <BreadcrumbPage>Quest for the Ancient Tomb</BreadcrumbPage>
+              <BreadcrumbPage>The Forgotten Bunker</BreadcrumbPage>
             </BreadcrumbItem>
           </BreadcrumbList>
         </Breadcrumb>
@@ -39,13 +39,13 @@ export default function MagicWandPage() {
       <ReviewsStack />
       <CtaSection />
 
-      <section className="py-20 bg-[#1a0a2e] border-t border-purple-800/40">
+      <section className="py-20 bg-[#0f1410] border-t border-white/10">
         <div className="mx-auto max-w-4xl px-4 text-center">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white font-mono leading-[1.2] tracking-tight text-balance">
             Perfect escape room for small groups
           </h2>
           <p className="mt-8 text-lg md:text-xl text-gray-400 leading-relaxed max-w-2xl mx-auto">
-            Quest for the Ancient Tomb is our most family-friendly adventure. Check out our{" "}
+            The Forgotten Bunker is a gripping choice for families and small groups. Check out our{" "}
             <Link href="/group-bookings" className="text-white underline underline-offset-4 hover:text-gray-300 transition-colors font-semibold">
               teenage birthday party deal
             </Link>

@@ -10,9 +10,9 @@ const dropdowns = [
   {
     label: "Our Games",
     links: [
-      { label: "Operation Pitt",        href: "/escape-rooms/operation-pitt" },
-      { label: "The Billion Dollar Heist",         href: "/escape-rooms/billion-dollar-heist" },
-      { label: "Quest for the Ancient Tomb",  href: "/escape-rooms/ancient-tomb" },
+      { label: "The Eiger Signal",        href: "/escape-rooms/the-eiger-signal" },
+      { label: "The Forgotten Bunker",         href: "/escape-rooms/the-forgotten-bunker" },
+      { label: "The Ice Chamber",  href: "/escape-rooms/the-ice-chamber" },
     ],
   },
   {

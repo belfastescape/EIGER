@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { Phone } from "lucide-react"
+import { Mail } from "lucide-react"
 
 /**
  * Sticky mobile CTA — Server Component so "Check availability" / "Book now" are in the
@@ -23,16 +23,16 @@ export function StickyBookingCta() {
           Book now
         </span>
       </Link>
-      <a
-        href="tel:0215550198"
+      <Link
+        href="/contact"
         className="w-[30%] min-h-full flex flex-col items-center justify-center py-3 px-3 bg-green-800 border-l border-green-700/50 text-white active:bg-green-900 transition-colors"
-        aria-label="Call now: 021 555 0198"
+        aria-label="Contact us"
       >
-        <Phone className="w-8 h-8 text-white mb-1" aria-hidden />
+        <Mail className="w-8 h-8 text-white mb-1" aria-hidden />
         <span className="text-sm font-semibold tracking-wide text-white uppercase">
-          Call now
+          Contact
         </span>
-      </a>
+      </Link>
     </div>
   )
 }
