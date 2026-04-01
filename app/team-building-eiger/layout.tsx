@@ -8,11 +8,13 @@ export const viewport: Viewport = {
 }
 
 export const metadata: Metadata = {
-  title: "Team Building Eiger | Eiger Escape Rooms",
-  description: "Discover the best team building activities in Eiger with our immersive escape room experiences. Perfect for corporate teams and groups.",
+  title: "Team Building Grindelwald | Eiger Escape Rooms",
+  description:
+    "Strengthen your team with immersive escape room challenges. Premier team building activities in Grindelwald for corporate groups.",
   openGraph: {
-    title: "Team Building Eiger | Eiger Escape Rooms",
-    description: "Discover the best team building activities in Eiger with our immersive escape room experiences. Perfect for corporate teams and groups.",
+    title: "Team Building Grindelwald | Eiger Escape Rooms",
+    description:
+      "Strengthen your team with immersive escape room challenges at Eiger Escape Rooms in Grindelwald.",
     url: "https://www.eigerescaperooms.com/team-building-eiger",
     siteName: "Eiger Escape Rooms",
     images: [
@@ -20,7 +22,7 @@ export const metadata: Metadata = {
         url: "https://www.eigerescaperooms.com/images/eiger-hero.png",
         width: 1200,
         height: 630,
-        alt: "Team Building Eiger",
+        alt: "Team Building Grindelwald",
       },
     ],
     locale: "en_NZ",
@@ -28,8 +30,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Team Building Eiger | Eiger Escape Rooms",
-    description: "Discover the best team building activities in Eiger with our immersive escape room experiences. Perfect for corporate teams and groups.",
+    title: "Team Building Grindelwald | Eiger Escape Rooms",
+    description:
+      "Strengthen your team with immersive escape room challenges at Eiger Escape Rooms in Grindelwald.",
     images: ["https://www.eigerescaperooms.com/images/eiger-hero.png"],
   },
   robots: {

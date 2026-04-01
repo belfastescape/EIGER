@@ -78,10 +78,10 @@ function RoomCard({ room }: RoomCardProps) {
             href={`/escape-rooms/${room.id}`}
             className="text-cyan-400 hover:text-cyan-300 transition-colors inline-flex items-center"
           >
-            Story & specs <ArrowRight className="w-4 h-4 ml-1" />
+            Room Details <ArrowRight className="w-4 h-4 ml-1" />
           </Link>
           <Link href="/booking" className="text-cyan-400 hover:text-cyan-300 transition-colors">
-            Reserve
+            Book Now
           </Link>
         </div>
       </div>
@@ -176,10 +176,11 @@ export default function EscapeRoomsPage() {
             variants={fadeIn}
           >
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 bg-gradient-to-r from-cyan-400 to-green-400 bg-clip-text text-transparent">
-              The three missions
+              Our Escape Rooms
             </h1>
             <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto">
-              Same address, three different worlds—each built as a full arc with its own tone, tempo, and puzzle style.
+              Choose your adventure from our range of immersive escape room experiences, each with unique themes and
+              challenges.
             </p>
           </motion.div>
         </div>
@@ -197,12 +198,12 @@ export default function EscapeRoomsPage() {
           >
             <Tabs defaultValue="all" className="w-full" onValueChange={setFilter}>
               <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-8">
-                <h2 className="text-3xl font-bold text-white">Browse by vibe</h2>
+                <h2 className="text-3xl font-bold text-white">Choose Your Adventure</h2>
                 <TabsList className="bg-[#111] border border-[#222]">
-                  <TabsTrigger value="all">Every room</TabsTrigger>
-                  <TabsTrigger value="beginner">Easier</TabsTrigger>
+                  <TabsTrigger value="all">All Rooms</TabsTrigger>
+                  <TabsTrigger value="beginner">Beginner</TabsTrigger>
                   <TabsTrigger value="family-friendly">Family</TabsTrigger>
-                  <TabsTrigger value="expert">Hardest</TabsTrigger>
+                  <TabsTrigger value="expert">Expert</TabsTrigger>
                 </TabsList>
               </div>
 
@@ -273,10 +274,10 @@ export default function EscapeRoomsPage() {
           >
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
               <div>
-                <h2 className="text-3xl font-bold mb-4 text-white">Bigger groups</h2>
+                <h2 className="text-3xl font-bold mb-4 text-white">Group Bookings</h2>
                 <p className="text-gray-300 mb-6">
-                  Hosting a crowd? Spin up more than one room at the same start time—ideal for offsites, birthdays, or
-                  any day you want bragging rights at dinner.
+                  Planning a larger event? We can accommodate groups of all sizes by running multiple rooms
+                  simultaneously. Perfect for corporate team building, birthday parties, or any special occasion.
                 </p>
                 <ul className="space-y-3 mb-6">
                   <li className="flex items-start">
@@ -329,40 +330,46 @@ export default function EscapeRoomsPage() {
             variants={fadeIn}
           >
             <h2 className="text-3xl font-bold mb-8 text-center bg-gradient-to-r from-cyan-400 to-green-400 bg-clip-text text-transparent">
-              Common questions
+              Frequently Asked Questions
             </h2>
 
             <div className="space-y-4">
               <div className="bg-[#111] rounded-lg border border-[#222] p-6">
-                <h3 className="text-xl font-bold mb-2 text-white">Where should we start if we are new?</h3>
+                <h3 className="text-xl font-bold mb-2 text-white">How do I choose the right room?</h3>
                 <p className="text-gray-300">
-                  The Eiger Signal is the gentlest slope: hut radio, medium difficulty. Prefer codes and history? The
-                  Forgotten Bunker adds pressure. Want frost, branching puzzles, and a sting in the tail? Save The Ice
-                  Chamber for a team that already likes a fight.
+                  If you&apos;re new to escape rooms, we recommend starting with The Eiger Signal (difficulty 3/5). For
+                  experienced players looking for a challenge, try The Forgotten Bunker (4/5) or The Ice Chamber (4.5/5).
+                  Each room has a different theme, so you can also choose based on what interests you most!
                 </p>
               </div>
 
               <div className="bg-[#111] rounded-lg border border-[#222] p-6">
-                <h3 className="text-xl font-bold mb-2 text-white">If time runs out, do we still see the ending?</h3>
+                <h3 className="text-xl font-bold mb-2 text-white">What if we don&apos;t escape in time?</h3>
                 <p className="text-gray-300">
-                  Yes—we care that you hear the payoff. Expect a tight recap after the buzzer, especially in The Ice
-                  Chamber where plots cross in more than one corner.
+                  Don&apos;t worry! Many teams don&apos;t escape in 60 minutes, especially in our more challenging rooms.
+                  If you don&apos;t make it out in time, we will give you extra time to complete your game. All of our
+                  games are story-based, so we want you to experience the end of the story even if you run a bit over
+                  time.
                 </p>
               </div>
 
               <div className="bg-[#111] rounded-lg border border-[#222] p-6">
-                <h3 className="text-xl font-bold mb-2 text-white">Why are phones off-limits inside?</h3>
+                <h3 className="text-xl font-bold mb-2 text-white">Can we take photos inside the rooms?</h3>
                 <p className="text-gray-300">
-                  So the next group walks in cold. Afterward we are glad to shoot a team photo in the lobby—say if you
-                  want the Eiger in frame.
+                  You can take photos of your team while you are playing your game. However, we&apos;re happy to take a
+                  group photo of your team after your experience. It&apos;s probably better that way so you don&apos;t
+                  miss out on any of the experience.
                 </p>
               </div>
 
               <div className="bg-[#111] rounded-lg border border-[#222] p-6">
-                <h3 className="text-xl font-bold mb-2 text-white">Can we buy a gift for someone travelling here?</h3>
+                <h3 className="text-xl font-bold mb-2 text-white">Do you offer gift vouchers?</h3>
                 <p className="text-gray-300">
-                  Yes—vouchers apply to any room and last twelve months. Buy online or ask for a custom value. If
-                  flights move, contact us before the date slips away; we try to extend once.
+                  Yes! Escape room experiences make great gifts. You can purchase gifts on our booking page. Vouchers
+                  are valid for 12 months from the date of purchase and can be emailed directly to the recipient or to
+                  you to give in person. Check out our souvenir gift card that we will send out to you for free. They
+                  make great little mementos. NB. If your date expires, we will always extend the voucher date. We want as
+                  many people to play our games as possible.
                 </p>
               </div>
             </div>
@@ -382,10 +389,11 @@ export default function EscapeRoomsPage() {
           >
             <div className="p-8 md:p-12 text-center">
               <h2 className="text-3xl font-bold mb-6 bg-gradient-to-r from-cyan-400 to-green-400 bg-clip-text text-transparent">
-                Lock a slot
+                Ready for Your Next Adventure?
               </h2>
               <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-                Reserve online when you know your date—the best windows go first on weekends and in peak season.
+                Book your escape room experience today and put your problem-solving skills to the test. The clock is
+                ticking!
               </p>
               <Link href="/booking" className="text-cyan-400 hover:text-cyan-300 transition-colors">
                 Go to booking

@@ -65,15 +65,15 @@ export default function Home() {
               Eiger Escape Rooms
             </h1>
             <p className="text-lg md:text-xl text-gray-300 mb-6 leading-relaxed">
-              Step out of the everyday for sixty minutes: hands-on missions beneath the mountain. A solid{" "}
+              Escape the real world for an hour. Our immersive escape rooms are the perfect{" "}
               <Link href="/rainy-day-activities-eiger" className="text-cyan-400 hover:text-cyan-300 transition-colors">
-                indoor plan when the weather turns
+                fun indoor activity in Grindelwald
               </Link>
-              —whether you roll in with friends, relatives, or colleagues.
+              —whether you&apos;re with friends, family, or workmates.
             </p>
             <p className="text-lg md:text-xl text-gray-300 mb-12 leading-relaxed">
-              Collaborate, hunt for clues, and beat the timer. Three standalone rooms, each with its own thread to pull
-              and a finale worth reaching.
+              Work together, crack the puzzles, beat the clock. Three unique escape rooms, each with its own story
+              waiting to be solved. We challenge you to escape.
             </p>
           </motion.div>
         </div>
@@ -89,11 +89,11 @@ export default function Home() {
             transition={{ duration: 0.6 }}
           >
             <h2 className="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-cyan-400 to-green-400 bg-clip-text text-transparent">
-              Pick your mission
+              Choose Your Adventure
             </h2>
             <p className="text-base sm:text-lg md:text-xl text-gray-300 max-w-3xl mx-auto px-4">
-              Three different setups—each one a full storyline, its own difficulty curve, and a reason to talk about the
-              ride home.
+              Choose your adventure from our range of immersive escape room experiences, each with unique themes and
+              challenges.
             </p>
           </motion.div>
 
@@ -249,11 +249,11 @@ export default function Home() {
             transition={{ duration: 0.6 }}
           >
             <h2 className="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-cyan-400 to-green-400 bg-clip-text text-transparent">
-              What sets us apart
+              Why Choose Eiger Escape Rooms?
             </h2>
             <p className="text-base sm:text-lg md:text-xl text-gray-300 max-w-3xl mx-auto px-4">
-              We build worlds you can touch—tight storytelling, puzzles that feel fair, and a finish you will still be
-              debating over coffee.
+              We&apos;re committed to providing you the best escape room experience in Grindelwald with immersive themes,
+              challenging puzzles, and unforgettable adventures.
             </p>
           </motion.div>
 
@@ -267,10 +267,10 @@ export default function Home() {
               <div className="w-16 h-16 bg-gradient-to-r from-cyan-500 to-green-500 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Clock className="w-8 h-8 text-white" />
               </div>
-              <h3 className="text-xl font-bold mb-3 text-white">Built sets & story</h3>
+              <h3 className="text-xl font-bold mb-3 text-white">Immersive Experiences</h3>
               <p className="text-gray-300">
-                Physical props, layered sound, and a plot that keeps moving—so you feel inside the fiction, not in a
-                bare box with locks.
+                Our escape rooms feature detailed sets, professional props, and engaging storylines that transport you to
+                another world.
               </p>
             </motion.div>
 
@@ -283,11 +283,13 @@ export default function Home() {
               <div className="w-16 h-16 bg-gradient-to-r from-cyan-500 to-green-500 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Users className="w-8 h-8 text-white" />
               </div>
-              <h3 className="text-xl font-bold mb-3 text-white">Made for crews</h3>
+              <h3 className="text-xl font-bold mb-3 text-white">Perfect for Groups</h3>
               <p className="text-gray-300">
-                From <Link href="/group-bookings" className="text-cyan-400 hover:text-cyan-300 transition-colors">birthdays and school trips</Link> to{" "}
-                <Link href="/team-building-eiger" className="text-cyan-400 hover:text-cyan-300 transition-colors">company offsites</Link>, we scale the
-                welcome and the pacing to match your mix of ages and experience.
+                Whether it&apos;s your next family outing, a birthday party, or your{" "}
+                <Link href="/team-building-eiger" className="text-cyan-400 hover:text-cyan-300 transition-colors">
+                  team building event in Grindelwald
+                </Link>
+                , our escape rooms are designed for groups of all sizes.
               </p>
             </motion.div>
 
@@ -300,10 +302,10 @@ export default function Home() {
               <div className="w-16 h-16 bg-gradient-to-r from-cyan-500 to-green-500 rounded-full flex items-center justify-center mx-auto mb-4">
                 <MapPin className="w-8 h-8 text-white" />
               </div>
-              <h3 className="text-xl font-bold mb-3 text-white">Easy to reach</h3>
+              <h3 className="text-xl font-bold mb-3 text-white">Central Location</h3>
               <p className="text-gray-300">
-                3818 Grindelwald—trains from Interlaken, quick links to the rest of the Bernese Oberland, and a walkable
-                village once you arrive.
+                Conveniently located in Grindelwald, we&apos;re easily accessible by public transport and close to
+                restaurants and cafes.
               </p>
             </motion.div>
           </div>
@@ -320,10 +322,10 @@ export default function Home() {
             transition={{ duration: 0.6 }}
           >
             <h2 className="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-cyan-400 to-green-400 bg-clip-text text-transparent">
-              Before you book
+              Frequently Asked Questions
             </h2>
             <p className="text-base sm:text-lg md:text-xl text-gray-300 max-w-3xl mx-auto px-4">
-              Straight answers about the Grindelwald site and the three alpine games we run.
+              Got questions? We&apos;ve got answers! Here are some of the most common questions about our escape rooms.
             </p>
           </motion.div>
 
@@ -397,11 +399,11 @@ export default function Home() {
             transition={{ duration: 0.6 }}
           >
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 text-white px-4">
-              Plan your next run
+              Ready for Your Next Adventure?
             </h2>
             <p className="text-base sm:text-lg md:text-xl text-gray-300 max-w-3xl mx-auto mb-8 px-4">
-              Lock a slot today—stretch your problem-solving, lean on each other under the clock, and leave with a story
-              you did not have that morning.
+              Book your escape room experience today and discover why we&apos;re Grindelwald&apos;s premier escape room
+              destination. Challenge your mind, test your teamwork, and create unforgettable memories!
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center px-4">
               <Link href="/booking" className="w-full sm:w-auto">

@@ -8,7 +8,7 @@ import { cn } from "@/lib/utils"
 
 const dropdowns = [
   {
-    label: "Rooms",
+    label: "Our Games",
     links: [
       { label: "The Eiger Signal",        href: "/escape-rooms/the-eiger-signal" },
       { label: "The Forgotten Bunker",         href: "/escape-rooms/the-forgotten-bunker" },
@@ -16,7 +16,7 @@ const dropdowns = [
     ],
   },
   {
-    label: "Groups & schools",
+    label: "Group Bookings",
     links: [
       { label: "Team building", href: "/team-building-eiger" },
       { label: "Parties & school trips", href: "/group-bookings" },
@@ -25,8 +25,8 @@ const dropdowns = [
 ]
 
 const plainLinks = [
-  { label: "Offers", href: "/deals" },
-  { label: "Get in touch", href: "/contact" },
+  { label: "Deals", href: "/deals" },
+  { label: "Contact", href: "/contact" },
 ]
 
 export function Header() {
@@ -95,10 +95,10 @@ export function Header() {
               </Link>
             ))}
 
-            {/* Reserve CTA */}
+            {/* Book CTA */}
             <Link href="/booking">
               <Button className="bg-gradient-to-r from-cyan-500 to-green-500 hover:from-cyan-600 hover:to-green-600 text-white">
-                Reserve
+                Book Now
               </Button>
             </Link>
           </nav>
@@ -175,7 +175,7 @@ export function Header() {
 
           <Link href="/booking" onClick={() => setMobileMenuOpen(false)} className="mt-4">
             <Button className="bg-gradient-to-r from-cyan-500 to-green-500 hover:from-cyan-600 hover:to-green-600 text-white text-lg px-10 py-4">
-              Reserve
+              Book Now
             </Button>
           </Link>
         </div>

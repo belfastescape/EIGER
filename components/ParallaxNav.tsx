@@ -18,13 +18,13 @@ const navItems: NavItem[] = [
 ]
 
 const secondaryLinks = [
-  { label: "Offers", href: "/deals" },
+  { label: "Deals", href: "/deals" },
   { label: "Contact", href: "/contact" },
 ]
 
 const dropdowns = [
   {
-    label: "Escape rooms",
+    label: "Our Games",
     links: [
       { label: "The Eiger Signal",       href: "/escape-rooms/the-eiger-signal" },
       { label: "The Forgotten Bunker",        href: "/escape-rooms/the-forgotten-bunker" },
@@ -32,7 +32,7 @@ const dropdowns = [
     ],
   },
   {
-    label: "Groups & schools",
+    label: "Group Bookings",
     links: [
       { label: "Team building", href: "/team-building-eiger" },
       { label: "Parties & school trips", href: "/group-bookings" },
@@ -191,12 +191,12 @@ export default function ParallaxNav() {
               </Link>
             ))}
 
-            {/* Reserve CTA */}
+            {/* Book CTA */}
             <Link
               href="/booking"
               className="bg-gradient-to-r from-cyan-500 to-green-500 hover:from-cyan-600 hover:to-green-600 text-white text-sm font-medium px-4 py-2 rounded-md transition-all duration-200"
             >
-              Reserve
+              Book Now
             </Link>
           </nav>
 
@@ -271,7 +271,7 @@ export default function ParallaxNav() {
               onClick={() => setMobileMenuOpen(false)}
               className="mt-4 bg-gradient-to-r from-cyan-500 to-green-500 hover:from-cyan-600 hover:to-green-600 text-white font-medium text-lg px-10 py-4 rounded-md"
             >
-              Reserve
+              Book Now
             </Link>
           </div>
         )}

@@ -2,13 +2,15 @@ import type { Metadata } from "next"
 
 export const metadata: Metadata = {
   title: "Contact Us | Eiger Escape Rooms",
-  description: "Get in touch with Eiger Escape Rooms. Contact us for bookings, inquiries, or to learn more about our escape room experiences. We're here to help!",
+  description:
+    "Have questions or need more information? We're here to help you plan your perfect escape room adventure in Grindelwald.",
   alternates: {
     canonical: '/contact',
   },
   openGraph: {
     title: "Contact Us | Eiger Escape Rooms",
-    description: "Get in touch with Eiger Escape Rooms. Contact us for bookings, inquiries, or to learn more about our escape room experiences. We're here to help!",
+    description:
+      "Have questions or need more information? We're here to help you plan your perfect escape room adventure in Grindelwald.",
     type: "website",
     url: "https://eigerescaperooms.com/contact",
   },

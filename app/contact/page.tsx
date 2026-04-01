@@ -94,10 +94,11 @@ export default function ContactPage() {
             variants={fadeIn}
           >
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 bg-gradient-to-r from-cyan-400 to-green-400 bg-clip-text text-transparent">
-              Get in touch
+              Contact Us
             </h1>
             <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto">
-              Ask about rooms, group sizes, vouchers, or travel—our crew replies as soon as we are off the game floor.
+              Have questions or need more information? We&apos;re here to help you plan your perfect escape room
+              adventure.
             </p>
           </motion.div>
         </div>

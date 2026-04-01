@@ -14,11 +14,11 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   title: "Contact Us | Eiger Escape Rooms",
   description:
-    "Get in touch with Eiger Escape Rooms. We're here to help with bookings, inquiries, and any questions you may have.",
+    "Have questions or need more information? We're here to help you plan your perfect escape room adventure in Grindelwald.",
   openGraph: {
     title: "Contact Us | Eiger Escape Rooms",
     description:
-      "Get in touch with Eiger Escape Rooms. We're here to help with bookings, inquiries, and any questions you may have.",
+      "Have questions or need more information? We're here to help you plan your perfect escape room adventure in Grindelwald.",
     url: "https://www.eigerescaperooms.com/contact",
     siteName: "Eiger Escape Rooms",
     images: [
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Contact Us | Eiger Escape Rooms",
     description:
-      "Get in touch with Eiger Escape Rooms. We're here to help with bookings, inquiries, and any questions you may have.",
+      "Have questions or need more information? We're here to help you plan your perfect escape room adventure in Grindelwald.",
     images: ["https://www.eigerescaperooms.com/images/eiger-hero.png"],
   },
   robots: {

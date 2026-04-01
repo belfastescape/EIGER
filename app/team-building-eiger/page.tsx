@@ -64,8 +64,8 @@ export default function TeamBuildingEigerPage() {
     <div className="min-h-screen">
       {/* Hero Section */}
       <HeroSection
-        title="Company missions in Grindelwald"
-        subtitle="Parallel rooms, optional scoreboards, debriefs that tie back to your objectives"
+        title="Team Building Grindelwald"
+        subtitle="Strengthen your team with our immersive escape room challenges"
         buttonText="Plan Your Team Event"
         imageSrc="/images/reception.png"
         imageAlt="Team celebrating after an escape room"
@@ -82,10 +82,11 @@ export default function TeamBuildingEigerPage() {
             variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6 } } }}
           >
             <h2 className="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-cyan-400 to-green-400 bg-clip-text text-transparent">
-              Elevate Your Team in Eiger
+              Grindelwald&apos;s Premier Team Building Experience
             </h2>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-              Searching for a unique way to boost teamwork in Eiger? Our escape rooms offer a dynamic setting for teams to connect, communicate, and conquer challenges together.
+              Looking for team building activities in Grindelwald that are fun, engaging, and effective? Our escape rooms
+              provide the perfect environment for teams to collaborate, communicate, and problem-solve together.
             </p>
           </motion.div>
 
@@ -412,8 +413,7 @@ export default function TeamBuildingEigerPage() {
               Frequently Asked Questions
             </h2>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-              Corporate offsites, leadership retreats, and squad days—answered for our Grindelwald venue and three
-              mountain-set rooms.
+              Everything you need to know about team building at Eiger Escape Rooms.
             </p>
           </motion.div>
 

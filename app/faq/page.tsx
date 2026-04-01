@@ -239,11 +239,10 @@ export default function FAQPage() {
             variants={fadeIn}
           >
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 bg-gradient-to-r from-cyan-400 to-green-400 bg-clip-text text-transparent">
-              Help centre
+              Frequently Asked Questions
             </h1>
             <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto">
-              Booking rules, room fit, and what to expect inside The Eiger Signal, The Forgotten Bunker, and The Ice
-              Chamber at our Grindelwald site.
+              Find answers to common questions about our escape rooms, booking process, and more.
             </p>
           </motion.div>
         </div>

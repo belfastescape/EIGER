@@ -16,10 +16,12 @@ export function Footer() {
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-2xl font-bold text-white mb-4">Who we are</h2>
             <p className="text-gray-400 leading-relaxed">
-              Since 2021 we have welcomed guests to Grindelwald for hour-long, puzzle-driven missions tied to the
-              mountain. We focus on clear storytelling, fair challenge, and moments where your group has to really
-              listen to each other—whether you are on holiday, celebrating a birthday, or here on business. Our doors
-              open to friends, families, and crews who want something more memorable than another slide deck.
+              Eiger Escape Rooms was established in 2021 with a vision to provide exhilarating escape room adventures in
+              the heart of Grindelwald. Our mission is to create unforgettable experiences that challenge the mind and
+              foster teamwork. We pride ourselves on our core values: Customer Satisfaction, Teamwork, and Innovation.
+              These principles guide us in delivering exceptional entertainment for friends, families, and corporate
+              groups alike. Join us for an adventure that promises excitement and collaboration, making every visit a
+              memorable one.
             </p>
           </div>
         </div>
@@ -64,7 +66,7 @@ export function Footer() {
                 </li>
                 <li>
                   <Link href="/escape-rooms" className={footerLink}>
-                    All rooms
+                    Our Escape Rooms
                   </Link>
                 </li>
                 
@@ -133,12 +135,12 @@ export function Footer() {
                 </li>
                 <li>
                   <Link href="/deals" className={footerLink}>
-                    Deals & promos
+                    Special Deals
                   </Link>
                 </li>
                 <li>
                   <Link href="/location" className={footerLink}>
-                    Find us
+                    Location & Directions
                   </Link>
                 </li>
                 <li>

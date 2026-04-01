@@ -38,13 +38,13 @@ export default function LocationPage() {
           </div>
           <div className="p-8 text-center">
             <h1 className="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-cyan-400 to-green-400 bg-clip-text text-transparent">
-              Find us
+              Our Location
             </h1>
             <p className="text-xl text-gray-300 mb-4">
               3818 Grindelwald, Switzerland
             </p>
             <p className="text-gray-400 mb-8">
-              In the Bernese Oberland—trains through Interlaken, then a short hop into the village on foot or bus.
+              Find us in the heart of the Bernese Oberland, accessible via trains through Interlaken.
             </p>
           </div>
         </motion.div>
@@ -87,7 +87,8 @@ export default function LocationPage() {
                   <h3 className="text-lg font-semibold text-white">Parking</h3>
                 </div>
                 <p className="text-gray-300 ml-8">
-                  Street, lot, and hotel spots around the village—watch local signs for hours and fees.
+                  There are street, lot, and hotel parking spots available around the village. Please watch local signs
+                  for hours and fees.
                 </p>
               </div>
               <div>
@@ -96,7 +97,8 @@ export default function LocationPage() {
                   <h3 className="text-lg font-semibold text-white">Public Transport</h3>
                 </div>
                 <p className="text-gray-300 ml-8">
-                  SBB to Interlaken Ost, then the Berner Oberland Bahn up to Grindelwald station.
+                  Take the SBB to Interlaken Ost, then the Berner Oberland Bahn up to Grindelwald station. We are a short
+                  walk from the station.
                 </p>
               </div>
             </div>
