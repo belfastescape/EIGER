@@ -15,12 +15,4 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     site: '@eigerescaperooms',
   },
-  robots: {
-    index: false,
-    follow: false,
-    googleBot: {
-      index: false,
-      follow: false,
-    },
-  },
 } 

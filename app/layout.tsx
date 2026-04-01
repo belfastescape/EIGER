@@ -1,6 +1,7 @@
 import type React from "react"
 import "./globals.css"
 import type { Metadata } from "next"
+import { GoogleAnalytics } from "@next/third-parties/google"
 import { ThemeProvider } from "@/components/theme-provider"
 import { JsonLd } from '@/components/JsonLd'
 import MainLayoutWrapper from '@/components/layout/main-layout-wrapper'
@@ -38,14 +39,6 @@ export const metadata: Metadata = {
     apple: [
       { url: '/apple-touch-icon.png', sizes: '180x180', type: 'image/png' },
     ],
-  },
-  robots: {
-    index: false,
-    follow: false,
-    googleBot: {
-      index: false,
-      follow: false,
-    },
   },
 }
 
@@ -140,6 +133,7 @@ export default function RootLayout({
           <MainLayoutWrapper>{children}</MainLayoutWrapper>
           <StickyBookingCta />
         </ThemeProvider>
+        <GoogleAnalytics gaId="G-MTR7HY9NS8" />
       </body>
     </html>
   )

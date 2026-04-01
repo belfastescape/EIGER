@@ -37,11 +37,11 @@ export const metadata: Metadata = {
     images: ["https://www.eigerescaperooms.com/images/eiger-hero.png"],
   },
   robots: {
-    index: false,
-    follow: false,
+    index: true,
+    follow: true,
     googleBot: {
-      index: false,
-      follow: false,
+      index: true,
+      follow: true,
       "max-video-preview": -1,
       "max-image-preview": "large",
       "max-snippet": -1,
