@@ -39,7 +39,7 @@ export const teamBuildingSchema = {
         "itemOffered": {
           "@type": "Service",
           "name": "The Eiger Signal",
-          "description": "Navigate through political intrigue and government secrets in this Eiger-themed escape room adventure. 2-8 players."
+          "description": "Abandoned mountain rescue hut high on the Eiger transmitting again—decode the signal and uncover what lies beneath. 2–8 players."
         }
       },
       {
@@ -47,7 +47,7 @@ export const teamBuildingSchema = {
         "itemOffered": {
           "@type": "Service",
           "name": "The Forgotten Bunker",
-          "description": "Plan the perfect heist to steal a priceless diamond in this multi-room escape challenge. 2-7 players."
+          "description": "A sealed WWII bunker deep in the Eiger, buried under ice—systems reactivated, ciphers and a final order never carried out. 2–6 players."
         }
       },
       {
@@ -55,7 +55,7 @@ export const teamBuildingSchema = {
         "itemOffered": {
           "@type": "Service",
           "name": "The Ice Chamber",
-          "description": "Embark on a magical journey to find the legendary wand in this enchanting adventure. 2-6 players."
+          "description": "A hidden chamber deep inside the Eiger, preserved in perfect ice—symbols, crystalline light, and mechanisms that respond to your choices. 2–7 players."
         }
       }
     ]

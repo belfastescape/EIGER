@@ -15,11 +15,11 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   title: "The Eiger Signal | Mountain Mystery Escape Room | Eiger Escape Rooms",
   description:
-    "An abandoned mountain rescue hut on the Eiger is transmitting again. Decode the signal and uncover what lies beneath the mountain before time runs out. 2–8 players, 60 minutes.",
+    "Abandoned rescue hut high on the Eiger, transmitting again—strange signal, something beneath the mountain. Decode it before the hour runs out. 2–8 players, 60 minutes.",
   openGraph: {
     title: "The Eiger Signal | Mountain Mystery Escape Room | Eiger Escape Rooms",
     description:
-      "An abandoned mountain rescue hut on the Eiger is transmitting again. Decode the signal and uncover what lies beneath the mountain before time runs out. 2–8 players, 60 minutes.",
+      "Abandoned rescue hut high on the Eiger, transmitting again—strange signal, something beneath the mountain. Decode it before the hour runs out. 2–8 players, 60 minutes.",
     url: "https://www.eigerescaperooms.com/escape-rooms/the-eiger-signal",
     siteName: "Eiger Escape Rooms",
     images: [
@@ -57,7 +57,7 @@ const eigerSignalSchema = {
   "@context": "https://schema.org",
   "@type": "Product",
   "name": "The Eiger Signal - Mountain Mystery Escape Room",
-  "description": "An abandoned mountain rescue hut high on the Eiger has begun transmitting again after decades of silence. Decode the transmission and uncover the truth in this immersive 60-minute challenge for 2–8 players.",
+  "description": "Mountain rescue hut high on the Eiger transmitting again—decode the transmission, uncover what lies beneath, before the signal completes. 2–8 players, 60 minutes.",
   "image": "https://www.eigerescaperooms.com/images/mountain.png",
   "url": "https://www.eigerescaperooms.com/escape-rooms/the-eiger-signal",
   "brand": {

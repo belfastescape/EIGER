@@ -19,8 +19,11 @@ export function DescriptionSection() {
                 </p>
                 <p className="mt-4 text-gray-300 leading-relaxed text-base md:text-lg">
                   As you work through military ciphers and restore the bunker&apos;s control systems, a final set of
-                  orders emerges—one that was never carried out. The countdown has already begun. You must decipher the
-                  truth and shut it down before the bunker completes its last mission.
+                  orders emerges—one that was never carried out.
+                </p>
+                <p className="mt-4 text-gray-300 leading-relaxed text-base md:text-lg">
+                  The countdown has already begun. You must decipher the truth and shut it down before the bunker
+                  completes its last mission.
                 </p>
               </CardContent>
             </Card>

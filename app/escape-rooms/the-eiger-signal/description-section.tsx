@@ -19,8 +19,11 @@ export function DescriptionSection() {
               </p>
               <p className="mt-4 text-gray-300 leading-relaxed text-base md:text-lg">
                 As you restore power and decode the transmission, it becomes clear this is no ordinary distress call.
-                Something was discovered beneath the mountain… and it may still be there. You have one hour to uncover
-                the truth before the signal completes—and whatever it&apos;s calling finally arrives.
+                Something was discovered beneath the mountain… and it may still be there.
+              </p>
+              <p className="mt-4 text-gray-300 leading-relaxed text-base md:text-lg">
+                You have one hour to uncover the truth before the signal completes—and whatever it&apos;s calling
+                finally arrives.
               </p>
             </CardContent>
           </Card>

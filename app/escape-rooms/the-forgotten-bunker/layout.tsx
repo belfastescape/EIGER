@@ -15,11 +15,11 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   title: "The Forgotten Bunker | WWII Cipher Escape Room | Eiger Escape Rooms",
   description:
-    "A sealed WWII bunker deep in the Eiger has reactivated. Work through military ciphers and classified documents before the last mission completes. 2–6 players, 60 minutes.",
+    "Hidden deep in the Eiger: a sealed WWII bunker under ice—systems reactivated, maps and ciphers in play. Shut it down before the last mission completes. 2–6 players, 60 minutes.",
   openGraph: {
     title: "The Forgotten Bunker | Eiger Escape Rooms",
     description:
-      "A sealed WWII bunker deep in the Eiger has reactivated. Work through military ciphers and classified documents before the last mission completes. 2–6 players, 60 minutes.",
+      "Hidden deep in the Eiger: a sealed WWII bunker under ice—systems reactivated, maps and ciphers in play. Shut it down before the last mission completes. 2–6 players, 60 minutes.",
     url: "https://www.eigerescaperooms.com/escape-rooms/the-forgotten-bunker",
     siteName: "Eiger Escape Rooms",
     images: [
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "The Forgotten Bunker | Eiger Escape Rooms",
     description:
-      "A sealed WWII bunker deep in the Eiger has reactivated. Work through military ciphers and classified documents before the last mission completes.",
+      "Hidden deep in the Eiger: a sealed WWII bunker under ice—systems reactivated. Military ciphers and a final order never carried out.",
     images: ["https://www.eigerescaperooms.com/images/bunker.png"],
   },
   robots: {
@@ -57,7 +57,7 @@ const forgottenBunkerSchema = {
   "@context": "https://schema.org",
   "@type": "Product",
   "name": "The Forgotten Bunker - WWII Cipher Escape Room",
-  "description": "Hidden deep within the Eiger lies a sealed WWII bunker. Decipher classified documents and shut down the bunker before its last mission completes. 2–6 players, 60 minutes.",
+  "description": "Sealed WWII bunker deep in the Eiger, buried under ice—reactivated. Decipher ciphers and shut it down before the last mission completes. 2–6 players, 60 minutes.",
   "image": "https://www.eigerescaperooms.com/images/bunker.png",
   "url": "https://www.eigerescaperooms.com/escape-rooms/the-forgotten-bunker",
   "brand": {

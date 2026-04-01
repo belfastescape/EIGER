@@ -22,6 +22,10 @@ export function HeroSection() {
             <span className="text-amber-400">Bunker</span>
           </h1>
           <p className="mt-4 text-lg text-gray-400 font-mono">WWII Cipher Mission &mdash; Ages 10+</p>
+          <p className="mt-6 text-base md:text-lg text-gray-300 max-w-2xl leading-relaxed">
+            Hidden deep within the Eiger lies a sealed WWII bunker, buried beneath ice—recently uncovered, its systems
+            mysteriously reactivated. Decipher the truth and shut it down before the bunker completes its last mission.
+          </p>
         </div>
       </div>
     </section>

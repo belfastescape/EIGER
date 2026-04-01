@@ -54,7 +54,7 @@ function ShareCard({ delay = 0 }: { delay?: number }) {
       try {
         await navigator.share({
           title: "The Ice Chamber – Eiger Escape Rooms",
-          text: "Check out The Ice Chamber at Eiger Escape Rooms — a deep-Eiger ice mystery for 2–7 players!",
+          text: "Check out The Ice Chamber at Eiger Escape Rooms — hidden in perfect ice deep in the Eiger, 2–7 players!",
           url: window.location.href,
         })
       } catch {

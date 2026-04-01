@@ -597,8 +597,8 @@ export default function TeamBuildingEigerPage() {
                     </span>
                   </div>
                   <p className="text-gray-300 mb-4">
-                    Decode a mysterious transmission from an abandoned mountain rescue hut and uncover what lies beneath
-                    the Eiger. The Eiger Signal tests strategic thinking and careful attention to detail.
+                    A rescue hut high on the Eiger is transmitting again—decode the signal and uncover what lies beneath
+                    before the hour runs out. Ideal for teams that need strategic planning and attention to detail.
                   </p>
                   <h4 className="text-lg font-bold mb-2 text-white">Team Skills Tested:</h4>
                   <ul className="space-y-2 mb-6">
@@ -651,9 +651,8 @@ export default function TeamBuildingEigerPage() {
                     </span>
                   </div>
                   <p className="text-gray-300 mb-4">
-                    Work through military ciphers and classified documents in a sealed WWII bunker that has reactivated
-                    deep in the mountain. The Forgotten Bunker is perfect for teams that need to coordinate across puzzles
-                    and tight spaces.
+                    A sealed WWII bunker deep in the Eiger, buried under ice—systems reactivated, ciphers and classified
+                    orders in play. Ideal for teams coordinating across puzzles and tight spaces.
                   </p>
                   <h4 className="text-lg font-bold mb-2 text-white">Team Skills Tested:</h4>
                   <ul className="space-y-2 mb-6">
@@ -706,8 +705,9 @@ export default function TeamBuildingEigerPage() {
                     </span>
                   </div>
                   <p className="text-gray-300 mb-4">
-                    Explore a frozen chamber where mechanisms respond to your choices. With layered, nonlinear puzzles,
-                    The Ice Chamber is ideal for larger experienced teams that need to coordinate across shifting spaces.
+                    A hidden chamber deep inside the Eiger, preserved in perfect ice—symbols on the walls, crystalline
+                    light, and mechanisms that respond to your choices. Ideal for larger experienced teams coordinating
+                    across shifting spaces.
                   </p>
                   <h4 className="text-lg font-bold mb-2 text-white">Team Skills Tested:</h4>
                   <ul className="space-y-2 mb-6">

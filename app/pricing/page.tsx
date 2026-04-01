@@ -243,7 +243,7 @@ export default function PricingPage() {
                       <div className="absolute inset-0 bg-gradient-to-t from-[#111] to-transparent"></div>
                       <div className="absolute bottom-4 left-4 right-4">
                         <h3 className="text-xl font-bold text-white">The Eiger Signal</h3>
-                        <p className="text-sm text-gray-300">Hut radios &amp; a signal under the peak</p>
+                        <p className="text-sm text-gray-300">Rescue hut live again—signal from beneath the peak</p>
                       </div>
                     </div>
                     <CardContent className="pt-6">
@@ -284,7 +284,7 @@ export default function PricingPage() {
                       <div className="absolute inset-0 bg-gradient-to-t from-[#111] to-transparent"></div>
                       <div className="absolute bottom-4 left-4 right-4">
                         <h3 className="text-xl font-bold text-white">The Forgotten Bunker</h3>
-                        <p className="text-sm text-gray-300">Wartime bunkers &amp; sealed orders</p>
+                        <p className="text-sm text-gray-300">WWII bunker under ice—ciphers &amp; final orders</p>
                       </div>
                     </div>
                     <CardContent className="pt-6">

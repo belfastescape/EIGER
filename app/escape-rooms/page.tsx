@@ -117,7 +117,7 @@ export default function EscapeRoomsPage() {
       id: "the-eiger-signal",
       name: "The Eiger Signal",
       description:
-        "A high-altitude rescue post is broadcasting again after years of quiet—static on the speakers, lamps twitching, the journal stopping mid-entry. The cadence is not a textbook SOS. Reroute power, untangle the pattern, and learn what was opened beneath the ridge before the carrier fades.",
+        "An abandoned rescue hut high on the Eiger is transmitting again—radios humming, a signal no one can explain. Restore power, decode the transmission, and uncover what lies beneath the mountain before the signal completes—and whatever it is calling arrives.",
       image: "/images/mountain.png",
 
       minPeople: 2,
@@ -129,7 +129,7 @@ export default function EscapeRoomsPage() {
       id: "the-forgotten-bunker",
       name: "The Forgotten Bunker",
       description:
-        "A sealed WWII shelter under the ice has powered back on—intercept traffic, redacted maps, and a final order that never went out. Work the ciphers, bring panels online, and halt the protocol before the bunker finishes what it started.",
+        "A sealed WWII bunker deep in the Eiger, buried under ice—recently uncovered, systems reactivated. Maps, ciphers, and a final order never carried out: decipher the truth and shut it down before the bunker completes its last mission.",
       image: "/images/bunker.png",
 
       minPeople: 2,
@@ -141,7 +141,7 @@ export default function EscapeRoomsPage() {
       id: "the-ice-chamber",
       name: "The Ice Chamber",
       description:
-        "A frozen hall inside the massif—glyphs on the walls, crystals catching light like warnings. Nothing in the archive explains the architect. The space reacts to you: paths fork, devices follow your pace. Finish the sequence before the vault resets—or stay inside what it was meant to hold.",
+        "A hidden chamber deep inside the Eiger, preserved in perfect ice—symbols on the walls, crystalline light, and mechanisms that respond to your choices. Solve its secrets before it seals again—or risk becoming part of what it was built to contain.",
       image: "/images/chamber.png",
 
       minPeople: 2,

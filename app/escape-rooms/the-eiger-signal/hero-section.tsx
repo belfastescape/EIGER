@@ -22,6 +22,11 @@ export function HeroSection() {
             <span className="text-cyan-400">Signal</span>
           </h1>
           <p className="mt-4 text-lg text-gray-400 font-mono">Mountain Rescue Mystery &mdash; Ages 12+</p>
+          <p className="mt-6 text-base md:text-lg text-gray-300 max-w-2xl leading-relaxed">
+            A rescue hut high on the Eiger is transmitting again after decades of silence—strange patterns in the
+            signal, something beneath the mountain. One hour to uncover the truth before whatever it&apos;s calling
+            arrives.
+          </p>
         </div>
       </div>
     </section>

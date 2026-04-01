@@ -63,8 +63,8 @@ export default function IceChamberPage() {
               </span>
             </h1>
             <p className="text-xl md:text-2xl text-gray-300 max-w-3xl">
-              A hidden chamber deep inside the Eiger, preserved in perfect ice. Mechanisms respond to your presence—every
-              choice shapes what happens next. Solve its secrets before it seals again.
+              A hidden chamber has been discovered deep inside the Eiger, preserved in perfect ice. Strange symbols cover
+              the walls, and crystalline structures glow with an unnatural light. No records explain who built it—or why.
             </p>
           </motion.div>
 
@@ -122,9 +122,12 @@ export default function IceChamberPage() {
                     what happens next.
                   </p>
                   <p className="text-gray-300 mt-4">
+                    Solve the chamber&apos;s secrets before it seals itself again… or risk becoming part of what it was
+                    built to contain.
+                  </p>
+                  <p className="text-gray-300 mt-4">
                     This is our most advanced room — trickier than The Eiger Signal — and is best suited to players who
-                    have tackled an escape room before. Solve the chamber&apos;s secrets before it seals itself again… or
-                    risk becoming part of what it was built to contain.
+                    have tackled an escape room before.
                   </p>
                 </div>
               </motion.div>
@@ -406,7 +409,8 @@ export default function IceChamberPage() {
                           The Eiger Signal
                         </h4>
                         <p className="text-gray-400 text-sm mt-1">
-                          Decode a mysterious transmission from an abandoned mountain rescue hut high on the Eiger.
+                          Hut transmitting again—strange signal, something beneath the mountain. Decode it before the hour
+                          runs out.
                         </p>
                         <div className="flex items-center justify-end mt-2">
                           <ArrowRight className="w-4 h-4 text-cyan-400 opacity-0 group-hover:opacity-100 transition-opacity" />
@@ -421,7 +425,8 @@ export default function IceChamberPage() {
                           The Forgotten Bunker
                         </h4>
                         <p className="text-gray-400 text-sm mt-1">
-                          Work through WWII ciphers and classified documents in a sealed bunker deep in the Eiger.
+                          Sealed under ice, systems reactivated—ciphers, orders never carried out, last mission counting
+                          down.
                         </p>
                         <div className="flex items-center justify-end mt-2">
                           <ArrowRight className="w-4 h-4 text-cyan-400 opacity-0 group-hover:opacity-100 transition-opacity" />

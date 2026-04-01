@@ -126,10 +126,9 @@ export default function Home() {
                   </span>
                   <h3 className="text-4xl md:text-6xl font-bold text-white mb-4">The Ice Chamber</h3>
                   <p className="text-gray-200 text-lg md:text-xl mb-8 max-w-xl">
-                    A sealed vault has surfaced deep in the rock—walls carved with symbols, ice catching light the wrong
-                    way. No file explains who shaped it or why it wakes up when you walk. The space reacts: routes change,
-                    mechanisms follow your choices. It is less a room than a machine waiting for input. Finish the
-                    sequence before the cold closes in—or stay trapped in what it was meant to guard.
+                    A hidden chamber deep inside the Eiger, preserved in perfect ice—symbols on the walls, crystalline
+                    light, and mechanisms that respond to your choices. Solve its secrets before it seals again—or risk
+                    becoming part of what it was built to contain.
                   </p>
                   <div className="flex flex-wrap gap-4">
                     <Link href="/booking">
@@ -169,10 +168,9 @@ export default function Home() {
                   </span>
                   <h3 className="text-4xl md:text-6xl font-bold text-white mb-4">The Forgotten Bunker</h3>
                   <p className="text-gray-200 text-lg md:text-xl mb-8 max-w-xl">
-                    A long-buried wartime bunker has blinked back on beneath the ice—maps, intercepts, and stamped
-                    orders that were never meant to be read. Circuits hum again; the last directive was never executed.
-                    Crack the ciphers, bring the consoles online, and stop the final protocol before the bunker finishes
-                    what it started decades ago.
+                    A sealed WWII bunker deep in the Eiger, buried under ice—recently uncovered, systems reactivated.
+                    Maps, ciphers, and a final order never carried out: decipher the truth and shut it down before the
+                    bunker completes its last mission.
                   </p>
                   <div className="flex flex-wrap gap-4">
                     <Link href="/booking">
@@ -212,10 +210,9 @@ export default function Home() {
                   </span>
                   <h3 className="text-4xl md:text-6xl font-bold text-white mb-4">The Eiger Signal</h3>
                   <p className="text-gray-200 text-lg md:text-xl mb-8 max-w-xl">
-                    High on the ridge, a derelict rescue hut is live again—radios humming, lamps strobing, the logbook
-                    cut off mid-sentence. The pulse is not a textbook SOS. Reroute power, read the pattern, and learn what
-                    was dug up under the peak—because the broadcast may still be summoning it. Sixty minutes to finish
-                    before the carrier drops and silence returns.
+                    An abandoned mountain rescue hut high on the Eiger is transmitting again—radios humming, a strange
+                    signal pulsing through the gear. Restore power, decode the transmission, and uncover what lies
+                    beneath the mountain before the signal completes—and whatever it is calling arrives.
                   </p>
                   <div className="flex flex-wrap gap-4">
                     <Link href="/booking">

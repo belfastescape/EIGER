@@ -15,11 +15,11 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   title: "The Ice Chamber | Deep-Eiger Escape Adventure | Eiger Escape Rooms",
   description:
-    "A hidden chamber inside the Eiger, preserved in ice. Symbols, crystalline structures, and shifting mechanisms respond to your every choice. 2–7 players, 60 minutes.",
+    "A hidden chamber deep inside the Eiger, preserved in perfect ice—symbols, crystalline light, and mechanisms that respond to your choices. 2–7 players, 60 minutes.",
   openGraph: {
     title: "The Ice Chamber | Deep-Eiger Escape Adventure | Eiger Escape Rooms",
     description:
-      "A hidden chamber inside the Eiger, preserved in ice. Symbols, crystalline structures, and shifting mechanisms respond to your every choice. 2–7 players, 60 minutes.",
+      "A hidden chamber deep inside the Eiger, preserved in perfect ice—symbols, crystalline light, and mechanisms that respond to your choices. 2–7 players, 60 minutes.",
     url: "https://www.eigerescaperooms.com/escape-rooms/the-ice-chamber",
     siteName: "Eiger Escape Rooms",
     images: [
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "The Ice Chamber | Deep-Eiger Escape Adventure | Eiger Escape Rooms",
     description:
-      "A hidden chamber inside the Eiger, preserved in ice. Symbols, crystalline structures, and shifting mechanisms respond to your every choice.",
+      "A hidden chamber deep inside the Eiger, preserved in perfect ice—symbols, crystalline light, and mechanisms that respond to your choices.",
     images: ["https://www.eigerescaperooms.com/images/chamber.png"],
   },
   robots: {
@@ -57,7 +57,7 @@ const iceChamberSchema = {
   "@context": "https://schema.org",
   "@type": "Product",
   "name": "The Ice Chamber - Deep-Eiger Escape Adventure",
-  "description": "Explore a hidden chamber preserved in ice deep inside the Eiger. Solve its secrets before it seals again — 2–7 players, 60 minutes.",
+  "description": "A hidden chamber deep inside the Eiger, preserved in perfect ice—symbols, crystalline light, and shifting mechanisms. Solve its secrets before it seals again. 2–7 players, 60 minutes.",
   "image": "https://www.eigerescaperooms.com/images/chamber.png",
   "url": "https://www.eigerescaperooms.com/escape-rooms/the-ice-chamber",
   "brand": {

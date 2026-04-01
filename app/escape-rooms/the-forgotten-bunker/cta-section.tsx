@@ -54,7 +54,7 @@ function ShareCard({ delay = 0 }: { delay?: number }) {
       try {
         await navigator.share({
           title: "The Forgotten Bunker – Eiger Escape Rooms",
-          text: "Check out The Forgotten Bunker at Eiger Escape Rooms — a WWII cipher mission for 2–6 players!",
+          text: "Check out The Forgotten Bunker at Eiger Escape Rooms — sealed WWII bunker under the Eiger, 2–6 players!",
           url: window.location.href,
         })
       } catch {

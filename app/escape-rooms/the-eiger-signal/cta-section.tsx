@@ -54,7 +54,7 @@ function ShareCard({ delay = 0 }: { delay?: number }) {
       try {
         await navigator.share({
           title: "The Eiger Signal – Eiger Escape Rooms",
-          text: "Check out The Eiger Signal at Eiger Escape Rooms — a mountain rescue mystery for 2–8 players!",
+          text: "Check out The Eiger Signal at Eiger Escape Rooms — abandoned rescue hut on the Eiger, 2–8 players!",
           url: window.location.href,
         })
       } catch {
