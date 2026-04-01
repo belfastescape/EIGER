@@ -55,15 +55,14 @@ export default function PricingPage() {
             variants={fadeIn}
           >
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 bg-gradient-to-r from-cyan-400 to-green-400 bg-clip-text text-transparent">
-              Escape Room Pricing & Packages
+              Rates & bundles
               <br />
               <span className="text-3xl md:text-4xl lg:text-5xl mt-[30px] inline-block">
-                From $33 per Adult. from $25 per child.
+                Adults from $33 · kids from $25
               </span>
             </h1>
             <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto">
-              Affordable adventure awaits! Explore our pricing options and special discounts for your next escape room
-              experience.
+              Straight totals for each crew size, plus seasonal cuts when they are live—no surprise fees at the door.
             </p>
           </motion.div>
         </div>
@@ -82,17 +81,17 @@ export default function PricingPage() {
             {/* Section Header */}
             <div className="text-center mb-10">
               <h2 className="text-3xl md:text-4xl font-bold mb-3 bg-gradient-to-r from-cyan-400 to-green-400 bg-clip-text text-transparent">
-                Simple, Transparent Pricing
+                Per-person table
               </h2>
               <p className="text-gray-300 text-lg">
-                Choose the best option for your group size
+                Pick the row that matches how many seats you need
               </p>
             </div>
 
             {/* Main Pricing Table */}
             <div className="bg-[#111] rounded-xl shadow-2xl overflow-hidden mb-8 border border-[#222]">
               <div className="bg-gradient-to-r from-cyan-600 to-green-600 text-white px-6 py-4">
-                <h3 className="text-xl font-bold">Standard Pricing</h3>
+                <h3 className="text-xl font-bold">Standard rates</h3>
               </div>
               <div className="divide-y divide-[#222]">
                 {/* 2 Players */}
@@ -225,7 +224,7 @@ export default function PricingPage() {
           >
             <div className="w-full">
               <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-8">
-                <h2 className="text-3xl font-bold text-white">Choose Your Experience</h2>
+                <h2 className="text-3xl font-bold text-white">Match a room</h2>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                   {/* The Eiger Signal */}
@@ -244,7 +243,7 @@ export default function PricingPage() {
                       <div className="absolute inset-0 bg-gradient-to-t from-[#111] to-transparent"></div>
                       <div className="absolute bottom-4 left-4 right-4">
                         <h3 className="text-xl font-bold text-white">The Eiger Signal</h3>
-                        <p className="text-sm text-gray-300">Mountain rescue hut mystery on the Eiger</p>
+                        <p className="text-sm text-gray-300">Hut radios &amp; a signal under the peak</p>
                       </div>
                     </div>
                     <CardContent className="pt-6">
@@ -273,7 +272,7 @@ export default function PricingPage() {
                     </CardContent>
                     <CardFooter>
                       <Link href="/booking" className="text-cyan-400 hover:text-cyan-300 transition-colors">
-                        Book Now
+                        Reserve
                       </Link>
                     </CardFooter>
                   </Card>
@@ -285,7 +284,7 @@ export default function PricingPage() {
                       <div className="absolute inset-0 bg-gradient-to-t from-[#111] to-transparent"></div>
                       <div className="absolute bottom-4 left-4 right-4">
                         <h3 className="text-xl font-bold text-white">The Forgotten Bunker</h3>
-                        <p className="text-sm text-gray-300">WWII ciphers and classified secrets</p>
+                        <p className="text-sm text-gray-300">Wartime bunkers &amp; sealed orders</p>
                       </div>
                     </div>
                     <CardContent className="pt-6">
@@ -314,7 +313,7 @@ export default function PricingPage() {
                     </CardContent>
                     <CardFooter>
                       <Link href="/booking" className="text-cyan-400 hover:text-cyan-300 transition-colors">
-                        Book Now
+                        Reserve
                       </Link>
                     </CardFooter>
                   </Card>
@@ -363,7 +362,7 @@ export default function PricingPage() {
                     </CardContent>
                     <CardFooter>
                       <Link href="/booking" className="text-cyan-400 hover:text-cyan-300 transition-colors">
-                        Book Now
+                        Reserve
                       </Link>
                     </CardFooter>
                   </Card>
@@ -388,10 +387,9 @@ export default function PricingPage() {
            >
              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                <div className="p-8">
-                 <h2 className="text-3xl font-bold mb-4 text-white">Gift Vouchers</h2>
+                 <h2 className="text-3xl font-bold mb-4 text-white">Gift credit</h2>
                  <p className="text-gray-300 mb-6">
-                   Give the gift of adventure! Our gift vouchers make the perfect present for birthdays, holidays, or any
-                   special occasion.
+                   Send a balance someone can put toward any mission—birthdays, thank-yous, or a rainy-day backup plan.
                  </p>
                  <ul className="space-y-4 mb-6">
                    
@@ -400,8 +398,8 @@ export default function PricingPage() {
                        <span className="text-white font-bold text-sm">2</span>
                      </div>
                      <div>
-                       <h4 className="font-bold text-white">Value Vouchers</h4>
-                       <p className="text-gray-400">Choose any amount from $50  to be used toward any booking.</p>
+                       <h4 className="font-bold text-white">Flexible amounts</h4>
+                       <p className="text-gray-400">From $50 upward—redeem toward whichever room and date they pick.</p>
                      </div>
                    </li>
                    <li className="flex items-start">
@@ -409,14 +407,14 @@ export default function PricingPage() {
                        <span className="text-white font-bold text-sm">3</span>
                      </div>
                      <div>
-                       <h4 className="font-bold text-white">Digital or Physical</h4>
-                       <p className="text-gray-400">Choose between instant email delivery or a physical gift card.</p>
+                       <h4 className="font-bold text-white">Email or printed</h4>
+                       <p className="text-gray-400">Instant PDF to the inbox or a card to tuck in a pack.</p>
                      </div>
                    </li>
                  </ul>
                 <Link href="/booking">
                   <Button className="bg-gradient-to-r from-cyan-500 to-green-500 hover:from-cyan-600 hover:to-green-600 text-white">
-                    Purchase Gift Voucher
+                    Buy credit
                   </Button>
                 </Link>
                </div>
@@ -435,7 +433,7 @@ export default function PricingPage() {
              viewport={{ once: true, margin: "-100px" }}
              variants={fadeIn}
            >
-             <h2 className="text-3xl font-bold mb-8 text-white">Pricing FAQs</h2>
+             <h2 className="text-3xl font-bold mb-8 text-white">Billing Q&amp;A</h2>
              <div className="bg-[#111] rounded-xl border border-[#222] p-8">
                <Accordion type="single" collapsible className="w-full">
                  <AccordionItem value="item-1" className="border-b border-[#222]">
@@ -514,16 +512,15 @@ export default function PricingPage() {
            >
              <div className="p-8 md:p-12 text-center">
                <h2 className="text-3xl font-bold mb-6 bg-gradient-to-r from-cyan-400 to-green-400 bg-clip-text text-transparent">
-                 Ready to Book Your Adventure?
+                 Lock a time
                </h2>
                <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-                 Choose your room, gather your team, and put your problem-solving skills to the test. The clock is
-                 ticking!
+                 Pick the room, invite the crew, and see how far you get before the buzzer.
                </p>
                <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link href="/booking">
                   <Button className="bg-gradient-to-r from-cyan-500 to-green-500 hover:from-cyan-600 hover:to-green-600 text-white text-2xl py-8 px-16">
-                    BOOK HERE
+                    Reserve
                   </Button>
                 </Link>
                  <Link href="/contact">

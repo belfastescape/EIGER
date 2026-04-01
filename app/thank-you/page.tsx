@@ -23,22 +23,22 @@ export default function ThankYouPage() {
           <div className="w-20 h-20 bg-gradient-to-r from-cyan-500 to-green-500 rounded-full mx-auto flex items-center justify-center mb-6">
             <CheckCircle2 className="w-10 h-10 text-white" />
           </div>
-          <h1 className="text-4xl font-bold mb-4">Thanks For Booking With Us!</h1>
+          <h1 className="text-4xl font-bold mb-4">Reservation received</h1>
           <p className="text-xl text-gray-400 mb-8">
-            Thanks for booking with Eiger Escape Rooms. You should receive a booking confirmation email shortly. 
-            If you don't receive it within the next 15 minutes, please check your spam folder or contact us directly.
+            Thank you for choosing Eiger Escape Rooms. A confirmation should land in your inbox soon—if nothing appears
+            in about fifteen minutes, peek at spam or write to us.
           </p>
           <p className="text-lg text-gray-400 mb-8">
-            If you have any questions or need to modify your booking, you can:<br />
-            • Email us at info@eigerescaperooms.com<br />
-            • Visit our contact page
+            To change details or ask anything:<br />
+            • info@eigerescaperooms.com<br />
+            • <Link href="/contact" className="text-cyan-400 hover:text-cyan-300">Contact form</Link>
           </p>
           <Button
             className="bg-gradient-to-r from-cyan-500 to-green-500 hover:from-cyan-600 hover:to-green-600 text-white text-lg py-6 px-8"
             asChild
           >
             <Link href="/">
-              <ArrowLeft className="w-5 h-5 mr-2" /> Return to Homepage
+              <ArrowLeft className="w-5 h-5 mr-2" /> Back to home
             </Link>
           </Button>
         </motion.div>

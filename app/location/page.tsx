@@ -38,13 +38,13 @@ export default function LocationPage() {
           </div>
           <div className="p-8 text-center">
             <h1 className="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-cyan-400 to-green-400 bg-clip-text text-transparent">
-              Our Location
+              Find us
             </h1>
             <p className="text-xl text-gray-300 mb-4">
               3818 Grindelwald, Switzerland
             </p>
             <p className="text-gray-400 mb-8">
-              Find us in the village of Grindelwald in the Bernese Oberland, with regional rail links via Interlaken.
+              In the Bernese Oberland—trains through Interlaken, then a short hop into the village on foot or bus.
             </p>
           </div>
         </motion.div>
@@ -56,7 +56,7 @@ export default function LocationPage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.2 }}
           >
-            <h2 className="text-2xl font-bold mb-6 text-white">Contact Information</h2>
+            <h2 className="text-2xl font-bold mb-6 text-white">Reach us</h2>
             <div className="space-y-4">
               <div className="flex items-center">
                 <Mail className="w-5 h-5 text-cyan-400 mr-3" />
@@ -79,7 +79,7 @@ export default function LocationPage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.3 }}
           >
-            <h2 className="text-2xl font-bold mb-6 text-white">Getting Here</h2>
+            <h2 className="text-2xl font-bold mb-6 text-white">Travel</h2>
             <div className="space-y-6">
               <div>
                 <div className="flex items-center mb-2">
@@ -87,7 +87,7 @@ export default function LocationPage() {
                   <h3 className="text-lg font-semibold text-white">Parking</h3>
                 </div>
                 <p className="text-gray-300 ml-8">
-                  Public and hotel parking is available in and around Grindelwald; follow local signage.
+                  Street, lot, and hotel spots around the village—watch local signs for hours and fees.
                 </p>
               </div>
               <div>
@@ -96,7 +96,7 @@ export default function LocationPage() {
                   <h3 className="text-lg font-semibold text-white">Public Transport</h3>
                 </div>
                 <p className="text-gray-300 ml-8">
-                  Take Swiss Federal Railways (SBB) to Interlaken Ost, then the Berner Oberland Bahn to Grindelwald.
+                  SBB to Interlaken Ost, then the Berner Oberland Bahn up to Grindelwald station.
                 </p>
               </div>
             </div>
@@ -114,7 +114,7 @@ export default function LocationPage() {
             asChild
           >
             <Link href="/contact">
-              Book Your Escape Room <ArrowRight className="ml-2 w-5 h-5" />
+              Reserve a game <ArrowRight className="ml-2 w-5 h-5" />
             </Link>
           </Button>
         </motion.div>

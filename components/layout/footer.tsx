@@ -14,14 +14,12 @@ export function Footer() {
       <section className="py-12 bg-[#0c0c0c] border-t border-[#222]">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-2xl font-bold text-white mb-4">About Eiger Escape Rooms</h2>
+            <h2 className="text-2xl font-bold text-white mb-4">Who we are</h2>
             <p className="text-gray-400 leading-relaxed">
-              Eiger Escape Rooms was established in 2021 with a vision to provide exhilarating escape room
-              adventures in the heart of Eiger City Centre. Our mission is to create unforgettable experiences that
-              challenge the mind and foster teamwork. We pride ourselves on our core values: Customer Satisfaction,
-              Teamwork, and Innovation. These principles guide us in delivering exceptional entertainment for friends,
-              families, and corporate groups alike. Join us for an adventure that promises excitement and collaboration,
-              making every visit a memorable one.
+              Since 2021 we have welcomed guests to Grindelwald for hour-long, puzzle-driven missions tied to the
+              mountain. We focus on clear storytelling, fair challenge, and moments where your group has to really
+              listen to each other—whether you are on holiday, celebrating a birthday, or here on business. Our doors
+              open to friends, families, and crews who want something more memorable than another slide deck.
             </p>
           </div>
         </div>
@@ -40,8 +38,8 @@ export function Footer() {
                 style={{ width: '100px', height: '40px' }}
               />
               <p className={`${footerMuted} mb-4 max-w-md`}>
-                Eiger's premier escape room experience, offering immersive adventures for friends, families, and
-                corporate teams. One of the best fun indoor activities in Eiger.
+                Grindelwald&apos;s home for timed, hands-on escape games—built for visitors after the lifts, locals on a
+                rainy afternoon, and teams who want a shared win.
               </p>
               <div className="flex space-x-4">
                 <Link
@@ -57,7 +55,7 @@ export function Footer() {
             </div>
 
             <div>
-              <h3 className="text-lg font-bold mb-4 text-white">Quick Links</h3>
+              <h3 className="text-lg font-bold mb-4 text-white">Explore</h3>
               <ul className="space-y-2">
                 <li>
                   <Link href="/" className={footerLink}>
@@ -66,7 +64,7 @@ export function Footer() {
                 </li>
                 <li>
                   <Link href="/escape-rooms" className={footerLink}>
-                    Our Escape Rooms
+                    All rooms
                   </Link>
                 </li>
                 
@@ -126,7 +124,7 @@ export function Footer() {
             </div>
 
             <div>
-              <h3 className="text-lg font-bold mb-4 text-white">Resources</h3>
+              <h3 className="text-lg font-bold mb-4 text-white">Help & offers</h3>
               <ul className="space-y-2">
                 <li>
                   <Link href="/faq" className={footerLink}>
@@ -135,12 +133,12 @@ export function Footer() {
                 </li>
                 <li>
                   <Link href="/deals" className={footerLink}>
-                    Special Deals
+                    Deals & promos
                   </Link>
                 </li>
                 <li>
                   <Link href="/location" className={footerLink}>
-                    Location & Directions
+                    Find us
                   </Link>
                 </li>
                 <li>
@@ -152,7 +150,7 @@ export function Footer() {
             </div>
 
             <div>
-              <h3 className="text-lg font-bold mb-4 text-white">Contact Information</h3>
+              <h3 className="text-lg font-bold mb-4 text-white">Reach us</h3>
               <ul className="space-y-3">
                 <li className="flex items-start">
                   <MapPin className="w-5 h-5 text-cyan-400 mr-2 mt-0.5" />

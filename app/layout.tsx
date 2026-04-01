@@ -9,24 +9,24 @@ import { inter } from './fonts'
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.eigerescaperooms.com'),
-  title: "Escape Room Eiger | Fun Group Activities in Eiger",
-  description: "Experience Eiger's premier escape rooms. Challenge your mind, test your teamwork, and race against the clock in our immersive escape room adventures. Perfect for groups, families, and team building.",
+  title: "Eiger Escape Rooms | Grindelwald live adventures for groups",
+  description: "Three story-led escape games in Grindelwald: work together, beat the clock, and explore The Eiger Signal, The Forgotten Bunker, and The Ice Chamber—ideal for friends, families, and company offsites.",
   openGraph: {
-    title: "Escape Room Eiger | Fun Group Activities in Eiger",
-    description: "Experience Eiger's premier escape rooms. Challenge your mind, test your teamwork, and race against the clock in our immersive escape room adventures. Perfect for groups, families, and team building.",
+    title: "Eiger Escape Rooms | Grindelwald live adventures for groups",
+    description: "Three story-led escape games in Grindelwald: timed missions, hands-on puzzles, and rooms built around the mountain—great for visitors, locals, and teams.",
     images: [
       {
         url: '/images/eiger-hero.png',
         width: 1920,
         height: 1080,
-        alt: 'Escape Room Eiger - Enter a new world',
+        alt: 'Eiger Escape Rooms — step into a mountain-set mission',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: "Eiger Escape Rooms | Best Indoor Activities in Eiger",
-    description: "Experience Eiger's premier escape rooms. Challenge your mind, test your teamwork, and race against the clock in our immersive escape room adventures.",
+    title: "Eiger Escape Rooms | Indoor missions in the Bernese Oberland",
+    description: "Timed escape adventures in Grindelwald: collaborate under pressure in three themed rooms at the foot of the Eiger.",
     images: ['/images/eiger-hero.png'],
   },
   icons: {
@@ -62,7 +62,7 @@ export default function RootLayout({
     "url": "https://www.eigerescaperooms.com",
     "logo": "https://www.eigerescaperooms.com/images/eiger-hero.png",
     "image": "https://www.eigerescaperooms.com/images/eiger-hero.png",
-    "description": "Eiger's premier escape room experience. Perfect for team building, birthday parties, and group activities. Three immersive themed rooms at 3818 Grindelwald, Switzerland.",
+    "description": "Hands-on escape games at 3818 Grindelwald—three themed rooms for parties, schools, and team days beneath the Eiger.",
     "priceRange": "$$",
     "currenciesAccepted": "NZD",
     "paymentAccepted": "Cash, Credit Card, Debit Card",

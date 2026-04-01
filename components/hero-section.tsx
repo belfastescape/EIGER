@@ -24,7 +24,7 @@ export function HeroSection({ title, subtitle, buttonText, buttonAction, imageSr
         <div className="max-w-3xl mx-auto text-center">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-white">{title}</h1>
           <p className="text-xl md:text-2xl text-gray-300 mb-8">{subtitle}</p>
-          {buttonText === "Book Your Team Event" ? (
+          {buttonText === "Book Your Team Event" || buttonText === "Plan Your Team Event" ? (
             <Link href="/contact">
               <Button className="bg-cyan-500 hover:bg-cyan-600 text-white text-lg py-6 px-8">
                 {buttonText}

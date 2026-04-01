@@ -30,9 +30,9 @@ export default function BookingPage() {
 
           {/* Additional Information */}
           <div className="mt-12 text-center">
-            <h2 className="text-2xl font-bold text-white mb-4">Need Help?</h2>
+            <h2 className="text-2xl font-bold text-white mb-4">Questions?</h2>
             <p className="text-gray-300 mb-6">
-              If you have any questions about booking or need assistance, please don&apos;t hesitate to contact us.
+              Stuck on dates, room choice, or payment—email us and we will walk you through it.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a

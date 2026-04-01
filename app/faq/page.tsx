@@ -239,10 +239,11 @@ export default function FAQPage() {
             variants={fadeIn}
           >
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 bg-gradient-to-r from-cyan-400 to-green-400 bg-clip-text text-transparent">
-              Frequently Asked Questions
+              Help centre
             </h1>
             <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto">
-              Practical answers about our Grindelwald venue, The Eiger Signal, The Forgotten Bunker, The Ice Chamber, and how we run games here.
+              Booking rules, room fit, and what to expect inside The Eiger Signal, The Forgotten Bunker, and The Ice
+              Chamber at our Grindelwald site.
             </p>
           </motion.div>
         </div>
@@ -261,7 +262,7 @@ export default function FAQPage() {
               <Search className="absolute left-4 top-3.5 h-5 w-5 text-gray-400" />
               <Input
                 type="text"
-                placeholder="Search for answers..."
+                placeholder="Type a keyword…"
                 value={searchQuery}
                 onChange={handleSearchChange}
                 className="pl-12 pr-12 py-6 bg-[#111] border-[#333] focus:border-cyan-500 text-white text-lg rounded-full"
@@ -496,7 +497,7 @@ export default function FAQPage() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button className="bg-gradient-to-r from-cyan-500 to-green-500 hover:from-cyan-600 hover:to-green-600 text-white text-lg py-6 px-8">
-                  Book Now
+                  Reserve
                 </Button>
                 <Link href="/contact">
                   <Button

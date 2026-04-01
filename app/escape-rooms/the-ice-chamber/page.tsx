@@ -89,7 +89,7 @@ export default function IceChamberPage() {
               href="/booking" 
               className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-cyan-500 to-green-500 text-white font-bold rounded-xl hover:from-cyan-600 hover:to-green-600 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
             >
-              Book Now
+              Reserve
               <ArrowRight className="w-5 h-5 ml-2" />
             </Link>
           </motion.div>
@@ -383,7 +383,7 @@ export default function IceChamberPage() {
                       chamber before it seals.
                     </p>
                     <Link href="/booking" className="text-cyan-400 hover:text-cyan-300 transition-colors">
-                      Book Now
+                      Reserve
                     </Link>
                   </div>
                 </motion.div>
@@ -550,7 +550,7 @@ export default function IceChamberPage() {
                   href="/booking" 
                   className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-cyan-500 to-green-500 text-white font-bold rounded-xl hover:from-cyan-600 hover:to-green-600 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
                 >
-                  Book Now
+                  Reserve
                   <ArrowRight className="w-5 h-5 ml-2" />
                 </Link>
               </div>

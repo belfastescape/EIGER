@@ -58,17 +58,18 @@ export default function GroupBookingsPage() {
             variants={fadeIn}
           >
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 bg-gradient-to-r from-cyan-400 to-green-400 bg-clip-text text-transparent">
-              Group Bookings
+              Parties & school trips
             </h1>
             <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto">
-              The perfect adventure for groups of all kinds. We can accommodate up to 30 people in each session!
+              Stags, birthdays, classes, clubs—we can line up several rooms at once and host on the order of thirty
+              players per wave.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button
                 className="bg-gradient-to-r from-cyan-500 to-green-500 hover:from-cyan-600 hover:to-green-600 text-white text-lg py-6 px-8"
                 asChild
               >
-                <Link href="/contact">Contact</Link>
+                <Link href="/contact">Enquire</Link>
               </Button>
               <Button
                 variant="outline"
@@ -76,7 +77,7 @@ export default function GroupBookingsPage() {
                 asChild
               >
                 <Link href="/booking" className="text-cyan-400 hover:text-cyan-300 transition-colors">
-                  Check Availability
+                  See slots
                 </Link>
               </Button>
             </div>
@@ -425,7 +426,7 @@ export default function GroupBookingsPage() {
                 Frequently Asked Questions
               </h2>
               <p className="text-xl text-gray-300">
-                Everything you need to know about group bookings at Eiger Escape Rooms.
+                Lead times, split rooms, and policy—tailored to how we host big crews here.
               </p>
             </div>
 

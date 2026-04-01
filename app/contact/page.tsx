@@ -94,10 +94,10 @@ export default function ContactPage() {
             variants={fadeIn}
           >
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 bg-gradient-to-r from-cyan-400 to-green-400 bg-clip-text text-transparent">
-              Contact Us
+              Get in touch
             </h1>
             <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto">
-              Have questions or need more information? We're here to help you plan your perfect escape room adventure.
+              Ask about rooms, group sizes, vouchers, or travel—our crew replies as soon as we are off the game floor.
             </p>
           </motion.div>
         </div>
@@ -118,13 +118,13 @@ export default function ContactPage() {
                 <Card className="bg-[#111] border-[#222] shadow-2xl">
                   <CardContent className="p-8">
                     <div className="mb-6">
-                      <h2 className="text-2xl font-bold text-white mb-2">Send us a message</h2>
-                      <p className="text-gray-400">We'll get back to you as soon as possible</p>
+                      <h2 className="text-2xl font-bold text-white mb-2">Write to us</h2>
+                      <p className="text-gray-400">We usually answer within one business day</p>
                     </div>
 
                     {submitStatus === 'success' && (
                       <div className="mb-6 p-4 bg-green-500/10 border border-green-500/20 rounded-lg">
-                        <p className="text-green-400 text-sm">Message sent successfully! We'll be in touch soon.</p>
+                        <p className="text-green-400 text-sm">Sent—thanks. We will reply shortly.</p>
                       </div>
                     )}
 
@@ -223,7 +223,7 @@ export default function ContactPage() {
                         ) : (
                           <div className="flex items-center gap-2">
                             <Send className="w-4 h-4" />
-                            Send Message
+                            Send
                           </div>
                         )}
                       </Button>
@@ -247,7 +247,7 @@ export default function ContactPage() {
                   <div className="flex items-start gap-4">
                         <MapPin className="w-6 h-6 text-cyan-400 flex-shrink-0 mt-1" />
                     <div>
-                      <h3 className="text-lg font-semibold text-white mb-2">Visit Us</h3>
+                      <h3 className="text-lg font-semibold text-white mb-2">Address</h3>
                       <p className="text-gray-300">3818 Grindelwald, Switzerland</p>
                     </div>
                   </div>
@@ -291,7 +291,7 @@ export default function ContactPage() {
             {/* Social Media */}
                 <Card className="bg-[#111] border-[#222]">
                   <CardContent className="p-6 text-center">
-              <h3 className="text-xl font-semibold text-white mb-4">Follow Us</h3>
+              <h3 className="text-xl font-semibold text-white mb-4">Social</h3>
               <a
                 href="https://www.facebook.com/YOUR_FACEBOOK_PAGE"
                 target="_blank"

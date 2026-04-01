@@ -2,14 +2,14 @@ import type { Metadata } from "next"
 import { JsonLd } from '@/components/JsonLd'
 
 export const metadata: Metadata = {
-  title: "Escape Room FAQ Eiger | Common Questions Answered",
-  description: "Answers about Eiger Escape Rooms in Grindelwald: The Eiger Signal, The Forgotten Bunker, The Ice Chamber, booking, groups, and what to expect.",
+  title: "Help centre | Eiger Escape Rooms Grindelwald",
+  description: "Booking, rooms, groups, and gameplay—FAQs for The Eiger Signal, The Forgotten Bunker, and The Ice Chamber.",
   alternates: {
     canonical: '/faq',
   },
   openGraph: {
-    title: "Escape Room FAQ Eiger | Common Questions Answered",
-    description: "Answers about Eiger Escape Rooms in Grindelwald: our three themed rooms, booking, groups, and what to expect.",
+    title: "Help centre | Eiger Escape Rooms Grindelwald",
+    description: "Practical answers about our Grindelwald venue, the three mountain-set games, and policies.",
     type: "website",
     url: "https://www.eigerescaperooms.com/faq",
   },

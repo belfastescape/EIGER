@@ -62,13 +62,18 @@ export default function Home() {
             transition={{ duration: 0.6 }}
           >
             <h1 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-cyan-400 to-green-400 bg-clip-text text-transparent">
-              Escape Room Eiger
+              Eiger Escape Rooms
             </h1>
             <p className="text-lg md:text-xl text-gray-300 mb-6 leading-relaxed">
-              Escape the real world for an hour. Our immersive escape rooms are the perfect <Link href="/rainy-day-activities-eiger" className="text-cyan-400 hover:text-cyan-300 transition-colors">fun indoor activity in Eiger</Link> — whether you&apos;re with friends, family, or workmates.
+              Step out of the everyday for sixty minutes: hands-on missions beneath the mountain. A solid{" "}
+              <Link href="/rainy-day-activities-eiger" className="text-cyan-400 hover:text-cyan-300 transition-colors">
+                indoor plan when the weather turns
+              </Link>
+              —whether you roll in with friends, relatives, or colleagues.
             </p>
             <p className="text-lg md:text-xl text-gray-300 mb-12 leading-relaxed">
-              Work together, crack the puzzles, beat the clock. Three unique  escape rooms, each with its own story waiting to be solved.
+              Collaborate, hunt for clues, and beat the timer. Three standalone rooms, each with its own thread to pull
+              and a finale worth reaching.
             </p>
           </motion.div>
         </div>
@@ -84,11 +89,11 @@ export default function Home() {
             transition={{ duration: 0.6 }}
           >
             <h2 className="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-cyan-400 to-green-400 bg-clip-text text-transparent">
-              Choose Your Adventure
+              Pick your mission
             </h2>
             <p className="text-base sm:text-lg md:text-xl text-gray-300 max-w-3xl mx-auto px-4">
-              Choose your adventure from our range of immersive escape room experiences, each with unique themes and
-              challenges.
+              Three different setups—each one a full storyline, its own difficulty curve, and a reason to talk about the
+              ride home.
             </p>
           </motion.div>
 
@@ -121,25 +126,23 @@ export default function Home() {
                   </span>
                   <h3 className="text-4xl md:text-6xl font-bold text-white mb-4">The Ice Chamber</h3>
                   <p className="text-gray-200 text-lg md:text-xl mb-8 max-w-xl">
-                    A hidden chamber has been discovered deep inside the Eiger, preserved in perfect ice. Strange symbols
-                    cover the walls, and crystalline structures glow with an unnatural light. No records explain who built
-                    it—or why. As you explore the chamber, mechanisms begin to respond to your presence, shifting the
-                    environment itself. This is not just a place, but a system waiting to be activated. Every choice you
-                    make shapes what happens next. Solve the chamber&apos;s secrets before it seals itself again… or risk
-                    becoming part of what it was built to contain.
+                    A sealed vault has surfaced deep in the rock—walls carved with symbols, ice catching light the wrong
+                    way. No file explains who shaped it or why it wakes up when you walk. The space reacts: routes change,
+                    mechanisms follow your choices. It is less a room than a machine waiting for input. Finish the
+                    sequence before the cold closes in—or stay trapped in what it was meant to guard.
                   </p>
                   <div className="flex flex-wrap gap-4">
                     <Link href="/booking">
                       <Button className="bg-gradient-to-r from-cyan-500 to-green-500 hover:from-cyan-600 hover:to-green-600 text-white text-lg py-4 px-10">
-                        Book Now <ArrowRight className="ml-2 h-5 w-5" />
+                        Get tickets <ArrowRight className="ml-2 h-5 w-5" />
                       </Button>
                     </Link>
                     <Link href="/escape-rooms/the-ice-chamber">
                       <Button variant="outline" className="border-white text-white hover:bg-white hover:text-black text-lg py-4 px-10">
-                        Learn More
+                        Full briefing
                       </Button>
                     </Link>
-                  </div>
+                    </div>
                 </div>
               </div>
             </div>
@@ -166,22 +169,20 @@ export default function Home() {
                   </span>
                   <h3 className="text-4xl md:text-6xl font-bold text-white mb-4">The Forgotten Bunker</h3>
                   <p className="text-gray-200 text-lg md:text-xl mb-8 max-w-xl">
-                    Hidden deep within the Eiger lies a sealed WWII bunker, lost to time and buried beneath ice. Recently
-                    uncovered, its systems have mysteriously reactivated. Inside, maps, coded messages, and classified
-                    documents reveal a secret operation that was never meant to be found. As you work through military
-                    ciphers and restore the bunker&apos;s control systems, a final set of orders emerges—one that was
-                    never carried out. The countdown has already begun. You must decipher the truth and shut it down
-                    before the bunker completes its last mission.
+                    A long-buried wartime bunker has blinked back on beneath the ice—maps, intercepts, and stamped
+                    orders that were never meant to be read. Circuits hum again; the last directive was never executed.
+                    Crack the ciphers, bring the consoles online, and stop the final protocol before the bunker finishes
+                    what it started decades ago.
                   </p>
                   <div className="flex flex-wrap gap-4">
                     <Link href="/booking">
                       <Button className="bg-gradient-to-r from-cyan-500 to-green-500 hover:from-cyan-600 hover:to-green-600 text-white text-lg py-4 px-10">
-                        Book Now <ArrowRight className="ml-2 h-5 w-5" />
+                        Get tickets <ArrowRight className="ml-2 h-5 w-5" />
                       </Button>
                     </Link>
                     <Link href="/escape-rooms/the-forgotten-bunker">
                       <Button variant="outline" className="border-white text-white hover:bg-white hover:text-black text-lg py-4 px-10">
-                        Learn More
+                        Full briefing
                       </Button>
                     </Link>
                   </div>
@@ -211,22 +212,20 @@ export default function Home() {
                   </span>
                   <h3 className="text-4xl md:text-6xl font-bold text-white mb-4">The Eiger Signal</h3>
                   <p className="text-gray-200 text-lg md:text-xl mb-8 max-w-xl">
-                    An abandoned mountain rescue hut high on the Eiger has begun transmitting again after decades of
-                    silence. Inside, everything is frozen in time—radios humming, lights flickering, logs abruptly ending.
-                    A strange signal pulses through the equipment, repeating in patterns no one can explain. As you restore
-                    power and decode the transmission, it becomes clear this is no ordinary distress call. Something was
-                    discovered beneath the mountain… and it may still be there. You have one hour to uncover the truth
-                    before the signal completes—and whatever it&apos;s calling finally arrives.
+                    High on the ridge, a derelict rescue hut is live again—radios humming, lamps strobing, the logbook
+                    cut off mid-sentence. The pulse is not a textbook SOS. Reroute power, read the pattern, and learn what
+                    was dug up under the peak—because the broadcast may still be summoning it. Sixty minutes to finish
+                    before the carrier drops and silence returns.
                   </p>
                   <div className="flex flex-wrap gap-4">
                     <Link href="/booking">
                       <Button className="bg-gradient-to-r from-cyan-500 to-green-500 hover:from-cyan-600 hover:to-green-600 text-white text-lg py-4 px-10">
-                        Book Now <ArrowRight className="ml-2 h-5 w-5" />
+                        Get tickets <ArrowRight className="ml-2 h-5 w-5" />
                       </Button>
                     </Link>
                     <Link href="/escape-rooms/the-eiger-signal">
                       <Button variant="outline" className="border-white text-white hover:bg-white hover:text-black text-lg py-4 px-10">
-                        Learn More
+                        Full briefing
                       </Button>
                     </Link>
                   </div>
@@ -253,11 +252,11 @@ export default function Home() {
             transition={{ duration: 0.6 }}
           >
             <h2 className="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-cyan-400 to-green-400 bg-clip-text text-transparent">
-              Why Choose Eiger Escape Rooms?
+              What sets us apart
             </h2>
             <p className="text-base sm:text-lg md:text-xl text-gray-300 max-w-3xl mx-auto px-4">
-              We're committed to providing the best escape room experience in Eiger with immersive themes,
-              challenging puzzles, and unforgettable adventures.
+              We build worlds you can touch—tight storytelling, puzzles that feel fair, and a finish you will still be
+              debating over coffee.
             </p>
           </motion.div>
 
@@ -271,10 +270,10 @@ export default function Home() {
               <div className="w-16 h-16 bg-gradient-to-r from-cyan-500 to-green-500 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Clock className="w-8 h-8 text-white" />
               </div>
-              <h3 className="text-xl font-bold mb-3 text-white">Immersive Experiences</h3>
+              <h3 className="text-xl font-bold mb-3 text-white">Built sets & story</h3>
               <p className="text-gray-300">
-                Our escape rooms feature detailed sets, professional props, and engaging storylines that transport you
-                to another world.
+                Physical props, layered sound, and a plot that keeps moving—so you feel inside the fiction, not in a
+                bare box with locks.
               </p>
             </motion.div>
 
@@ -287,10 +286,11 @@ export default function Home() {
               <div className="w-16 h-16 bg-gradient-to-r from-cyan-500 to-green-500 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Users className="w-8 h-8 text-white" />
               </div>
-              <h3 className="text-xl font-bold mb-3 text-white">Perfect for Groups</h3>
+              <h3 className="text-xl font-bold mb-3 text-white">Made for crews</h3>
               <p className="text-gray-300">
-                Whether it&apos;s a family outing, <Link href="/group-bookings" className="text-cyan-400 hover:text-cyan-300 transition-colors">a group celebration</Link>, or <Link href="/team-building-eiger" className="text-cyan-400 hover:text-cyan-300 transition-colors">a team building event in Eiger</Link>, our escape rooms are designed for
-                groups of all sizes.
+                From <Link href="/group-bookings" className="text-cyan-400 hover:text-cyan-300 transition-colors">birthdays and school trips</Link> to{" "}
+                <Link href="/team-building-eiger" className="text-cyan-400 hover:text-cyan-300 transition-colors">company offsites</Link>, we scale the
+                welcome and the pacing to match your mix of ages and experience.
               </p>
             </motion.div>
 
@@ -303,10 +303,10 @@ export default function Home() {
               <div className="w-16 h-16 bg-gradient-to-r from-cyan-500 to-green-500 rounded-full flex items-center justify-center mx-auto mb-4">
                 <MapPin className="w-8 h-8 text-white" />
               </div>
-              <h3 className="text-xl font-bold mb-3 text-white">Central Location</h3>
+              <h3 className="text-xl font-bold mb-3 text-white">Easy to reach</h3>
               <p className="text-gray-300">
-                Conveniently located at 3818 Grindelwald, Switzerland, with regional rail access via Interlaken and
-                connections across the Bernese Oberland.
+                3818 Grindelwald—trains from Interlaken, quick links to the rest of the Bernese Oberland, and a walkable
+                village once you arrive.
               </p>
             </motion.div>
           </div>
@@ -323,10 +323,10 @@ export default function Home() {
             transition={{ duration: 0.6 }}
           >
             <h2 className="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-cyan-400 to-green-400 bg-clip-text text-transparent">
-              Frequently Asked Questions
+              Before you book
             </h2>
             <p className="text-base sm:text-lg md:text-xl text-gray-300 max-w-3xl mx-auto px-4">
-              Quick answers about our Grindelwald venue and the three mountain-set games we run here.
+              Straight answers about the Grindelwald site and the three alpine games we run.
             </p>
           </motion.div>
 
@@ -400,22 +400,22 @@ export default function Home() {
             transition={{ duration: 0.6 }}
           >
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 text-white px-4">
-              Ready for Your Next Adventure?
+              Plan your next run
             </h2>
             <p className="text-base sm:text-lg md:text-xl text-gray-300 max-w-3xl mx-auto mb-8 px-4">
-              Book your escape room experience today and discover why we're Eiger's premier escape room destination.
-              Challenge your mind, test your teamwork, and create unforgettable memories!
+              Lock a slot today—stretch your problem-solving, lean on each other under the clock, and leave with a story
+              you did not have that morning.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center px-4">
               <Link href="/booking" className="w-full sm:w-auto">
                 <Button className="bg-gradient-to-r from-cyan-500 to-green-500 hover:from-cyan-600 hover:to-green-600 text-white text-base sm:text-lg py-4 px-6 sm:px-8 w-full sm:w-auto">
                   <PartyPopper className="mr-2 h-5 w-5" />
-                  Book Your Adventure
+                  Reserve a room
                 </Button>
               </Link>
               <Link href="/contact" className="w-full sm:w-auto">
                 <Button variant="outline" className="border-cyan-500 text-cyan-400 hover:bg-cyan-500 hover:text-white text-base sm:text-lg py-4 px-6 sm:px-8 w-full sm:w-auto">
-                  Contact Us
+                  Ask a question
                 </Button>
               </Link>
             </div>

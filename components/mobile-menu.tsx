@@ -119,7 +119,7 @@ export function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
 
         <div className="p-6 border-t border-[#222] space-y-4">
           <Link href="/contact" className="text-gray-300 hover:text-cyan-400 transition-colors">
-            Book Now
+            Reserve
           </Link>
 
           <div className="pt-4">

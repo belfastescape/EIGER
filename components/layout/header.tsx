@@ -8,7 +8,7 @@ import { cn } from "@/lib/utils"
 
 const dropdowns = [
   {
-    label: "Our Games",
+    label: "Rooms",
     links: [
       { label: "The Eiger Signal",        href: "/escape-rooms/the-eiger-signal" },
       { label: "The Forgotten Bunker",         href: "/escape-rooms/the-forgotten-bunker" },
@@ -16,17 +16,17 @@ const dropdowns = [
     ],
   },
   {
-    label: "Group Bookings",
+    label: "Groups & schools",
     links: [
-      { label: "Team Building", href: "/team-building-eiger" },
-      { label: "Group & school bookings", href: "/group-bookings" },
+      { label: "Team building", href: "/team-building-eiger" },
+      { label: "Parties & school trips", href: "/group-bookings" },
     ],
   },
 ]
 
 const plainLinks = [
-  { label: "Deals", href: "/deals" },
-  { label: "Contact", href: "/contact" },
+  { label: "Offers", href: "/deals" },
+  { label: "Get in touch", href: "/contact" },
 ]
 
 export function Header() {
@@ -95,10 +95,10 @@ export function Header() {
               </Link>
             ))}
 
-            {/* Book Now button */}
+            {/* Reserve CTA */}
             <Link href="/booking">
               <Button className="bg-gradient-to-r from-cyan-500 to-green-500 hover:from-cyan-600 hover:to-green-600 text-white">
-                Book Now
+                Reserve
               </Button>
             </Link>
           </nav>
@@ -175,7 +175,7 @@ export function Header() {
 
           <Link href="/booking" onClick={() => setMobileMenuOpen(false)} className="mt-4">
             <Button className="bg-gradient-to-r from-cyan-500 to-green-500 hover:from-cyan-600 hover:to-green-600 text-white text-lg px-10 py-4">
-              Book Now
+              Reserve
             </Button>
           </Link>
         </div>

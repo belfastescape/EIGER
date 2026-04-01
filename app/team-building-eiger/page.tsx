@@ -64,11 +64,11 @@ export default function TeamBuildingEigerPage() {
     <div className="min-h-screen">
       {/* Hero Section */}
       <HeroSection
-        title="Eiger Team Building Adventures"
-        subtitle="Unite your colleagues with unforgettable escape room experiences"
+        title="Company missions in Grindelwald"
+        subtitle="Parallel rooms, optional scoreboards, debriefs that tie back to your objectives"
         buttonText="Plan Your Team Event"
         imageSrc="/images/reception.png"
-        imageAlt="Celebrating team success in Eiger"
+        imageAlt="Team celebrating after an escape room"
       />
 
       {/* Introduction Section */}
@@ -616,7 +616,7 @@ export default function TeamBuildingEigerPage() {
                     </li>
                   </ul>
                   <Link href="/contact" className="text-cyan-400 hover:text-cyan-300 transition-colors">
-                    Book Now
+                    Reserve
                   </Link>
                 </div>
               </motion.div>
@@ -671,7 +671,7 @@ export default function TeamBuildingEigerPage() {
                     </li>
                   </ul>
                   <Link href="/contact" className="text-cyan-400 hover:text-cyan-300 transition-colors">
-                    Book Now
+                    Reserve
                   </Link>
                 </div>
               </motion.div>
@@ -725,7 +725,7 @@ export default function TeamBuildingEigerPage() {
                     </li>
                   </ul>
                   <Link href="/contact" className="text-cyan-400 hover:text-cyan-300 transition-colors">
-                    Book Now
+                    Reserve
                   </Link>
                 </div>
               </motion.div>
@@ -746,15 +746,15 @@ export default function TeamBuildingEigerPage() {
           >
             <div className="p-8 md:p-12 text-center">
               <h2 className="text-3xl md:text-4xl font-bold mb-6 bg-gradient-to-r from-cyan-400 to-green-400 bg-clip-text text-transparent">
-                Take Your Team to the Next Level
+                Line up your next off-site
               </h2>
               <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-                Reserve your Eiger team building experience now and see the difference teamwork can make in our escape rooms.
+                Hold a slot for your crew and we will help you pick rooms, timing, and a debrief that matches your goals.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link href="/booking">
                   <Button className="bg-gradient-to-r from-cyan-500 to-green-500 hover:from-cyan-600 hover:to-green-600 text-white text-lg py-6 px-8">
-                    Check Availability
+                    See open times
                   </Button>
                 </Link>
                 <Link href="/contact">
@@ -762,7 +762,7 @@ export default function TeamBuildingEigerPage() {
                     variant="outline"
                     className="border-cyan-500 text-cyan-400 hover:bg-cyan-500/10 text-lg py-6 px-8"
                   >
-                    Request Information
+                    Talk to us
                   </Button>
                 </Link>
               </div>

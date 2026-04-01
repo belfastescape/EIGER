@@ -38,11 +38,11 @@ export default function TeamBuildingPage() {
     <div className="min-h-screen">
       {/* Move JsonLd to a server component or layout file */}
       <HeroSection
-        title="Team Building Eiger"
-        subtitle="Strengthen your team with our immersive escape room challenges"
+        title="Offsites under the Eiger"
+        subtitle="Timed missions that surface how your people communicate when the clock is loud"
         buttonText="Book Your Team Event"
         imageSrc="/images/reception.png"
-        imageAlt="Team building success celebration"
+        imageAlt="Corporate group after an escape game"
       />
 
       {/* Introduction Section */}
@@ -56,11 +56,11 @@ export default function TeamBuildingPage() {
             variants={fadeIn}
           >
             <h2 className="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-cyan-400 to-green-400 bg-clip-text text-transparent">
-              Eiger's Premier Team Building Experience
+              Grindelwald-ready company days
             </h2>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-              Looking for team building activities in Eiger that are fun, engaging, and effective? Our escape rooms
-              provide the perfect environment for teams to collaborate, communicate, and problem-solve together.
+              Swap slides for something tactile: our rooms force hand-offs, clear roles, and quick debriefs—without
+              feeling like homework.
             </p>
           </motion.div>
 
@@ -71,32 +71,31 @@ export default function TeamBuildingPage() {
               viewport={{ once: true, margin: "-100px" }}
               variants={fadeIn}
             >
-              <h3 className="text-2xl font-bold mb-4 text-white">Why Escape Rooms for Team Building?</h3>
+              <h3 className="text-2xl font-bold mb-4 text-white">Why start inside an escape game?</h3>
               <p className="text-gray-300 mb-6">
-                Escape rooms are the perfect team building activity because they naturally encourage the skills that
-                make teams successful: communication, leadership, problem-solving, and collaboration.
+                A live room surfaces the same muscles great teams need elsewhere—clear updates, shared focus, and calm
+                under a deadline—without a trust-fall in sight.
               </p>
               <p className="text-gray-300 mb-6">
-                In our carefully designed rooms, your team will need to work together to solve puzzles, find clues, and
-                complete objectives within a 60-minute timeframe. The experience reveals how team members communicate
-                under pressure and highlights each person's unique strengths.
+                You have sixty minutes to chase objectives, trade findings, and adapt when a puzzle misfires—then we talk
+                about who stepped up, who listened, and what to try Monday.
               </p>
               <ul className="space-y-3">
                 <li className="flex items-start">
                   <CheckCircle2 className="w-6 h-6 text-cyan-400 mr-3 mt-0.5" />
-                  <span className="text-gray-300">Improves communication and collaboration</span>
+                  <span className="text-gray-300">Sharper hand-offs and fewer duplicate efforts</span>
                 </li>
                 <li className="flex items-start">
                   <CheckCircle2 className="w-6 h-6 text-cyan-400 mr-3 mt-0.5" />
-                  <span className="text-gray-300">Builds trust and team cohesion</span>
+                  <span className="text-gray-300">Psychological safety when stakes feel real but safe</span>
                 </li>
                 <li className="flex items-start">
                   <CheckCircle2 className="w-6 h-6 text-cyan-400 mr-3 mt-0.5" />
-                  <span className="text-gray-300">Develops problem-solving and critical thinking</span>
+                  <span className="text-gray-300">Pattern-spotting and quick iteration</span>
                 </li>
                 <li className="flex items-start">
                   <CheckCircle2 className="w-6 h-6 text-cyan-400 mr-3 mt-0.5" />
-                  <span className="text-gray-300">Creates shared memories and strengthens relationships</span>
+                  <span className="text-gray-300">A shared win (or near-win) to reference later</span>
                 </li>
               </ul>
             </motion.div>
@@ -609,7 +608,7 @@ If you are wanting an escape room experience, we would 100% recommended this one
                     className="bg-gradient-to-r from-cyan-500 to-green-500 hover:from-cyan-600 hover:to-green-600 text-white"
                     asChild
                   >
-                    <Link href="/booking">Book Now</Link>
+                    <Link href="/booking">Reserve</Link>
                   </Button>
                 </div>
               </motion.div>
@@ -667,7 +666,7 @@ If you are wanting an escape room experience, we would 100% recommended this one
                     className="bg-gradient-to-r from-cyan-500 to-green-500 hover:from-cyan-600 hover:to-green-600 text-white"
                     asChild
                   >
-                    <Link href="/booking">Book Now</Link>
+                    <Link href="/booking">Reserve</Link>
                   </Button>
                 </div>
               </motion.div>
@@ -725,7 +724,7 @@ If you are wanting an escape room experience, we would 100% recommended this one
                     className="bg-gradient-to-r from-cyan-500 to-green-500 hover:from-cyan-600 hover:to-green-600 text-white"
                     asChild
                   >
-                    <Link href="/booking">Book Now</Link>
+                    <Link href="/booking">Reserve</Link>
                   </Button>
                 </div>
               </motion.div>

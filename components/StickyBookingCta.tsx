@@ -14,19 +14,19 @@ export function StickyBookingCta() {
       <Link
         href="/booking"
         className="w-[70%] flex flex-col items-center justify-center py-3 px-4 bg-black text-center active:bg-gray-900 transition-colors"
-        aria-label="Book now — check availability"
+        aria-label="Reserve a slot — see what is open"
       >
         <span className="text-[22px] font-semibold tracking-[0.2em] text-white uppercase">
-          Check availability
+          See open slots
         </span>
         <span className="text-2xl font-bold tracking-wide text-white mt-1 uppercase">
-          Book now
+          Reserve
         </span>
       </Link>
       <Link
         href="/contact"
         className="w-[30%] min-h-full flex flex-col items-center justify-center py-3 px-3 bg-green-800 border-l border-green-700/50 text-white active:bg-green-900 transition-colors"
-        aria-label="Contact us"
+        aria-label="Message us"
       >
         <Mail className="w-8 h-8 text-white mb-1" aria-hidden />
         <span className="text-sm font-semibold tracking-wide text-white uppercase">

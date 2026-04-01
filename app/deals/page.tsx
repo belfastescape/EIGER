@@ -24,9 +24,9 @@ export default function DealsPage() {
       {/* Hero Section */}
       <section className="relative w-full">
         <div className="relative w-full h-[400px] bg-black flex flex-col items-center justify-center text-center p-4">
-          <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">Special Deals</h1>
+          <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">Offers & promos</h1>
           <p className="text-xl text-white max-w-2xl">
-            Take advantage of our exclusive offers and save on your escape room adventure
+            Limited bundles and seasonal cuts on our Grindelwald games—same rooms, lighter totals when you qualify.
           </p>
         </div>
       </section>
@@ -42,27 +42,27 @@ export default function DealsPage() {
             variants={fadeIn}
           >
             <div>
-              <h2 className="text-3xl font-bold mb-6 text-white">Saturday Morning Special</h2>
+              <h2 className="text-3xl font-bold mb-6 text-white">Saturday early-bird</h2>
               <p className="text-gray-300 mb-6">
-                Start your weekend with an exciting adventure! Book our Saturday morning sessions and enjoy special rates.
+                Weekend starts before lunch—book any Saturday slot before noon and the cap stays friendly for bigger squads.
               </p>
               <ul className="space-y-4 mb-8">
                 <li className="flex items-start">
                   <CheckCircle2 className="w-6 h-6 text-cyan-400 mr-3 mt-0.5" />
-                  <span className="text-gray-300">Available every Saturday morning before Noon.</span>
+                  <span className="text-gray-300">Saturdays, start time before 12:00</span>
                 </li>
                 <li className="flex items-start">
                   <CheckCircle2 className="w-6 h-6 text-cyan-400 mr-3 mt-0.5" />
-                  <span className="text-gray-300">$130 maximum price. Up to 8 players</span>
+                  <span className="text-gray-300">$130 max total for up to eight players</span>
                 </li>
                 <li className="flex items-start">
                   <CheckCircle2 className="w-6 h-6 text-cyan-400 mr-3 mt-0.5" />
-                  <span className="text-gray-300">Perfect for families and early birds</span>
+                  <span className="text-gray-300">Great for families and anyone who likes quiet lifts</span>
                 </li>
               </ul>
               <Link href="/booking">
                 <Button className="bg-gradient-to-r from-cyan-500 to-green-500 hover:from-cyan-600 hover:to-green-600 text-white">
-                  Book Now
+                  Reserve
                 </Button>
               </Link>
             </div>
@@ -81,27 +81,27 @@ export default function DealsPage() {
             variants={fadeIn}
           >
             <div className="order-1 md:order-2">
-              <h2 className="text-3xl font-bold mb-6 text-white">Summer Teams Deal</h2>
+              <h2 className="text-3xl font-bold mb-6 text-white">Summer team block</h2>
               <p className="text-gray-300 mb-6">
-                Keep your team engaged during the summer months with our special corporate team building rates.
+                Warm-season offsites: tighter per-person pricing when you bring eight or more on weekdays we designate.
               </p>
               <ul className="space-y-4 mb-8">
                 <li className="flex items-start">
                   <CheckCircle2 className="w-6 h-6 text-cyan-400 mr-3 mt-0.5" />
-                  <span className="text-gray-300">Special rates for groups of 8 or more</span>
+                  <span className="text-gray-300">Discounted bands for eight-plus players</span>
                 </li>
                 <li className="flex items-start">
                   <CheckCircle2 className="w-6 h-6 text-cyan-400 mr-3 mt-0.5" />
-                  <span className="text-gray-300">Available for corporate bookings</span>
+                  <span className="text-gray-300">Corporate and school invoicing welcome</span>
                 </li>
                 <li className="flex items-start">
                   <CheckCircle2 className="w-6 h-6 text-cyan-400 mr-3 mt-0.5" />
-                  <span className="text-gray-300">Perfect for team building events</span>
+                  <span className="text-gray-300">Pair with our team-building flow</span>
                 </li>
               </ul>
               <Link href="/team-building">
                 <Button className="bg-gradient-to-r from-cyan-500 to-green-500 hover:from-cyan-600 hover:to-green-600 text-white">
-                  Learn More About Team Building
+                  Team-building info
                 </Button>
               </Link>
             </div>

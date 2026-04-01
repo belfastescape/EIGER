@@ -29,11 +29,11 @@ export default function RainyDayActivitiesEigerPage() {
     <div className="min-h-screen">
       {/* Hero Section */}
       <HeroSection
-        title="Rainy Day Activities in Eiger"
-        subtitle="Discover the best indoor entertainment options for when the weather turns"
-        buttonText="Explore Our Escape Rooms"
+        title="When the valley turns wet"
+        subtitle="Dry, lively things to do around Grindelwald until the lifts clear again"
+        buttonText="Book Your Quest"
         imageSrc="/images/mountain.png"
-        imageAlt="Eiger city in the rain"
+        imageAlt="Grindelwald in misty weather"
       />
 
       {/* Introduction Section */}
@@ -47,10 +47,10 @@ export default function RainyDayActivitiesEigerPage() {
             variants={fadeIn}
           >
             <h2 className="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-cyan-400 to-green-400 bg-clip-text text-transparent">
-              Indoor Activities Guide for Eiger
+              Indoor picks around Grindelwald
             </h2>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-              Don't let Eiger's famous weather dampen your spirits! Our city offers an incredible array of indoor activities perfect for rainy days.
+              Clouds roll in fast here—below are warm, dry ways to spend the day without cancelling the fun.
             </p>
           </motion.div>
 
@@ -351,21 +351,22 @@ export default function RainyDayActivitiesEigerPage() {
           >
             <div className="p-8 md:p-12 text-center">
               <h2 className="text-3xl md:text-4xl font-bold mb-6 bg-gradient-to-r from-cyan-400 to-green-400 bg-clip-text text-transparent">
-                Start Your Indoor Adventure Today
+                Dry fun while it pours
               </h2>
               <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-                Don't let the rain stop your fun. Book your escape room experience today and discover why we're one of Eiger's top indoor activities.
+                Grab a timed mission at Eiger Escape Rooms—one of the liveliest indoor picks in the valley when the peaks
+                disappear into cloud.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Link href="/contact" className="text-cyan-400 hover:text-cyan-300 transition-colors">
-                  Book Now
+                <Link href="/booking" className="text-cyan-400 hover:text-cyan-300 transition-colors">
+                  Reserve
                 </Link>
                 <Link href="/contact">
                   <Button
                     variant="outline"
                     className="border-cyan-500 text-cyan-400 hover:bg-cyan-500/10 text-lg py-6 px-8"
                   >
-                    Contact Us
+                    Ask us anything
                   </Button>
                 </Link>
               </div>

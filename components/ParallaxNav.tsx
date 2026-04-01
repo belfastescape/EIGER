@@ -11,20 +11,20 @@ interface NavItem {
 }
 
 const navItems: NavItem[] = [
-  { label: ["OUR", "GAMES"],   image: "/images/eiger-hero.png",                href: "#escape-rooms" },
-  { label: ["BOOK", "NOW"],    image: "/images/bunker.png",        href: "/booking" },
-  { label: ["GROUPS"],         image: "/images/mountain.png",            href: "/team-building-eiger" },
-  { label: ["PRICES"],         image: "/images/chamber.png",         href: "/pricing" },
+  { label: ["THE", "ROOMS"],   image: "/images/eiger-hero.png",                href: "#escape-rooms" },
+  { label: ["GET", "TICKETS"],    image: "/images/bunker.png",        href: "/booking" },
+  { label: ["TEAMS"],         image: "/images/mountain.png",            href: "/team-building-eiger" },
+  { label: ["RATES"],         image: "/images/chamber.png",         href: "/pricing" },
 ]
 
 const secondaryLinks = [
-  { label: "Deals", href: "/deals" },
+  { label: "Offers", href: "/deals" },
   { label: "Contact", href: "/contact" },
 ]
 
 const dropdowns = [
   {
-    label: "Our Games",
+    label: "Escape rooms",
     links: [
       { label: "The Eiger Signal",       href: "/escape-rooms/the-eiger-signal" },
       { label: "The Forgotten Bunker",        href: "/escape-rooms/the-forgotten-bunker" },
@@ -32,10 +32,10 @@ const dropdowns = [
     ],
   },
   {
-    label: "Group Bookings",
+    label: "Groups & schools",
     links: [
-      { label: "Team Building", href: "/team-building-eiger" },
-      { label: "Group & school bookings", href: "/group-bookings" },
+      { label: "Team building", href: "/team-building-eiger" },
+      { label: "Parties & school trips", href: "/group-bookings" },
     ],
   },
 ]
@@ -191,12 +191,12 @@ export default function ParallaxNav() {
               </Link>
             ))}
 
-            {/* Book Now button */}
+            {/* Reserve CTA */}
             <Link
               href="/booking"
               className="bg-gradient-to-r from-cyan-500 to-green-500 hover:from-cyan-600 hover:to-green-600 text-white text-sm font-medium px-4 py-2 rounded-md transition-all duration-200"
             >
-              Book Now
+              Reserve
             </Link>
           </nav>
 
@@ -271,7 +271,7 @@ export default function ParallaxNav() {
               onClick={() => setMobileMenuOpen(false)}
               className="mt-4 bg-gradient-to-r from-cyan-500 to-green-500 hover:from-cyan-600 hover:to-green-600 text-white font-medium text-lg px-10 py-4 rounded-md"
             >
-              Book Now
+              Reserve
             </Link>
           </div>
         )}
@@ -328,7 +328,7 @@ export default function ParallaxNav() {
         {/* Bottom bar */}
         <footer className="flex items-center justify-between px-5 py-5 sm:px-8 sm:py-6 md:px-12 lg:px-16">
           <p className="text-white/40 text-[10px] sm:text-xs tracking-wide hidden sm:block">
-            Scroll to explore
+            Scroll for more
           </p>
           <div className="flex items-center gap-1 sm:gap-1.5 mx-auto sm:mx-0">
             {navItems.map((_, index) => (
@@ -345,7 +345,7 @@ export default function ParallaxNav() {
             ))}
           </div>
           <p className="text-white/40 text-[10px] sm:text-xs tracking-wide hidden sm:block">
-            Eiger, NZ
+            Grindelwald, CH
           </p>
         </footer>
 

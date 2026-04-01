@@ -78,10 +78,10 @@ function RoomCard({ room }: RoomCardProps) {
             href={`/escape-rooms/${room.id}`}
             className="text-cyan-400 hover:text-cyan-300 transition-colors inline-flex items-center"
           >
-            Room Details <ArrowRight className="w-4 h-4 ml-1" />
+            Story & specs <ArrowRight className="w-4 h-4 ml-1" />
           </Link>
           <Link href="/booking" className="text-cyan-400 hover:text-cyan-300 transition-colors">
-            Book Now
+            Reserve
           </Link>
         </div>
       </div>
@@ -117,7 +117,7 @@ export default function EscapeRoomsPage() {
       id: "the-eiger-signal",
       name: "The Eiger Signal",
       description:
-        "An abandoned mountain rescue hut high on the Eiger has begun transmitting again after decades of silence. Inside, everything is frozen in time—radios humming, lights flickering, logs abruptly ending. A strange signal pulses through the equipment, repeating in patterns no one can explain. As you restore power and decode the transmission, it becomes clear this is no ordinary distress call. Something was discovered beneath the mountain… and it may still be there. You have one hour to uncover the truth before the signal completes—and whatever it's calling finally arrives.",
+        "A high-altitude rescue post is broadcasting again after years of quiet—static on the speakers, lamps twitching, the journal stopping mid-entry. The cadence is not a textbook SOS. Reroute power, untangle the pattern, and learn what was opened beneath the ridge before the carrier fades.",
       image: "/images/mountain.png",
 
       minPeople: 2,
@@ -129,7 +129,7 @@ export default function EscapeRoomsPage() {
       id: "the-forgotten-bunker",
       name: "The Forgotten Bunker",
       description:
-        "Hidden deep within the Eiger lies a sealed WWII bunker, lost to time and buried beneath ice. Recently uncovered, its systems have mysteriously reactivated. Inside, maps, coded messages, and classified documents reveal a secret operation that was never meant to be found. As you work through military ciphers and restore the bunker's control systems, a final set of orders emerges—one that was never carried out. The countdown has already begun. You must decipher the truth and shut it down before the bunker completes its last mission.",
+        "A sealed WWII shelter under the ice has powered back on—intercept traffic, redacted maps, and a final order that never went out. Work the ciphers, bring panels online, and halt the protocol before the bunker finishes what it started.",
       image: "/images/bunker.png",
 
       minPeople: 2,
@@ -141,7 +141,7 @@ export default function EscapeRoomsPage() {
       id: "the-ice-chamber",
       name: "The Ice Chamber",
       description:
-        "A hidden chamber has been discovered deep inside the Eiger, preserved in perfect ice. Strange symbols cover the walls, and crystalline structures glow with an unnatural light. No records explain who built it—or why. As you explore the chamber, mechanisms begin to respond to your presence, shifting the environment itself. This is not just a place, but a system waiting to be activated. Every choice you make shapes what happens next. Solve the chamber's secrets before it seals itself again… or risk becoming part of what it was built to contain.",
+        "A frozen hall inside the massif—glyphs on the walls, crystals catching light like warnings. Nothing in the archive explains the architect. The space reacts to you: paths fork, devices follow your pace. Finish the sequence before the vault resets—or stay inside what it was meant to hold.",
       image: "/images/chamber.png",
 
       minPeople: 2,
@@ -176,11 +176,10 @@ export default function EscapeRoomsPage() {
             variants={fadeIn}
           >
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 bg-gradient-to-r from-cyan-400 to-green-400 bg-clip-text text-transparent">
-              Our Escape Rooms
+              The three missions
             </h1>
             <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto">
-              Choose your adventure from our range of immersive escape room experiences, each with unique themes and
-              challenges.
+              Same address, three different worlds—each built as a full arc with its own tone, tempo, and puzzle style.
             </p>
           </motion.div>
         </div>
@@ -198,12 +197,12 @@ export default function EscapeRoomsPage() {
           >
             <Tabs defaultValue="all" className="w-full" onValueChange={setFilter}>
               <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-8">
-                <h2 className="text-3xl font-bold text-white">Choose Your Adventure</h2>
+                <h2 className="text-3xl font-bold text-white">Browse by vibe</h2>
                 <TabsList className="bg-[#111] border border-[#222]">
-                  <TabsTrigger value="all">All Rooms</TabsTrigger>
-                  <TabsTrigger value="beginner">Beginner</TabsTrigger>
+                  <TabsTrigger value="all">Every room</TabsTrigger>
+                  <TabsTrigger value="beginner">Easier</TabsTrigger>
                   <TabsTrigger value="family-friendly">Family</TabsTrigger>
-                  <TabsTrigger value="expert">Expert</TabsTrigger>
+                  <TabsTrigger value="expert">Hardest</TabsTrigger>
                 </TabsList>
               </div>
 
@@ -274,34 +273,34 @@ export default function EscapeRoomsPage() {
           >
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
               <div>
-                <h2 className="text-3xl font-bold mb-4 text-white">Group Bookings</h2>
+                <h2 className="text-3xl font-bold mb-4 text-white">Bigger groups</h2>
                 <p className="text-gray-300 mb-6">
-                  Planning a larger event? We can accommodate groups of all sizes by running multiple rooms
-                  simultaneously. Perfect for corporate team building, birthday parties, or any special occasion.
+                  Hosting a crowd? Spin up more than one room at the same start time—ideal for offsites, birthdays, or
+                  any day you want bragging rights at dinner.
                 </p>
                 <ul className="space-y-3 mb-6">
                   <li className="flex items-start">
                     <div className="w-6 h-6 rounded-full bg-gradient-to-r from-cyan-500 to-green-500 flex items-center justify-center mr-3 mt-0.5">
                       <span className="text-white font-bold text-sm">1</span>
                     </div>
-                    <span className="text-gray-300">Multiple rooms running in parallel</span>
+                    <span className="text-gray-300">Parallel games across our three sets</span>
                   </li>
                   <li className="flex items-start">
                     <div className="w-6 h-6 rounded-full bg-gradient-to-r from-cyan-500 to-green-500 flex items-center justify-center mr-3 mt-0.5">
                       <span className="text-white font-bold text-sm">2</span>
                     </div>
-                    <span className="text-gray-300">Head to Head Team Challenge available</span>
+                    <span className="text-gray-300">Optional head-to-head scorekeeping</span>
                   </li>
                   <li className="flex items-start">
                     <div className="w-6 h-6 rounded-full bg-gradient-to-r from-cyan-500 to-green-500 flex items-center justify-center mr-3 mt-0.5">
                       <span className="text-white font-bold text-sm">3</span>
                     </div>
-                    <span className="text-gray-300">Up to 30 people per session</span>
+                    <span className="text-gray-300">Roughly thirty players in one wave</span>
                   </li>
                 </ul>
                 <Link href="/team-building">
                   <Button className="bg-gradient-to-r from-cyan-500 to-green-500 hover:from-cyan-600 hover:to-green-600 text-white">
-                    Learn About Team Building
+                    Team options
                   </Button>
                 </Link>
               </div>
@@ -330,45 +329,40 @@ export default function EscapeRoomsPage() {
             variants={fadeIn}
           >
             <h2 className="text-3xl font-bold mb-8 text-center bg-gradient-to-r from-cyan-400 to-green-400 bg-clip-text text-transparent">
-              Frequently Asked Questions
+              Common questions
             </h2>
 
             <div className="space-y-4">
               <div className="bg-[#111] rounded-lg border border-[#222] p-6">
-                <h3 className="text-xl font-bold mb-2 text-white">Which storyline should we tackle first?</h3>
+                <h3 className="text-xl font-bold mb-2 text-white">Where should we start if we are new?</h3>
                 <p className="text-gray-300">
-                  The Eiger Signal is our clearest on-ramp: radio static, rescue-hut tension, difficulty around three
-                  out of five. If you already love cipher work and wartime props, The Forgotten Bunker turns the dial
-                  up. When you want frostbite ambience and non-linear logic, The Ice Chamber is the summit push—save
-                  it for a crew that relishes chaos.
+                  The Eiger Signal is the gentlest slope: hut radio, medium difficulty. Prefer codes and history? The
+                  Forgotten Bunker adds pressure. Want frost, branching puzzles, and a sting in the tail? Save The Ice
+                  Chamber for a team that already likes a fight.
                 </p>
               </div>
 
               <div className="bg-[#111] rounded-lg border border-[#222] p-6">
-                <h3 className="text-xl font-bold mb-2 text-white">If the alarm sounds before we finish, do we still get closure?</h3>
+                <h3 className="text-xl font-bold mb-2 text-white">If time runs out, do we still see the ending?</h3>
                 <p className="text-gray-300">
-                  Yes. The story matters as much as the score. We would rather you see how the narrative ends than
-                  walk out on a cliffhanger, so expect a short walkthrough when the timer stops—especially in longer
-                  arcs like The Ice Chamber where threads cross in multiple corners.
+                  Yes—we care that you hear the payoff. Expect a tight recap after the buzzer, especially in The Ice
+                  Chamber where plots cross in more than one corner.
                 </p>
               </div>
 
               <div className="bg-[#111] rounded-lg border border-[#222] p-6">
-                <h3 className="text-xl font-bold mb-2 text-white">Why no photos inside the sets?</h3>
+                <h3 className="text-xl font-bold mb-2 text-white">Why are phones off-limits inside?</h3>
                 <p className="text-gray-300">
-                  We keep cameras out of the play space so the next team does not inherit spoilers on Instagram. After
-                  the debrief we will grab a crisp team shot in the lobby—feel free to mention if you want the peaks
-                  framed in the window behind you.
+                  So the next group walks in cold. Afterward we are glad to shoot a team photo in the lobby—say if you
+                  want the Eiger in frame.
                 </p>
               </div>
 
               <div className="bg-[#111] rounded-lg border border-[#222] p-6">
-                <h3 className="text-xl font-bold mb-2 text-white">Can we gift a mountain mission to someone visiting Grindelwald?</h3>
+                <h3 className="text-xl font-bold mb-2 text-white">Can we buy a gift for someone travelling here?</h3>
                 <p className="text-gray-300">
-                  Absolutely. Digital vouchers cover any of our three rooms and stay valid for twelve months—perfect
-                  for guests who already skied Jungfrau and want an indoor adventure. Order through the booking flow,
-                  or email us if you need a custom amount. We can usually extend expiry dates if the weather window
-                  shifts; just ask before you give up on the trip.
+                  Yes—vouchers apply to any room and last twelve months. Buy online or ask for a custom value. If
+                  flights move, contact us before the date slips away; we try to extend once.
                 </p>
               </div>
             </div>
@@ -388,14 +382,13 @@ export default function EscapeRoomsPage() {
           >
             <div className="p-8 md:p-12 text-center">
               <h2 className="text-3xl font-bold mb-6 bg-gradient-to-r from-cyan-400 to-green-400 bg-clip-text text-transparent">
-                Ready for Your Next Adventure?
+                Lock a slot
               </h2>
               <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-                Book your escape room experience today and put your problem-solving skills to the test. The clock is
-                ticking!
+                Reserve online when you know your date—the best windows go first on weekends and in peak season.
               </p>
-              <Link href="/contact" className="text-cyan-400 hover:text-cyan-300 transition-colors">
-                Book Now
+              <Link href="/booking" className="text-cyan-400 hover:text-cyan-300 transition-colors">
+                Go to booking
               </Link>
             </div>
           </motion.div>

@@ -121,13 +121,13 @@ export function PriceComparisonWidget() {
         ? ` for just $${ourPrice} at Eiger Escape Rooms - that's $${averageSavings} less than the average competitor!`
         : ` for just $${ourPrice} at Eiger Escape Rooms!`
       : " at Eiger Escape Rooms!"
-    const shareText = `Check out this escape room deal! ${adults} adult${adults !== 1 ? 's' : ''}${children > 0 ? ` + ${children} child${children !== 1 ? 'ren' : ''}` : ''}${pricePart}`
+    const shareText = `Compare escape-room rates: ${adults} adult${adults !== 1 ? 's' : ''}${children > 0 ? ` + ${children} child${children !== 1 ? 'ren' : ''}` : ''}${pricePart}`
     const shareUrl = "https://eigerescaperooms.com/#price-comparison"
 
     if (navigator.share) {
       try {
         await navigator.share({
-          title: "Eiger Escape Rooms - Price Comparison",
+          title: "Eiger Escape Rooms — rate check",
           text: shareText,
           url: shareUrl,
         })
@@ -169,10 +169,10 @@ export function PriceComparisonWidget() {
             </div>
             <div>
               <h2 className="text-lg font-bold tracking-tight text-foreground">
-                INSTANT LOCAL PRICE COMPARISON
+                LOCAL RATE CHECKER
               </h2>
               <p className="text-sm text-muted-foreground">
-                See how we stack up against the competition
+                Compare our total with other venues for your group size
               </p>
             </div>
           </div>
@@ -181,7 +181,7 @@ export function PriceComparisonWidget() {
         {/* Input Section */}
         <div className="p-6">
           <p className="text-foreground font-medium mb-5">
-            How many people are you looking to book for?
+            How many players are in your group?
           </p>
 
           <div className="grid grid-cols-2 gap-4 mb-6">
@@ -261,7 +261,7 @@ export function PriceComparisonWidget() {
               onClick={handleCalculate}
               disabled={adults + children === 0}
             >
-              Compare Prices
+              Show totals
             </Button>
           )}
 
@@ -279,19 +279,19 @@ export function PriceComparisonWidget() {
                   {adults === 2 && children === 0 ? (
                     <>
                       <p className="text-white font-bold text-lg">
-                        ESCAPE ROOMS WELLINGTON
+                        EIGER ESCAPE ROOMS
                       </p>
                       <p className="text-yellow-400 font-semibold text-sm tracking-wide">
-                        BEST LOCATION. HIGHEST RATING
+                        GRINDELWALD · TOP-RATED GAMES
                       </p>
                     </>
                   ) : (
                     <>
                       <p className="text-primary font-bold text-lg">
-                        Save ${averageSavings} on average with us!
+                        About ${averageSavings} less than the average quote
                       </p>
                       <p className="text-muted-foreground text-sm">
-                        Compared to average competitor pricing for {adults + children} {adults + children === 1 ? 'person' : 'people'}
+                        Versus the mean competitor price for {adults + children} {adults + children === 1 ? 'person' : 'people'}
                       </p>
                     </>
                   )}
@@ -327,7 +327,7 @@ export function PriceComparisonWidget() {
                     {/* Google Rating Row */}
                     <tr className="border-t border-border">
                       <td className="py-4 pl-2">
-                        <span className="text-sm font-medium text-foreground">Google Rating</span>
+                        <span className="text-sm font-medium text-foreground">Google score</span>
                       </td>
                       {competitors.map((competitor) => (
                         <td
@@ -355,7 +355,7 @@ export function PriceComparisonWidget() {
                     {/* Price Row */}
                     <tr className="border-t border-border">
                       <td className="py-4 pl-2">
-                        <span className="text-sm font-medium text-foreground">Price</span>
+                        <span className="text-sm font-medium text-foreground">Total</span>
                       </td>
                       {competitors.map((competitor, index) => {
                         const price = getDisplayPrice(competitor, index)
@@ -403,7 +403,7 @@ export function PriceComparisonWidget() {
                   ) : (
                     <>
                       <Share2 className="w-4 h-4" />
-                      Share with friends
+                      Share link
                     </>
                   )}
                 </Button>
@@ -415,14 +415,14 @@ export function PriceComparisonWidget() {
                   <div className="flex items-center gap-2 mb-3">
                     <Mail className="w-4 h-4 text-primary" />
                     <span className="text-sm font-medium text-foreground">
-                      Send this guaranteed price quote to your email
+                      Email me this estimate
                     </span>
                   </div>
                   
                   {emailSent ? (
                     <div className="flex items-center gap-2 text-primary py-2">
                       <Check className="w-5 h-5" />
-                      <span className="font-medium">Quote sent! Check your inbox.</span>
+                      <span className="font-medium">Sent—look for our message.</span>
                     </div>
                   ) : (
                     <div className="flex gap-2">
@@ -438,7 +438,7 @@ export function PriceComparisonWidget() {
                         disabled={!email || !email.includes("@") || isSending}
                         className="h-11 px-5 font-semibold"
                       >
-                        {isSending ? "Sending..." : "Send Quote"}
+                        {isSending ? "Sending..." : "Send"}
                       </Button>
                     </div>
                   )}
@@ -447,7 +447,7 @@ export function PriceComparisonWidget() {
                 {/* CTA */}
                 <Link href="/booking">
                   <Button className="w-full h-12 text-base font-semibold rounded-xl">
-                    Book Now & Save
+                    Reserve & lock this rate
                   </Button>
                 </Link>
               </div>
