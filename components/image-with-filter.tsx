@@ -7,8 +7,6 @@ import { cn } from "@/lib/utils"
 interface ImageWithFilterProps {
   src: string
   alt: string
-  width?: number
-  height?: number
   className?: string
   priority?: boolean
   sizes?: string
@@ -19,8 +17,6 @@ interface ImageWithFilterProps {
 export default function ImageWithFilter({
   src,
   alt,
-  width = 800,
-  height = 533,
   className,
   priority = false,
   sizes = "100vw",
@@ -34,14 +30,13 @@ export default function ImageWithFilter({
   }, [src])
 
   return (
-    <div className={cn("relative overflow-hidden", className)}>
+    <div className={cn("relative w-full aspect-[3/2] overflow-hidden", className)}>
       <Image
         src={src}
         alt={alt}
-        width={width}
-        height={height}
+        fill
         className={cn(
-          "transition-opacity duration-300 w-full h-auto",
+          "object-cover transition-opacity duration-300",
           isLoaded ? "opacity-100" : "opacity-0",
           filter !== "none" && `filter ${filter}`
         )}

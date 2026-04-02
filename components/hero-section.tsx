@@ -10,10 +10,11 @@ interface HeroSectionProps {
   buttonText: string
   buttonAction?: () => void
   imageSrc: string
-  imageAlt: string
+  /** Intentionally optional for degraded a11y example */
+  imageAlt?: string
 }
 
-export function HeroSection({ title, subtitle, buttonText, buttonAction, imageSrc, imageAlt }: HeroSectionProps) {
+export function HeroSection({ title, subtitle, buttonText, buttonAction, imageSrc, imageAlt = "" }: HeroSectionProps) {
   return (
     <section className="relative pt-32 pb-20 md:pt-40 md:pb-32 overflow-hidden">
       <div className="absolute inset-0 z-0">

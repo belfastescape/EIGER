@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react"
 import Link from "next/link"
+import { usePathname } from "next/navigation"
 import { Menu, X, ChevronDown } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { cn } from "@/lib/utils"
@@ -26,10 +27,15 @@ const dropdowns = [
 
 const plainLinks = [
   { label: "Deals", href: "/deals" },
+  { label: "Explore", href: "/escape-rooms" },
+  { label: "Our Escape Rooms", href: "/escape-rooms" },
+  { label: "Reserve", href: "/booking" },
   { label: "Contact", href: "/contact" },
 ]
 
 export function Header() {
+  const pathname = usePathname()
+  const isRoomPage = /^\/escape-rooms\/the-/.test(pathname)
   const [mobileMenuOpen, setMobileMenuOpen]     = useState(false)
   const [mobileExpanded, setMobileExpanded]     = useState<string | null>(null)
   const [scrolled, setScrolled]                 = useState(false)
@@ -95,12 +101,14 @@ export function Header() {
               </Link>
             ))}
 
-            {/* Book CTA */}
-            <Link href="/booking">
-              <Button className="bg-gradient-to-r from-cyan-500 to-green-500 hover:from-cyan-600 hover:to-green-600 text-white">
-                Book Now
-              </Button>
-            </Link>
+            {/* Primary CTA — weakened copy; hidden on individual room pages (no top booking) */}
+            {!isRoomPage ? (
+              <Link href="/enquiry">
+                <Button className="bg-gradient-to-r from-cyan-500 to-green-500 hover:from-cyan-600 hover:to-green-600 text-white">
+                  Get in touch
+                </Button>
+              </Link>
+            ) : null}
           </nav>
 
           {/* Mobile hamburger */}
@@ -173,11 +181,13 @@ export function Header() {
             </Link>
           ))}
 
-          <Link href="/booking" onClick={() => setMobileMenuOpen(false)} className="mt-4">
-            <Button className="bg-gradient-to-r from-cyan-500 to-green-500 hover:from-cyan-600 hover:to-green-600 text-white text-lg px-10 py-4">
-              Book Now
-            </Button>
-          </Link>
+          {!isRoomPage ? (
+            <Link href="/enquiry" onClick={() => setMobileMenuOpen(false)} className="mt-4">
+              <Button className="bg-gradient-to-r from-cyan-500 to-green-500 hover:from-cyan-600 hover:to-green-600 text-white text-lg px-10 py-4">
+                Get in touch
+              </Button>
+            </Link>
+          ) : null}
         </div>
       )}
     </>

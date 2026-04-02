@@ -51,7 +51,7 @@ export default function NotFound() {
               <div className="aspect-[4/3] relative overflow-hidden">
                 <Image
                   src={room.image}
-                  alt={room.name}
+                  alt=""
                   fill
                   className="object-cover transition-transform duration-300 group-hover:scale-105"
                   sizes="(max-width: 640px) 100vw, 280px"

@@ -59,6 +59,17 @@ export default function TheForgottenBunkerPage() {
       </section>
 
       <FaqSection />
+
+      <section className="py-20 md:py-28 bg-[#0f1410] border-t border-white/10">
+        <div className="container mx-auto px-4 flex justify-center">
+          <Link
+            href="/enquiry?room=The%20Forgotten%20Bunker"
+            className="inline-flex items-center justify-center rounded-lg border border-white/20 px-6 py-3 text-sm text-gray-400 hover:text-gray-300 transition-colors"
+          >
+            Enquire about this room
+          </Link>
+        </div>
+      </section>
     </div>
   )
 }

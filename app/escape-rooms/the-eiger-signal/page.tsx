@@ -36,18 +36,6 @@ export default function TheEigerSignalPage() {
 
       <VideoSection />
 
-      {/* Booking CTA */}
-      <section className="py-12 md:py-16 bg-[#0a0a0a] border-y border-[#222]">
-        <div className="container mx-auto px-4 flex justify-center">
-          <Link
-            href="/booking"
-            className="inline-flex w-full max-w-3xl items-center justify-center rounded-xl bg-gradient-to-r from-cyan-500 to-green-500 px-6 py-5 text-center text-base font-bold leading-snug text-white shadow-lg shadow-cyan-500/20 transition hover:from-cyan-400 hover:to-green-400 hover:shadow-cyan-500/30 md:px-10 md:py-6 md:text-xl lg:text-2xl"
-          >
-            Check Availability on the Booking Page
-          </Link>
-        </div>
-      </section>
-
       <CtaSection />
 
       {/* Head to Head / Use Cases */}
@@ -67,6 +55,17 @@ export default function TheEigerSignalPage() {
             </Link>
             . Race the clock and decode the mystery together.
           </p>
+        </div>
+      </section>
+
+      <section className="py-20 md:py-28 bg-[#0a0a0a] border-t border-[#222]">
+        <div className="container mx-auto px-4 flex justify-center">
+          <Link
+            href="/enquiry?room=The%20Eiger%20Signal"
+            className="inline-flex items-center justify-center rounded-lg border border-white/20 px-6 py-3 text-sm text-gray-400 hover:text-gray-300 transition-colors"
+          >
+            Enquire about this room
+          </Link>
         </div>
       </section>
     </div>

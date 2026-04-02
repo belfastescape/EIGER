@@ -4,11 +4,9 @@ import { useState, useEffect } from "react"
 import Image from "next/image"
 import Link from "next/link"
 import { motion } from "framer-motion"
-import { ChevronLeft, Clock, Users, Star, CheckCircle2, ArrowRight } from "lucide-react"
+import { ChevronLeft, Star } from "lucide-react"
 import { Card, CardContent } from "@/components/ui/card"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import { ImageSlideshow } from "@/components/image-slideshow"
-import { CtaSection } from "./cta-section"
 
 export default function IceChamberPage() {
   const [isVisible, setIsVisible] = useState(false)
@@ -22,16 +20,6 @@ export default function IceChamberPage() {
     visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
   }
 
-  const staggerContainer = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.2,
-      },
-    },
-  }
-
   return (
     <div className="min-h-screen pt-20">
       {/* Hero Section */}
@@ -39,10 +27,11 @@ export default function IceChamberPage() {
         <div className="absolute inset-0 z-0">
           <Image
             src="/images/chamber.png"
-            alt="The Ice Chamber"
+            alt=""
             fill
             className="object-cover opacity-40"
             priority
+            unoptimized
           />
           <div className="absolute inset-0 bg-gradient-to-b from-[#0a0a0a]/80 via-[#0a0a0a]/60 to-[#0a0a0a]"></div>
         </div>
@@ -57,41 +46,12 @@ export default function IceChamberPage() {
             </Link>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 bg-gradient-to-r from-cyan-400 to-green-400 bg-clip-text text-transparent">
               The Ice Chamber
-              <br />
-              <span className="text-3xl md:text-4xl lg:text-5xl mt-[30px] inline-block">
-                Our Most Challenging Escape Room
-              </span>
             </h1>
             <p className="text-xl md:text-2xl text-gray-300 max-w-3xl">
-              A hidden chamber has been discovered deep inside the Eiger, preserved in perfect ice. Strange symbols cover
-              the walls, and crystalline structures glow with an unnatural light. No records explain who built it—or why.
+              Room: The Ice Chamber. Players: 2–7. Duration: 60 minutes. Difficulty: Hard (rated 4/5). Indoor puzzle
+              sequence with non-linear tasks and environmental triggers. Minimum recommended age: 12+ with adult for
+              younger groups.
             </p>
-          </motion.div>
-
-          <motion.div
-            className="flex flex-wrap gap-6 mb-8"
-            initial="hidden"
-            animate={isVisible ? "visible" : "hidden"}
-            variants={staggerContainer}
-          >
-            <motion.div variants={fadeIn} className="flex items-center text-gray-300">
-              <Users className="w-5 h-5 mr-2 text-cyan-400" />
-              <span>2-7 Players</span>
-            </motion.div>
-            <motion.div variants={fadeIn} className="flex items-center text-gray-300">
-              <Clock className="w-5 h-5 mr-2 text-cyan-400" />
-              <span>60 Minutes</span>
-            </motion.div>
-          </motion.div>
-
-          <motion.div initial="hidden" animate={isVisible ? "visible" : "hidden"} variants={fadeIn}>
-            <Link 
-              href="/booking" 
-              className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-cyan-500 to-green-500 text-white font-bold rounded-xl hover:from-cyan-600 hover:to-green-600 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
-            >
-              Reserve
-              <ArrowRight className="w-5 h-5 ml-2" />
-            </Link>
           </motion.div>
         </div>
       </section>
@@ -99,9 +59,8 @@ export default function IceChamberPage() {
       {/* Main Content Section */}
       <section className="py-16">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
-            {/* Left Column - Main Content */}
-            <div className="lg:col-span-2">
+          <div className="max-w-4xl mx-auto">
+            <div>
               <motion.div
                 className="mb-12"
                 initial="hidden"
@@ -109,25 +68,12 @@ export default function IceChamberPage() {
                 viewport={{ once: true, margin: "-100px" }}
                 variants={fadeIn}
               >
-                <h2 className="text-3xl font-bold mb-6 text-white">Your Mission Briefing</h2>
+                <h2 className="text-3xl font-bold mb-6 text-white">Room specification</h2>
                 <div className="prose prose-lg prose-invert max-w-none">
                   <p className="text-gray-300">
-                    A hidden chamber has been discovered deep inside the Eiger, preserved in perfect ice. Strange symbols
-                    cover the walls, and crystalline structures glow with an unnatural light. No records explain who built
-                    it—or why.
-                  </p>
-                  <p className="text-gray-300 mt-4">
-                    As you explore the chamber, mechanisms begin to respond to your presence, shifting the environment
-                    itself. This is not just a place, but a system waiting to be activated. Every choice you make shapes
-                    what happens next.
-                  </p>
-                  <p className="text-gray-300 mt-4">
-                    Solve the chamber&apos;s secrets before it seals itself again… or risk becoming part of what it was
-                    built to contain.
-                  </p>
-                  <p className="text-gray-300 mt-4">
-                    This is our most advanced room — trickier than The Eiger Signal — and is best suited to players who
-                    have tackled an escape room before.
+                    Room: The Ice Chamber. Players: 2–7. Duration: 60 minutes. Difficulty: Hard (4/5). Mechanism-driven
+                    layout with parallel puzzle tracks. Lighting and temperature effects used as puzzle inputs. Success
+                    metric: complete objective sequence before timer end.
                   </p>
                 </div>
               </motion.div>
@@ -180,41 +126,17 @@ export default function IceChamberPage() {
               >
                 <h2 className="text-3xl font-bold mb-6 text-white">Mission Gallery</h2>
                 <div className="grid grid-cols-2 gap-4">
-                  <div className="overflow-hidden rounded-xl aspect-video">
-                    <Image
-                      src="/images/bunker.png"
-                      alt="Team exploring The Ice Chamber"
-                      width={600}
-                      height={400}
-                      className="w-full h-full object-cover"
-                    />
+                  <div className="relative overflow-hidden rounded-xl aspect-video">
+                    <Image src="/images/bunker.png" alt="" fill className="object-cover" unoptimized />
                   </div>
-                  <div className="overflow-hidden rounded-xl aspect-video">
-                    <Image
-                      src="/images/chamber.png"
-                      alt="Friends working together in The Ice Chamber"
-                      width={600}
-                      height={400}
-                      className="w-full h-full object-cover"
-                    />
+                  <div className="relative overflow-hidden rounded-xl aspect-video">
+                    <Image src="/images/chamber.png" alt="" fill className="object-cover" unoptimized />
                   </div>
-                  <div className="overflow-hidden rounded-xl aspect-video">
-                    <Image
-                      src="/images/mountain.png"
-                      alt="Group solving puzzles in The Ice Chamber"
-                      width={600}
-                      height={400}
-                      className="w-full h-full object-cover"
-                    />
+                  <div className="relative overflow-hidden rounded-xl aspect-video">
+                    <Image src="/images/mountain.png" alt="" fill className="object-cover" unoptimized />
                   </div>
-                  <div className="overflow-hidden rounded-xl aspect-video">
-                    <Image
-                      src="/images/reception.png"
-                      alt="Team in The Ice Chamber"
-                      width={600}
-                      height={400}
-                      className="w-full h-full object-cover"
-                    />
+                  <div className="relative overflow-hidden rounded-xl aspect-video">
+                    <Image src="/images/reception.png" alt="" fill className="object-cover" unoptimized />
                   </div>
                 </div>
               </motion.div>
@@ -235,20 +157,10 @@ export default function IceChamberPage() {
                           <Star key={i} className="w-4 h-4 text-yellow-400 fill-yellow-400" />
                         ))}
                       </div>
-                      <p className="text-gray-300 italic mb-4">
-                        "The Ice Chamber was the most challenging and rewarding escape room I've ever done! The puzzles
-                        were incredibly clever and the shifting environment kept us engaged the entire time. We escaped
-                        with just 37 seconds left and the adrenaline rush was amazing!"
+                      <p className="text-gray-300 italic">
+                        Most challenging and rewarding session completed so far. Puzzles rated high complexity;
+                        environment state changes during run. Completed with under one minute remaining.
                       </p>
-                      <div className="flex items-center">
-                        <div className="w-10 h-10 rounded-full bg-gradient-to-r from-cyan-500 to-green-500 flex items-center justify-center mr-3">
-                          <span className="text-white font-bold text-sm">AL</span>
-                        </div>
-                        <div>
-                          <h4 className="text-white font-medium">Alex L.</h4>
-                          <p className="text-gray-400 text-sm">Played May 2023</p>
-                        </div>
-                      </div>
                     </CardContent>
                   </Card>
 
@@ -262,20 +174,9 @@ export default function IceChamberPage() {
                           <Star key={i} className="w-4 h-4 text-gray-600" />
                         ))}
                       </div>
-                      <p className="text-gray-300 italic mb-4">
-                        "Wow, this room is tough! We didn't make it out in time but had an absolute blast trying. The
-                        puzzles are next-level difficult but in a good way. The staff were great about giving hints when
-                        we needed them. Will definitely come back to try again!"
+                      <p className="text-gray-300 italic">
+                        High difficulty run; objective not completed within timer. Hint system used. Would repeat.
                       </p>
-                      <div className="flex items-center">
-                        <div className="w-10 h-10 rounded-full bg-gradient-to-r from-cyan-500 to-green-500 flex items-center justify-center mr-3">
-                          <span className="text-white font-bold text-sm">KP</span>
-                        </div>
-                        <div>
-                          <h4 className="text-white font-medium">Kaitlyn P.</h4>
-                          <p className="text-gray-400 text-sm">Played February 2025</p>
-                        </div>
-                      </div>
                     </CardContent>
                   </Card>
 
@@ -286,156 +187,14 @@ export default function IceChamberPage() {
                           <Star key={i} className="w-4 h-4 text-yellow-400 fill-yellow-400" />
                         ))}
                       </div>
-                      <p className="text-gray-300 italic mb-4">
-                        "Our team of 6 took on The Ice Chamber as part of a corporate team building day, and it was
-                        perfect! The room really highlighted everyone's different strengths and forced us to communicate
-                        effectively. Even though we didn't escape in time, it was a fantastic bonding experience."
+                      <p className="text-gray-300 italic">
+                        Six participants; corporate booking. Communication load high; objective not completed; group
+                        satisfaction reported as positive.
                       </p>
-                      <div className="flex items-center">
-                        <div className="w-10 h-10 rounded-full bg-gradient-to-r from-cyan-500 to-green-500 flex items-center justify-center mr-3">
-                          <span className="text-white font-bold text-sm">DT</span>
-                        </div>
-                        <div>
-                          <h4 className="text-white font-medium">David T.</h4>
-                          <p className="text-gray-400 text-sm">Played April 2024</p>
-                        </div>
-                      </div>
                     </CardContent>
                   </Card>
                 </div>
               </motion.div>
-            </div>
-
-            {/* Right Column - Sidebar */}
-            <div className="lg:col-span-1">
-              <div className="sticky top-24">
-                <motion.div
-                  className="bg-[#111] rounded-xl border border-[#222] overflow-hidden mb-8"
-                  initial="hidden"
-                  whileInView="visible"
-                  viewport={{ once: true, margin: "-100px" }}
-                  variants={fadeIn}
-                >
-                  <div className="p-6">
-                    <h3 className="text-xl font-bold mb-4 text-white">Mission Details</h3>
-                    <ul className="space-y-4">
-                      <li className="flex items-start">
-                        <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-cyan-500 to-green-500 flex items-center justify-center mr-3 mt-0.5">
-                          <Users className="w-5 h-5 text-white" />
-                        </div>
-                        <div>
-                          <h4 className="font-bold text-white">Team Size</h4>
-                          <p className="text-gray-400">2-7 people (Recommended: 4-6)</p>
-                        </div>
-                      </li>
-                      <li className="flex items-start">
-                        <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-cyan-500 to-green-500 flex items-center justify-center mr-3 mt-0.5">
-                          <Clock className="w-5 h-5 text-white" />
-                        </div>
-                        <div>
-                          <h4 className="font-bold text-white">Duration</h4>
-                          <p className="text-gray-400">60 minutes</p>
-                        </div>
-                      </li>
-
-                      <li className="flex items-start">
-                        <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-cyan-500 to-green-500 flex items-center justify-center mr-3 mt-0.5">
-                          <Star className="w-5 h-5 text-white" />
-                        </div>
-                        <div>
-                          <h4 className="font-bold text-white">Difficulty</h4>
-                          <p className="text-gray-400">Tricky, but Fun. (4/5)</p>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="p-6 bg-gradient-to-br from-cyan-900/20 to-green-900/20 border-t border-[#222]">
-                    <h4 className="font-bold text-white mb-2">Perfect For:</h4>
-                    <ul className="space-y-2">
-                      <li className="flex items-center">
-                        <CheckCircle2 className="w-4 h-4 text-cyan-400 mr-2" />
-                        <span className="text-gray-300">Experienced escape room enthusiasts</span>
-                      </li>
-                      <li className="flex items-center">
-                        <CheckCircle2 className="w-4 h-4 text-cyan-400 mr-2" />
-                        <span className="text-gray-300">Larger groups (4-6 recommended)</span>
-                      </li>
-                      <li className="flex items-center">
-                        <CheckCircle2 className="w-4 h-4 text-cyan-400 mr-2" />
-                        <span className="text-gray-300">Corporate team building</span>
-                      </li>
-                      <li className="flex items-center">
-                        <CheckCircle2 className="w-4 h-4 text-cyan-400 mr-2" />
-                        <span className="text-gray-300">Those seeking a real challenge</span>
-                      </li>
-                    </ul>
-                  </div>
-                </motion.div>
-
-                <motion.div
-                  className="bg-[#111] rounded-xl border border-[#222] overflow-hidden mb-8"
-                  initial="hidden"
-                  whileInView="visible"
-                  viewport={{ once: true, margin: "-100px" }}
-                  variants={fadeIn}
-                >
-                  <div className="p-6">
-                    <h3 className="text-xl font-bold mb-4 text-white">Accept Your Mission</h3>
-                    <p className="text-gray-300 mb-4">
-                      Ready to test your skills with our most challenging room? Book now and see if you can unlock the
-                      chamber before it seals.
-                    </p>
-                    <Link href="/booking" className="text-cyan-400 hover:text-cyan-300 transition-colors">
-                      Reserve
-                    </Link>
-                  </div>
-                </motion.div>
-
-                <motion.div
-                  className="bg-[#111] rounded-xl border border-[#222] overflow-hidden"
-                  initial="hidden"
-                  whileInView="visible"
-                  viewport={{ once: true, margin: "-100px" }}
-                  variants={fadeIn}
-                >
-                  <div className="p-6">
-                    <h3 className="text-xl font-bold mb-4 text-white">Our Other Escape Rooms</h3>
-                    <div className="space-y-4">
-                      <Link
-                        href="/escape-rooms/the-eiger-signal"
-                        className="block p-4 bg-[#0a0a0a] rounded-lg border border-[#333] hover:border-cyan-500/50 transition-all group"
-                      >
-                        <h4 className="font-bold text-white group-hover:text-cyan-400 transition-colors">
-                          The Eiger Signal
-                        </h4>
-                        <p className="text-gray-400 text-sm mt-1">
-                          Hut transmitting again—strange signal, something beneath the mountain. Decode it before the hour
-                          runs out.
-                        </p>
-                        <div className="flex items-center justify-end mt-2">
-                          <ArrowRight className="w-4 h-4 text-cyan-400 opacity-0 group-hover:opacity-100 transition-opacity" />
-                        </div>
-                      </Link>
-
-                      <Link
-                        href="/escape-rooms/the-forgotten-bunker"
-                        className="block p-4 bg-[#0a0a0a] rounded-lg border border-[#333] hover:border-cyan-500/50 transition-all group"
-                      >
-                        <h4 className="font-bold text-white group-hover:text-cyan-400 transition-colors">
-                          The Forgotten Bunker
-                        </h4>
-                        <p className="text-gray-400 text-sm mt-1">
-                          Sealed under ice, systems reactivated—ciphers, orders never carried out, last mission counting
-                          down.
-                        </p>
-                        <div className="flex items-center justify-end mt-2">
-                          <ArrowRight className="w-4 h-4 text-cyan-400 opacity-0 group-hover:opacity-100 transition-opacity" />
-                        </div>
-                      </Link>
-                    </div>
-                  </div>
-                </motion.div>
-              </div>
             </div>
           </div>
         </div>
@@ -529,63 +288,14 @@ export default function IceChamberPage() {
         </div>
       </section>
 
-      {/* Share & Actions */}
-      <CtaSection />
-
-      {/* CTA Section */}
-      <section className="py-16">
-        <div className="container mx-auto px-4">
-          <motion.div
-            className="max-w-4xl mx-auto bg-[#111] rounded-2xl overflow-hidden border border-[#222]"
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: "-100px" }}
-            variants={fadeIn}
+      <section className="py-20 md:py-28 bg-[#0a0a0a] border-t border-[#222]">
+        <div className="container mx-auto px-4 flex justify-center">
+          <Link
+            href="/enquiry?room=The%20Ice%20Chamber"
+            className="inline-flex items-center justify-center rounded-lg border border-white/20 px-6 py-3 text-sm text-gray-400 hover:text-gray-300 transition-colors"
           >
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-0">
-              <div className="order-2 md:order-1 p-8 md:p-12 flex flex-col justify-center">
-                <h2 className="text-3xl font-bold mb-6 bg-gradient-to-r from-cyan-400 to-green-400 bg-clip-text text-transparent">
-                  Ready to Enter The Ice Chamber?
-                </h2>
-                <p className="text-lg text-gray-300 mb-8">
-                  The chamber is waking. Crystalline light cuts through the ice. Your crew has sixty minutes to solve its
-                  secrets before it seals. Are you in?
-                </p>
-                <Link 
-                  href="/booking" 
-                  className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-cyan-500 to-green-500 text-white font-bold rounded-xl hover:from-cyan-600 hover:to-green-600 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
-                >
-                  Reserve
-                  <ArrowRight className="w-5 h-5 ml-2" />
-                </Link>
-              </div>
-              <div className="order-1 md:order-2">
-                <ImageSlideshow
-                  images={[
-                    {
-                      src: "/images/chamber.png",
-                      alt: "Team exploring The Ice Chamber",
-                    },
-                    {
-                      src: "/images/bunker.png",
-                      alt: "Frozen passages near The Ice Chamber",
-                    },
-                    {
-                      src: "/images/mountain.png",
-                      alt: "The Eiger above the ice chamber",
-                    },
-                    {
-                      src: "/images/reception.png",
-                      alt: "Eiger Escape Rooms reception",
-                    },
-                  ]}
-                  interval={4000}
-                  aspectRatio="video"
-                  className="h-full md:rounded-l-none"
-                />
-              </div>
-            </div>
-          </motion.div>
+            Enquire about this room
+          </Link>
         </div>
       </section>
     </div>

@@ -8,22 +8,14 @@ export function DescriptionSection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
           <div className="flex flex-col gap-4">
             <h2 className="text-xl md:text-2xl font-bold text-white font-mono tracking-tight pl-[58px]">
-              The Mission Brief
+              Room data
             </h2>
             <Card className="border-[6px] border-white bg-[#111] flex-1">
             <CardContent className="py-[80px] px-[52px] flex flex-col justify-center h-full">
               <p className="text-gray-300 leading-relaxed text-base md:text-lg">
-                An abandoned mountain rescue hut high on the Eiger has begun transmitting again after decades of
-                silence. Inside, everything is frozen in time—radios humming, lights flickering, logs abruptly ending.
-                A strange signal pulses through the equipment, repeating in patterns no one can explain.
-              </p>
-              <p className="mt-4 text-gray-300 leading-relaxed text-base md:text-lg">
-                As you restore power and decode the transmission, it becomes clear this is no ordinary distress call.
-                Something was discovered beneath the mountain… and it may still be there.
-              </p>
-              <p className="mt-4 text-gray-300 leading-relaxed text-base md:text-lg">
-                You have one hour to uncover the truth before the signal completes—and whatever it&apos;s calling
-                finally arrives.
+                Room: The Eiger Signal. Players: 2–8. Duration: 60 minutes. Difficulty: Medium–hard. Puzzle types: logic,
+                radio/signal pattern, mechanical. Win condition: complete objective chain before countdown ends. Failure
+                mode: timer reaches zero.
               </p>
             </CardContent>
           </Card>
@@ -33,9 +25,10 @@ export function DescriptionSection() {
             <div className="relative aspect-video lg:aspect-auto lg:h-full lg:min-h-[320px]">
               <Image
                 src="/images/reception.png"
-                alt="Inside The Eiger Signal escape room"
+                alt=""
                 fill
                 className="object-contain lg:object-cover"
+                unoptimized
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#111]/40 to-transparent" />
             </div>

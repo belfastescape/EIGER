@@ -10,22 +10,15 @@ interface SelfDestructLinkProps {
   warning?: string
 }
 
-export function SelfDestructLink({ imageSrc, href, alt = "Book your mission", warning }: SelfDestructLinkProps) {
+export function SelfDestructLink({ imageSrc, href, alt = "", warning }: SelfDestructLinkProps) {
   return (
     <div className="relative w-full">
       <Link
         href={href}
-        className="relative block w-full hover:brightness-110 transition-[filter] duration-300"
-        aria-label={alt}
+        className="relative block w-full aspect-video hover:brightness-110 transition-[filter] duration-300"
+        aria-label={alt || "Book"}
       >
-        <Image
-          src={imageSrc}
-          alt={alt}
-          width={1920}
-          height={1080}
-          className="w-full h-auto"
-          priority
-        />
+        <Image src={imageSrc} alt={alt} fill className="object-cover" priority />
 
         {warning && (
           <p className="mt-2 text-neutral-300 text-2xl text-center pb-4 animate-[pulse-bright_1.5s_ease-in-out_infinite]">

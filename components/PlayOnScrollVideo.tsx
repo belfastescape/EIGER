@@ -12,7 +12,7 @@ export function PlayOnScrollVideo({
   className,
   videoClassName,
   poster,
-  posterAlt = "Video preview",
+  posterAlt = "",
   posterSizes = "100vw",
   captionsSrc,
   captionsLabel = "English",
@@ -81,6 +81,7 @@ export function PlayOnScrollVideo({
             className="object-cover"
             sizes={posterSizes}
             quality={75}
+            unoptimized
           />
         </div>
       )}

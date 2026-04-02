@@ -12,14 +12,13 @@ export function HeroSection() {
       <div className="absolute inset-0">
         <Image
           src="/images/eiger-hero.png"
-          alt="Escape Room Portal"
+          alt=""
           fill
           className="object-cover object-left md:object-center"
           priority
           quality={75}
           sizes="100vw"
-          placeholder="blur"
-          blurDataURL="data:image/webp;base64,UklGRo4AAABXRUJQVlA4TIEAAAAvAAAAAAfA//8+kP1/gAAAAA=="
+          unoptimized
         />
       </div>
       <div className="absolute inset-0 bg-black/60" aria-hidden />

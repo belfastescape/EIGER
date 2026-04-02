@@ -6,10 +6,11 @@ export function HeroSection() {
       <div className="absolute inset-0 z-0">
         <Image
           src="/images/mountain.png"
-          alt="The Eiger Signal escape room — abandoned mountain rescue hut"
+          alt=""
           fill
           className="object-cover grayscale"
           priority
+          unoptimized
         />
         <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-[#0a0a0a]/70 to-[#0a0a0a]/30" />
       </div>
@@ -21,11 +22,10 @@ export function HeroSection() {
             <br />
             <span className="text-cyan-400">Signal</span>
           </h1>
-          <p className="mt-4 text-lg text-gray-400 font-mono">Mountain Rescue Mystery &mdash; Ages 12+</p>
+          <p className="mt-4 text-lg text-gray-400 font-mono">Room specification</p>
           <p className="mt-6 text-base md:text-lg text-gray-300 max-w-2xl leading-relaxed">
-            A rescue hut high on the Eiger is transmitting again after decades of silence—strange patterns in the
-            signal, something beneath the mountain. One hour to uncover the truth before whatever it&apos;s calling
-            arrives.
+            Room: The Eiger Signal. Players: 2–8. Duration: 60 minutes. Difficulty: Medium–hard (3/5). Objectives:
+            restore power, decode signal sequence, complete mission before timer expiry. Recommended minimum age: 12+.
           </p>
         </div>
       </div>

@@ -42,7 +42,6 @@ export default function TeamBuildingPage() {
         subtitle="Timed missions that surface how your people communicate when the clock is loud"
         buttonText="Book Your Team Event"
         imageSrc="/images/reception.png"
-        imageAlt="Corporate group after an escape game"
       />
 
       {/* Introduction Section */}
@@ -565,14 +564,8 @@ If you are wanting an escape room experience, we would 100% recommended this one
                 viewport={{ once: true, margin: "-100px" }}
                 variants={fadeIn}
               >
-                <div className="rounded-xl overflow-hidden">
-                  <Image
-                    src="/images/mountain.png"
-                    alt="The Eiger Signal"
-                    width={800}
-                    height={600}
-                    className="w-full h-auto"
-                  />
+                <div className="rounded-xl overflow-hidden relative aspect-[4/3]">
+                  <Image src="/images/mountain.png" alt="" fill className="object-cover" />
                 </div>
                 <div>
                   <h3 className="text-2xl font-bold mb-4 text-white">The Eiger Signal</h3>
@@ -622,14 +615,8 @@ If you are wanting an escape room experience, we would 100% recommended this one
                 viewport={{ once: true, margin: "-100px" }}
                 variants={fadeIn}
               >
-                <div className="rounded-xl overflow-hidden">
-                  <Image
-                    src="/images/bunker.png"
-                    alt="The Forgotten Bunker"
-                    width={800}
-                    height={600}
-                    className="w-full h-auto"
-                  />
+                <div className="rounded-xl overflow-hidden relative aspect-[4/3]">
+                  <Image src="/images/bunker.png" alt="" fill className="object-cover" />
                 </div>
                 <div>
                   <h3 className="text-2xl font-bold mb-4 text-white">The Forgotten Bunker</h3>
@@ -679,14 +666,8 @@ If you are wanting an escape room experience, we would 100% recommended this one
                 viewport={{ once: true, margin: "-100px" }}
                 variants={fadeIn}
               >
-                <div className="rounded-xl overflow-hidden">
-                  <Image
-                    src="/images/chamber.png"
-                    alt="The Ice Chamber"
-                    width={800}
-                    height={600}
-                    className="w-full h-auto"
-                  />
+                <div className="rounded-xl overflow-hidden relative aspect-[4/3]">
+                  <Image src="/images/chamber.png" alt="" fill className="object-cover" />
                 </div>
                 <div>
                   <h3 className="text-2xl font-bold mb-4 text-white">The Ice Chamber</h3>

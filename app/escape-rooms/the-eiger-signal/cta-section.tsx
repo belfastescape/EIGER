@@ -168,25 +168,16 @@ export function CtaSection() {
   return (
     <section id="book" className="py-20 bg-[#0a0a0a]">
       <div className="mx-auto max-w-6xl px-4">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 items-stretch">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 items-stretch">
           <ShareCard delay={0} />
-          <CtaCard
-            title="Want to book this game?"
-            subtitle="Check out all availability on our booking page."
-            href="/booking"
-            label="Reserve"
-            variant="primary"
-            buttonColor="green"
-            delay={0.1}
-          />
-          <FlipCtaCard delay={0.2} />
+          <FlipCtaCard delay={0.1} />
           <CtaCard
             title="Check out our other games."
             subtitle="Browse our other escape rooms here."
             href="/escape-rooms"
             label="All of our rooms"
             buttonColor="yellow"
-            delay={0.3}
+            delay={0.2}
           />
         </div>
       </div>

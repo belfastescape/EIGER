@@ -54,7 +54,7 @@ export function ImageSlideshow({
         >
           <Image
             src={image.src || "/placeholder.svg"}
-            alt={image.alt}
+            alt={image.alt || ""}
             fill
             className="object-cover"
             priority={index === 0}

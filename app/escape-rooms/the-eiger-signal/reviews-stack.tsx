@@ -33,7 +33,7 @@ export function ReviewsStack() {
           {/* Mobile: 9:16 */}
           <Image
             src="/images/reception.png"
-            alt="Rebecca's review of The Eiger Signal"
+            alt=""
             fill
             className="object-cover sm:hidden"
             sizes="90vw"
@@ -41,7 +41,7 @@ export function ReviewsStack() {
           {/* Desktop: 16:9 */}
           <Image
             src="/images/reception.png"
-            alt="Rebecca's review of The Eiger Signal"
+            alt=""
             fill
             className="object-cover hidden sm:block"
             sizes="90vw"
@@ -56,7 +56,7 @@ export function ReviewsStack() {
           {/* Mobile: 9:16 */}
           <Image
             src="/images/mountain.png"
-            alt="Howard's review of The Eiger Signal"
+            alt=""
             fill
             className="object-cover sm:hidden"
             sizes="90vw"
@@ -64,7 +64,7 @@ export function ReviewsStack() {
           {/* Desktop: 16:9 */}
           <Image
             src="/images/mountain.png"
-            alt="Howard's review of The Eiger Signal"
+            alt=""
             fill
             className="object-cover hidden sm:block"
             sizes="90vw"
@@ -79,7 +79,7 @@ export function ReviewsStack() {
           {/* Mobile: 9:16 */}
           <Image
             src="/images/bunker.png"
-            alt="Tom's review of The Eiger Signal"
+            alt=""
             fill
             className="object-cover sm:hidden"
             sizes="90vw"
@@ -87,7 +87,7 @@ export function ReviewsStack() {
           {/* Desktop: 16:9 */}
           <Image
             src="/images/bunker.png"
-            alt="Tom's review of The Eiger Signal"
+            alt=""
             fill
             className="object-cover hidden sm:block"
             sizes="90vw"
@@ -102,7 +102,7 @@ export function ReviewsStack() {
           {/* Mobile: 9:16 */}
           <Image
             src="/images/chamber.png"
-            alt="Jessica's review of The Eiger Signal"
+            alt=""
             fill
             className="object-cover sm:hidden"
             sizes="90vw"
@@ -110,7 +110,7 @@ export function ReviewsStack() {
           {/* Desktop: 16:9 */}
           <Image
             src="/images/chamber.png"
-            alt="Jessica's review of The Eiger Signal"
+            alt=""
             fill
             className="object-cover hidden sm:block"
             sizes="90vw"
@@ -125,7 +125,7 @@ export function ReviewsStack() {
           {/* Mobile: 9:16 */}
           <Image
             src="/images/eiger-hero.png"
-            alt="Top Secret — Agent Reports"
+            alt=""
             fill
             className="object-cover sm:hidden"
             sizes="90vw"
@@ -134,7 +134,7 @@ export function ReviewsStack() {
           {/* Desktop: 16:9 */}
           <Image
             src="/images/eiger-hero.png"
-            alt="Top Secret — Agent Reports"
+            alt=""
             fill
             className="object-cover hidden sm:block"
             sizes="90vw"

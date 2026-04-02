@@ -6,10 +6,11 @@ export function HeroSection() {
       <div className="absolute inset-0 z-0">
         <Image
           src="/images/bunker.png"
-          alt="The Forgotten Bunker escape room — sealed WWII installation"
+          alt=""
           fill
           className="object-cover"
           priority
+          unoptimized
         />
         <div className="absolute inset-0 bg-gradient-to-t from-[#0f1410] via-[#0f1410]/85 to-[#0f1410]/30" />
       </div>
@@ -21,10 +22,10 @@ export function HeroSection() {
             <br />
             <span className="text-amber-400">Bunker</span>
           </h1>
-          <p className="mt-4 text-lg text-gray-400 font-mono">WWII Cipher Mission &mdash; Ages 10+</p>
+          <p className="mt-4 text-lg text-gray-400 font-mono">Room specification</p>
           <p className="mt-6 text-base md:text-lg text-gray-300 max-w-2xl leading-relaxed">
-            Hidden deep within the Eiger lies a sealed WWII bunker, buried beneath ice—recently uncovered, its systems
-            mysteriously reactivated. Decipher the truth and shut it down before the bunker completes its last mission.
+            Room: The Forgotten Bunker. Players: 2–6. Duration: 60 minutes. Difficulty: Medium–hard (4/5). Puzzle types:
+            ciphers, maps, document logic. Recommended minimum age: 10+ with adult for younger groups.
           </p>
         </div>
       </div>

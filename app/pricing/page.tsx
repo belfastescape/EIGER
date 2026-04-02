@@ -39,7 +39,7 @@ export default function PricingPage() {
         <div className="absolute inset-0 z-0">
           <Image
             src="/images/eiger-hero.png"
-            alt="Eiger Escape Rooms Pricing"
+            alt=""
             fill
             className="object-cover opacity-40"
             priority
@@ -280,7 +280,7 @@ export default function PricingPage() {
                   {/* The Forgotten Bunker */}
                   <Card className="bg-[#111] border-[#222] hover:border-cyan-500/30 transition-all overflow-hidden">
                     <div className="h-40 relative">
-                      <Image src="/images/bunker.png" alt="The Forgotten Bunker" fill className="object-cover" />
+                      <Image src="/images/bunker.png" alt="" fill className="object-cover" />
                       <div className="absolute inset-0 bg-gradient-to-t from-[#111] to-transparent"></div>
                       <div className="absolute bottom-4 left-4 right-4">
                         <h3 className="text-xl font-bold text-white">The Forgotten Bunker</h3>
@@ -419,7 +419,7 @@ export default function PricingPage() {
                 </Link>
                </div>
                              <div className="relative h-full min-h-[300px] md:min-h-0">
-                <Image src="/images/reception.png" alt="Gift Voucher" fill className="object-cover" />
+                <Image src="/images/reception.png" alt="" fill className="object-cover" />
               </div>
              </div>
            </motion.div>

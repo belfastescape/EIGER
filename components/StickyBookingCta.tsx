@@ -12,15 +12,15 @@ export function StickyBookingCta() {
       style={{ paddingBottom: "max(0.5rem, env(safe-area-inset-bottom))" }}
     >
       <Link
-        href="/booking"
+        href="/enquiry"
         className="w-[70%] flex flex-col items-center justify-center py-3 px-4 bg-black text-center active:bg-gray-900 transition-colors"
-        aria-label="Reserve a slot — see what is open"
+        aria-label="Get in touch"
       >
         <span className="text-[22px] font-semibold tracking-[0.2em] text-white uppercase">
-          See open slots
+          Message us
         </span>
         <span className="text-2xl font-bold tracking-wide text-white mt-1 uppercase">
-          Reserve
+          Enquiry
         </span>
       </Link>
       <Link

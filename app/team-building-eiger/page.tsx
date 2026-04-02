@@ -15,7 +15,6 @@ import { Textarea } from "@/components/ui/textarea"
 import { Label } from "@/components/ui/label"
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
-import GoogleIcon from '@/components/GoogleIcon'
 
 export default function TeamBuildingEigerPage() {
   const [formData, setFormData] = useState({
@@ -68,7 +67,6 @@ export default function TeamBuildingEigerPage() {
         subtitle="Strengthen your team with our immersive escape room challenges"
         buttonText="Plan Your Team Event"
         imageSrc="/images/reception.png"
-        imageAlt="Team celebrating after an escape room"
       />
 
       {/* Introduction Section */}
@@ -331,15 +329,6 @@ export default function TeamBuildingEigerPage() {
                   <p className="text-gray-300 mb-6 italic">
                     "Our department left the escape room energized and more connected than ever. The puzzles were clever and everyone contributed. Highly recommended for any Eiger business!"
                   </p>
-                  <div className="flex items-center">
-                    <div className="w-12 h-12 rounded-full bg-white flex items-center justify-center mr-4">
-                      <GoogleIcon className="w-8 h-8" />
-                    </div>
-                    <div>
-                      <h4 className="text-white font-bold">Alex Morgan</h4>
-                      <p className="text-gray-400">Team Lead, Eiger</p>
-                    </div>
-                  </div>
                 </CardContent>
               </Card>
             </motion.div>
@@ -357,15 +346,6 @@ export default function TeamBuildingEigerPage() {
                   <p className="text-gray-300 mb-6 italic">
                     "We wanted something different for our annual team event and this was perfect. The staff were fantastic and the experience brought out the best in everyone."
                   </p>
-                  <div className="flex items-center">
-                    <div className="w-12 h-12 rounded-full bg-white flex items-center justify-center mr-4">
-                      <GoogleIcon className="w-8 h-8" />
-                    </div>
-                    <div>
-                      <h4 className="text-white font-bold">Priya Singh</h4>
-                      <p className="text-gray-400">HR Manager, Eiger</p>
-                    </div>
-                  </div>
                 </CardContent>
               </Card>
             </motion.div>
@@ -383,15 +363,6 @@ export default function TeamBuildingEigerPage() {
                   <p className="text-gray-300 mb-6 italic">
                     "As a small business, we found the escape room to be a fun and affordable way to build trust and communication. We'll definitely be back!"
                   </p>
-                  <div className="flex items-center">
-                    <div className="w-12 h-12 rounded-full bg-white flex items-center justify-center mr-4">
-                      <GoogleIcon className="w-8 h-8" />
-                    </div>
-                    <div>
-                      <h4 className="text-white font-bold">Jamie Chen</h4>
-                      <p className="text-gray-400">Owner, Eiger</p>
-                    </div>
-                  </div>
                 </CardContent>
               </Card>
             </motion.div>
@@ -576,14 +547,8 @@ export default function TeamBuildingEigerPage() {
                 viewport={{ once: true, margin: "-100px" }}
                 variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6 } } }}
               >
-                <div className="rounded-xl overflow-hidden">
-                  <Image
-                    src="/images/mountain.png"
-                    alt="The Eiger Signal"
-                    width={800}
-                    height={600}
-                    className="w-full h-auto"
-                  />
+                <div className="rounded-xl overflow-hidden relative aspect-[4/3]">
+                  <Image src="/images/mountain.png" alt="" fill className="object-cover" />
                 </div>
                 <div>
                   <h3 className="text-2xl font-bold mb-4 text-white">The Eiger Signal</h3>
@@ -630,14 +595,8 @@ export default function TeamBuildingEigerPage() {
                 viewport={{ once: true, margin: "-100px" }}
                 variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6 } } }}
               >
-                <div className="rounded-xl overflow-hidden">
-                  <Image
-                    src="/images/bunker.png"
-                    alt="The Forgotten Bunker"
-                    width={800}
-                    height={600}
-                    className="w-full h-auto"
-                  />
+                <div className="rounded-xl overflow-hidden relative aspect-[4/3]">
+                  <Image src="/images/bunker.png" alt="" fill className="object-cover" />
                 </div>
                 <div>
                   <h3 className="text-2xl font-bold mb-4 text-white">The Forgotten Bunker</h3>
@@ -684,14 +643,8 @@ export default function TeamBuildingEigerPage() {
                 viewport={{ once: true, margin: "-100px" }}
                 variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6 } } }}
               >
-                <div className="rounded-xl overflow-hidden">
-                  <Image
-                    src="/images/chamber.png"
-                    alt="The Ice Chamber"
-                    width={800}
-                    height={600}
-                    className="w-full h-auto"
-                  />
+                <div className="rounded-xl overflow-hidden relative aspect-[4/3]">
+                  <Image src="/images/chamber.png" alt="" fill className="object-cover" />
                 </div>
                 <div>
                   <h3 className="text-2xl font-bold mb-4 text-white">The Ice Chamber</h3>

@@ -33,7 +33,6 @@ export default function RainyDayActivitiesEigerPage() {
         subtitle="Dry, lively things to do around Grindelwald until the lifts clear again"
         buttonText="Book Your Quest"
         imageSrc="/images/mountain.png"
-        imageAlt="Grindelwald in misty weather"
       />
 
       {/* Introduction Section */}
@@ -79,9 +78,7 @@ export default function RainyDayActivitiesEigerPage() {
             >
               <ImageWithFilter
                 src="/images/chamber.png"
-                alt="Indoor entertainment"
-                width={800}
-                height={533}
+                alt=""
                 filter="brightness-110 contrast-110 saturate-150"
                 className="rounded-xl"
               />
@@ -96,9 +93,7 @@ export default function RainyDayActivitiesEigerPage() {
             >
               <ImageWithFilter
                 src="/images/bunker.png"
-                alt="Family fun"
-                width={800}
-                height={533}
+                alt=""
                 filter="brightness-110 contrast-110 saturate-150"
                 className="rounded-xl"
               />
@@ -113,9 +108,7 @@ export default function RainyDayActivitiesEigerPage() {
             >
               <ImageWithFilter
                 src="/images/reception.png"
-                alt="Group activities"
-                width={800}
-                height={533}
+                alt=""
                 filter="brightness-110 contrast-110 saturate-150"
                 className="rounded-xl"
               />
@@ -130,9 +123,7 @@ export default function RainyDayActivitiesEigerPage() {
             >
               <ImageWithFilter
                 src="/images/mountain.png"
-                alt="Indoor fun"
-                width={800}
-                height={533}
+                alt=""
                 filter="brightness-110 contrast-110 saturate-150"
                 className="rounded-xl"
               />
@@ -286,11 +277,9 @@ export default function RainyDayActivitiesEigerPage() {
             >
               <ImageWithFilter
                 src="/images/reception.png"
-                alt="Team solving puzzles in escape room"
-                width={800}
-                height={600}
+                alt=""
                 filter="brightness-110 contrast-110 saturate-150"
-                className="w-full h-auto"
+                className="w-full"
               />
             </motion.div>
 

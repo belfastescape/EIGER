@@ -19,6 +19,10 @@ const navItems: NavItem[] = [
 
 const secondaryLinks = [
   { label: "Deals", href: "/deals" },
+  { label: "Explore", href: "/escape-rooms" },
+  { label: "What We Do", href: "/about" },
+  { label: "Our Escape Rooms", href: "/escape-rooms" },
+  { label: "Reserve", href: "/booking" },
   { label: "Contact", href: "/contact" },
 ]
 
@@ -128,12 +132,13 @@ export default function ParallaxNav() {
             >
               <Image
                 src={item.image}
-                alt={item.label.join(" ")}
+                alt=""
                 fill
                 className="object-cover"
                 sizes="100vw"
                 quality={75}
                 priority={index === 0}
+                unoptimized
               />
             </div>
           </div>
@@ -191,12 +196,11 @@ export default function ParallaxNav() {
               </Link>
             ))}
 
-            {/* Book CTA */}
             <Link
-              href="/booking"
+              href="/enquiry"
               className="bg-gradient-to-r from-cyan-500 to-green-500 hover:from-cyan-600 hover:to-green-600 text-white text-sm font-medium px-4 py-2 rounded-md transition-all duration-200"
             >
-              Book Now
+              Get in touch
             </Link>
           </nav>
 
@@ -267,11 +271,11 @@ export default function ParallaxNav() {
             ))}
 
             <Link
-              href="/booking"
+              href="/enquiry"
               onClick={() => setMobileMenuOpen(false)}
               className="mt-4 bg-gradient-to-r from-cyan-500 to-green-500 hover:from-cyan-600 hover:to-green-600 text-white font-medium text-lg px-10 py-4 rounded-md"
             >
-              Book Now
+              Get in touch
             </Link>
           </div>
         )}

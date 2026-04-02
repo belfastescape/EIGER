@@ -78,7 +78,7 @@ export default function ContactPage() {
         <div className="absolute inset-0 z-0">
           <Image
             src="/placeholder.svg?key=contact-hero"
-            alt="Contact Eiger Escape Rooms"
+            alt=""
             fill
             className="object-cover opacity-40"
             priority

@@ -1,6 +1,6 @@
 import Link from "next/link"
 import Image from "next/image"
-import { Facebook, MapPin, Mail, Clock } from "lucide-react"
+import { Facebook } from "lucide-react"
 
 /** WCAG-friendly body text on footer bg `#080808` */
 const footerMuted = "text-gray-300"
@@ -28,17 +28,11 @@ export function Footer() {
       </section>
       <footer className="py-12 bg-[#080808] border-t border-[#222]">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-            <div className="md:col-span-2">
-              {/* Fixed dimensions to prevent CLS - h-10 = 40px, aspect ratio 2.5:1 = 100px width */}
-              <Image
-                src="/images/eiger-hero.png"
-                alt="Eiger Escape Rooms"
-                width={100}
-                height={40}
-                className="h-10 w-[100px] mb-4"
-                style={{ width: '100px', height: '40px' }}
-              />
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+            <div className="md:col-span-1">
+              <div className="relative h-10 w-[100px] mb-4">
+                <Image src="/images/eiger-hero.png" alt="" fill className="object-cover" sizes="100px" unoptimized />
+              </div>
               <p className={`${footerMuted} mb-4 max-w-md`}>
                 Grindelwald&apos;s home for timed, hands-on escape games—built for visitors after the lifts, locals on a
                 rainy afternoon, and teams who want a shared win.
@@ -49,7 +43,7 @@ export function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className={`inline-flex rounded-sm ${footerLink}`}
-                  aria-label="Eiger Escape Rooms on Facebook (opens in a new tab)"
+                  aria-label="Facebook (opens in a new tab)"
                 >
                   <Facebook className="w-6 h-6" aria-hidden />
                 </Link>
@@ -69,7 +63,7 @@ export function Footer() {
                     Our Escape Rooms
                   </Link>
                 </li>
-                
+
                 <li>
                   <Link href="/team-building" className={footerLink}>
                     Team Building
@@ -147,32 +141,6 @@ export function Footer() {
                   <Link href="/contact" className={footerLink}>
                     Contact Us
                   </Link>
-                </li>
-              </ul>
-            </div>
-
-            <div>
-              <h3 className="text-lg font-bold mb-4 text-white">Reach us</h3>
-              <ul className="space-y-3">
-                <li className="flex items-start">
-                  <MapPin className="w-5 h-5 text-cyan-400 mr-2 mt-0.5" />
-                  <span className={footerMuted}>3818 Grindelwald, Switzerland</span>
-                </li>
-                <li className="flex items-center">
-                  <Mail className="w-5 h-5 text-cyan-400 mr-2" />
-                  <Link
-                    href="mailto:info@eigerescaperooms.com"
-                    className={footerLink}
-                  >
-                    info@eigerescaperooms.com
-                  </Link>
-                </li>
-                <li className="flex items-start">
-                  <Clock className="w-5 h-5 text-cyan-400 mr-2 mt-0.5" />
-                  <div className={footerMuted}>
-                    <p>Mon-Fri: 10am - 8:30pm</p>
-                    <p>Sat-Sun: 9am - 8:30pm</p>
-                  </div>
                 </li>
               </ul>
             </div>

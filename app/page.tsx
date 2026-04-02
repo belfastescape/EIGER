@@ -44,7 +44,7 @@ export default function Home() {
           className="absolute inset-0 w-full h-full"
           videoClassName="absolute inset-0 w-full h-full object-cover"
           poster="/images/eiger-hero.png"
-          posterAlt="Eiger Escape Rooms intro"
+          posterAlt=""
           posterSizes="100vw"
           captionsSrc="/videos/escape-rooms-eiger-intro-captions.vtt"
         >
@@ -111,12 +111,13 @@ export default function Home() {
             >
               <Image
                 src="/images/chamber.png"
-                alt="The Ice Chamber"
+                alt=""
                 fill
                 className="object-cover"
                 loading="lazy"
                 quality={75}
                 sizes="(max-width: 768px) 90vw, (max-width: 1280px) 85vw, 80vw"
+                unoptimized
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent" />
               <div className="relative z-10 w-full px-8 md:px-16 pb-12 md:pb-20">
@@ -126,14 +127,13 @@ export default function Home() {
                   </span>
                   <h3 className="text-4xl md:text-6xl font-bold text-white mb-4">The Ice Chamber</h3>
                   <p className="text-gray-200 text-lg md:text-xl mb-8 max-w-xl">
-                    A hidden chamber deep inside the Eiger, preserved in perfect ice—symbols on the walls, crystalline
-                    light, and mechanisms that respond to your choices. Solve its secrets before it seals again—or risk
-                    becoming part of what it was built to contain.
+                    Room: The Ice Chamber. Players: 2–7. Duration: 60 minutes. Difficulty: Hard. Indoor puzzle sequence;
+                    non-linear tasks; environmental triggers.
                   </p>
                   <div className="flex flex-wrap gap-4">
-                    <Link href="/booking">
+                    <Link href="/escape-rooms">
                       <Button className="bg-gradient-to-r from-cyan-500 to-green-500 hover:from-cyan-600 hover:to-green-600 text-white text-lg py-4 px-10">
-                        Get tickets <ArrowRight className="ml-2 h-5 w-5" />
+                        Find out more <ArrowRight className="ml-2 h-5 w-5" />
                       </Button>
                     </Link>
                     <Link href="/escape-rooms/the-ice-chamber">
@@ -153,12 +153,13 @@ export default function Home() {
             >
               <Image
                 src="/images/bunker.png"
-                alt="The Forgotten Bunker"
+                alt=""
                 fill
                 className="object-cover"
                 loading="lazy"
                 quality={75}
                 sizes="(max-width: 768px) 90vw, (max-width: 1280px) 85vw, 80vw"
+                unoptimized
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent" />
               <div className="relative z-10 w-full px-8 md:px-16 pb-12 md:pb-20">
@@ -168,14 +169,13 @@ export default function Home() {
                   </span>
                   <h3 className="text-4xl md:text-6xl font-bold text-white mb-4">The Forgotten Bunker</h3>
                   <p className="text-gray-200 text-lg md:text-xl mb-8 max-w-xl">
-                    A sealed WWII bunker deep in the Eiger, buried under ice—recently uncovered, systems reactivated.
-                    Maps, ciphers, and a final order never carried out: decipher the truth and shut it down before the
-                    bunker completes its last mission.
+                    Room: The Forgotten Bunker. Players: 2–6. Duration: 60 minutes. Difficulty: Medium–hard. Puzzle types:
+                    ciphers, maps, document-based logic.
                   </p>
                   <div className="flex flex-wrap gap-4">
-                    <Link href="/booking">
+                    <Link href="/escape-rooms">
                       <Button className="bg-gradient-to-r from-cyan-500 to-green-500 hover:from-cyan-600 hover:to-green-600 text-white text-lg py-4 px-10">
-                        Get tickets <ArrowRight className="ml-2 h-5 w-5" />
+                        Find out more <ArrowRight className="ml-2 h-5 w-5" />
                       </Button>
                     </Link>
                     <Link href="/escape-rooms/the-forgotten-bunker">
@@ -195,12 +195,13 @@ export default function Home() {
             >
               <Image
                 src="/images/mountain.png"
-                alt="The Eiger Signal"
+                alt=""
                 fill
                 className="object-cover"
                 loading="lazy"
                 quality={75}
                 sizes="(max-width: 768px) 90vw, (max-width: 1280px) 85vw, 80vw"
+                unoptimized
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent" />
               <div className="relative z-10 w-full px-8 md:px-16 pb-12 md:pb-20">
@@ -210,14 +211,13 @@ export default function Home() {
                   </span>
                   <h3 className="text-4xl md:text-6xl font-bold text-white mb-4">The Eiger Signal</h3>
                   <p className="text-gray-200 text-lg md:text-xl mb-8 max-w-xl">
-                    An abandoned mountain rescue hut high on the Eiger is transmitting again—radios humming, a strange
-                    signal pulsing through the gear. Restore power, decode the transmission, and uncover what lies
-                    beneath the mountain before the signal completes—and whatever it is calling arrives.
+                    Room: The Eiger Signal. Players: 2–8. Duration: 60 minutes. Difficulty: Medium–hard. Objectives: power
+                    restoration, signal decode, timed completion.
                   </p>
                   <div className="flex flex-wrap gap-4">
-                    <Link href="/booking">
+                    <Link href="/escape-rooms">
                       <Button className="bg-gradient-to-r from-cyan-500 to-green-500 hover:from-cyan-600 hover:to-green-600 text-white text-lg py-4 px-10">
-                        Get tickets <ArrowRight className="ml-2 h-5 w-5" />
+                        Find out more <ArrowRight className="ml-2 h-5 w-5" />
                       </Button>
                     </Link>
                     <Link href="/escape-rooms/the-eiger-signal">
@@ -406,10 +406,10 @@ export default function Home() {
               destination. Challenge your mind, test your teamwork, and create unforgettable memories!
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center px-4">
-              <Link href="/booking" className="w-full sm:w-auto">
+              <Link href="/escape-rooms" className="w-full sm:w-auto">
                 <Button className="bg-gradient-to-r from-cyan-500 to-green-500 hover:from-cyan-600 hover:to-green-600 text-white text-base sm:text-lg py-4 px-6 sm:px-8 w-full sm:w-auto">
                   <PartyPopper className="mr-2 h-5 w-5" />
-                  Reserve a room
+                  Find out more
                 </Button>
               </Link>
               <Link href="/contact" className="w-full sm:w-auto">

@@ -42,7 +42,7 @@ export default function GroupBookingsPage() {
         <div className="absolute inset-0 z-0">
           <Image
             src="/placeholder.svg?key=9hhyq"
-            alt="Group Bookings at Eiger Escape Rooms"
+            alt=""
             fill
             className="object-cover opacity-40"
             priority
@@ -246,14 +246,8 @@ export default function GroupBookingsPage() {
                   </div>
                 </motion.div>
 
-                <motion.div variants={fadeIn} className="order-1 lg:order-2">
-                  <Image
-                    src="/images/reception.png"
-                    alt="Corporate team building at Eiger Escape Rooms"
-                    width={800}
-                    height={600}
-                    className="rounded-xl"
-                  />
+                <motion.div variants={fadeIn} className="order-1 lg:order-2 relative aspect-[4/3] rounded-xl overflow-hidden">
+                  <Image src="/images/reception.png" alt="" fill className="object-cover" />
                 </motion.div>
               </motion.div>
             </TabsContent>
@@ -266,14 +260,8 @@ export default function GroupBookingsPage() {
                 viewport={{ once: true, margin: "-100px" }}
                 variants={staggerContainer}
               >
-                <motion.div variants={fadeIn}>
-                  <Image
-                    src="/images/chamber.png"
-                    alt="School groups at Eiger Escape Rooms"
-                    width={800}
-                    height={600}
-                    className="rounded-xl"
-                  />
+                <motion.div variants={fadeIn} className="relative aspect-[4/3] rounded-xl overflow-hidden">
+                  <Image src="/images/chamber.png" alt="" fill className="object-cover" />
                 </motion.div>
 
                 <motion.div variants={fadeIn}>
@@ -396,14 +384,8 @@ export default function GroupBookingsPage() {
                   </div>
                 </motion.div>
 
-                <motion.div variants={fadeIn} className="order-1 lg:order-2">
-                  <Image
-                    src="/images/mountain.png"
-                    alt="Hen and stag parties at Eiger Escape Rooms"
-                    width={800}
-                    height={600}
-                    className="rounded-xl"
-                  />
+                <motion.div variants={fadeIn} className="order-1 lg:order-2 relative aspect-[4/3] rounded-xl overflow-hidden">
+                  <Image src="/images/mountain.png" alt="" fill className="object-cover" />
                 </motion.div>
               </motion.div>
             </TabsContent>

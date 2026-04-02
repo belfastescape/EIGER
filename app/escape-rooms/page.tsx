@@ -7,7 +7,6 @@ import { motion } from "framer-motion"
 import { Clock, Users, Star, ArrowRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
-import ImageWithFilter from "@/components/image-with-filter"
 import { HeroSection } from "@/components/hero-section"
 import GoogleIcon from '@/components/GoogleIcon'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
@@ -39,17 +38,15 @@ function RoomCard({ room }: RoomCardProps) {
       <div className="aspect-[4/3] overflow-hidden relative">
         <Image
           src={room.image || "/placeholder.svg"}
-          alt={room.name}
-          width={800}
-          height={600}
-          className="object-cover w-full h-full transition-all duration-500 absolute inset-0 group-hover:scale-110 group-hover:filter group-hover:brightness-125 group-hover:contrast-125 group-hover:saturate-150"
+          alt=""
+          fill
+          className="object-cover transition-all duration-500 absolute inset-0 group-hover:scale-110 group-hover:filter group-hover:brightness-125 group-hover:contrast-125 group-hover:saturate-150"
         />
         {room.hoverImage && (
           <Image
             src={room.hoverImage || "/placeholder.svg"}
-            alt={`${room.name} - Alternate View`}
-            width={800}
-            height={600}
+            alt=""
+            fill
             className="object-cover w-full h-full transition-all duration-500 absolute inset-0 opacity-0 group-hover:opacity-100 group-hover:filter group-hover:brightness-125 group-hover:contrast-125 group-hover:saturate-150"
           />
         )}
@@ -160,7 +157,7 @@ export default function EscapeRoomsPage() {
         <div className="absolute inset-0 z-0">
           <Image
             src="/placeholder.svg?key=yjanr"
-            alt="Eiger Escape Rooms"
+            alt=""
             fill
             className="object-cover opacity-40"
             priority
@@ -305,14 +302,8 @@ export default function EscapeRoomsPage() {
                   </Button>
                 </Link>
               </div>
-              <div className="rounded-xl overflow-hidden">
-                <Image
-                  src="/images/reception.png"
-                  alt="Group Booking"
-                  width={600}
-                  height={400}
-                  className="w-full h-auto object-cover"
-                />
+              <div className="rounded-xl overflow-hidden relative aspect-[3/2]">
+                <Image src="/images/reception.png" alt="" fill className="object-cover" />
               </div>
             </div>
           </motion.div>
